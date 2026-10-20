@@ -1,0 +1,6253 @@
+{
+ "tag": "manual_autofe",
+ "dataset": "kion",
+ "n_start": 39,
+ "selected": [
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 7
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "cnt"
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "mean",
+   "window": 30,
+   "value": "pct"
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "mean",
+   "value": "pct"
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "sum",
+   "window": 30,
+   "value": "hours"
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "last"
+  },
+  {
+   "key": "user",
+   "event": "watch",
+   "agg": "first"
+  },
+  {
+   "num": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt"
+   },
+   "den": {
+    "key": "user",
+    "event": "watch",
+    "agg": "cnt"
+   }
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 1
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 7
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 14
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "cnt"
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7
+   },
+   "den": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 30
+   }
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "mean",
+   "window": 30,
+   "value": "pct"
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "mean",
+   "value": "pct"
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "full",
+    "agg": "cnt",
+    "window": 30
+   },
+   "den": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 30
+   }
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "first"
+  },
+  {
+   "key": "item",
+   "event": "watch",
+   "agg": "last"
+  },
+  {
+   "key": "s:age",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "key": "s:sex",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "key": "s:income",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "key": "s:kids",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30
+  },
+  {
+   "num": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 30
+   },
+   "den": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 30
+   }
+  },
+  {
+   "key": "a:genre",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30,
+   "red": "mean"
+  },
+  {
+   "key": "a:actor",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30,
+   "red": "max"
+  },
+  {
+   "key": "a:director",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30,
+   "red": "max"
+  },
+  {
+   "key": "ua:genre",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "sum"
+  },
+  {
+   "key": "ua:genre",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "max"
+  },
+  {
+   "key": "ua:genre",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 30,
+   "red": "max"
+  },
+  {
+   "num": {
+    "key": "ua:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   },
+   "den": {
+    "key": "user",
+    "event": "watch",
+    "agg": "cnt"
+   }
+  },
+  {
+   "key": "ua:genre",
+   "event": "watch",
+   "agg": "mean",
+   "value": "pct",
+   "red": "mean"
+  },
+  {
+   "key": "ua:genre",
+   "event": "watch",
+   "agg": "last",
+   "red": "min"
+  },
+  {
+   "key": "ua:actor",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "sum"
+  },
+  {
+   "key": "ua:director",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "sum"
+  },
+  {
+   "key": "ua:country",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "max"
+  },
+  {
+   "key": "ua:studio",
+   "event": "watch",
+   "agg": "cnt",
+   "red": "max"
+  },
+  {
+   "num": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "cnt"
+   },
+   "den": {
+    "key": "user",
+    "event": "watch",
+    "agg": "cnt"
+   }
+  },
+  {
+   "key": "a:genre",
+   "event": "drop",
+   "agg": "cnt",
+   "window": 5,
+   "red": "max"
+  },
+  {
+   "key": "ua:actor",
+   "event": "long",
+   "agg": "cnt",
+   "window": 20,
+   "red": "mean"
+  },
+  {
+   "key": "a:genre",
+   "event": "long",
+   "agg": "cnt",
+   "window": 5,
+   "red": "max"
+  },
+  {
+   "num": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 7,
+    "red": "max"
+   },
+   "den": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7,
+    "red": "max"
+   }
+  },
+  {
+   "key": "a:genre",
+   "event": "long",
+   "agg": "mean",
+   "window": 60,
+   "value": "hours",
+   "red": "min"
+  },
+  {
+   "key": "ua:actor",
+   "event": "long",
+   "agg": "cnt",
+   "window": 61,
+   "red": "mean"
+  }
+ ],
+ "selected_names": [
+  "user|watch|cnt|w7",
+  "user|watch|cnt|w30",
+  "user|watch|cnt|all",
+  "user|watch|mean(pct)|w30",
+  "user|watch|mean(pct)|all",
+  "user|watch|sum(hours)|w30",
+  "user|watch|last|all",
+  "user|watch|first|all",
+  "R[user|full|cnt|all / user|watch|cnt|all]",
+  "item|watch|cnt|w1",
+  "item|watch|cnt|w7",
+  "item|watch|cnt|w14",
+  "item|watch|cnt|w30",
+  "item|watch|cnt|all",
+  "R[item|watch|cnt|w7 / item|watch|cnt|w30]",
+  "item|watch|mean(pct)|w30",
+  "item|watch|mean(pct)|all",
+  "R[item|full|cnt|w30 / item|watch|cnt|w30]",
+  "item|watch|first|all",
+  "item|watch|last|all",
+  "s:age|watch|cnt|w30",
+  "s:sex|watch|cnt|w30",
+  "s:income|watch|cnt|w30",
+  "s:kids|watch|cnt|w30",
+  "R[s:age|watch|cnt|w30 / item|watch|cnt|w30]",
+  "a:genre|watch|cnt|w30|mean",
+  "a:actor|watch|cnt|w30|max",
+  "a:director|watch|cnt|w30|max",
+  "ua:genre|watch|cnt|all|sum",
+  "ua:genre|watch|cnt|all|max",
+  "ua:genre|watch|cnt|w30|max",
+  "R[ua:genre|watch|cnt|all|mean / user|watch|cnt|all]",
+  "ua:genre|watch|mean(pct)|all|mean",
+  "ua:genre|watch|last|all|min",
+  "ua:actor|watch|cnt|all|sum",
+  "ua:director|watch|cnt|all|sum",
+  "ua:country|watch|cnt|all|max",
+  "ua:studio|watch|cnt|all|max",
+  "R[ua:ctype|watch|cnt|all / user|watch|cnt|all]",
+  "a:genre|drop|cnt|w5|max",
+  "ua:actor|long|cnt|w20|mean",
+  "a:genre|long|cnt|w5|max",
+  "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
+  "a:genre|long|mean(hours)|w60|min",
+  "ua:actor|long|cnt|w61|mean"
+ ],
+ "log": [
+  {
+   "gen": 0,
+   "candidates": 120,
+   "rescreened": 0,
+   "best_gain": 0.0001180056451483627,
+   "accepted": [
+    "a:genre|drop|cnt|w5|max",
+    "ua:actor|long|cnt|w20|mean"
+   ],
+   "n_selected": 41,
+   "val_logloss": 0.050633704993179623,
+   "feature_sec": 0.1645745000023453,
+   "elapsed_sec": 360.8703889999997
+  },
+  {
+   "gen": 1,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.0001269574421664671,
+   "accepted": [
+    "a:genre|long|cnt|w5|max",
+    "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
+    "a:genre|long|mean(hours)|w60|min"
+   ],
+   "n_selected": 44,
+   "val_logloss": 0.05059228584972949,
+   "feature_sec": 37.54539120000118,
+   "elapsed_sec": 648.9399383999989
+  },
+  {
+   "gen": 2,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00010936035007638734,
+   "accepted": [
+    "ua:actor|long|cnt|w61|mean"
+   ],
+   "n_selected": 45,
+   "val_logloss": 0.050588039505127955,
+   "feature_sec": 68.55095570000049,
+   "elapsed_sec": 1009.8558604999998
+  },
+  {
+   "gen": 3,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00011046968602633489,
+   "accepted": [],
+   "n_selected": 45,
+   "val_logloss": 0.050588039505127955,
+   "feature_sec": 67.69093019999855,
+   "elapsed_sec": 1250.629764199999
+  },
+  {
+   "gen": 4,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00011347885313819223,
+   "accepted": [],
+   "n_selected": 45,
+   "val_logloss": 0.050588039505127955,
+   "feature_sec": 20.967787900000985,
+   "elapsed_sec": 1353.8150625000017
+  },
+  {
+   "gen": 5,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00011791608033837053,
+   "accepted": [],
+   "n_selected": 45,
+   "val_logloss": 0.050588039505127955,
+   "feature_sec": 28.839187000001402,
+   "elapsed_sec": 1482.5896103000014
+  }
+ ],
+ "timing": {
+  "features": 223.75882650000494,
+  "screen": 832.9076323000008,
+  "train": 414.6847011000027,
+  "total": 1482.6063974999997,
+  "final_train_sec": 40.9761628999986
+ },
+ "n_evaluated": 420,
+ "archive": [
+  {
+   "name": "a:genre|drop|cnt|w5|max",
+   "gain": 0.0001180056451483627,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w35|max",
+   "gain": 0.00011791608033837053,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 35,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h38.5)|w96|max",
+   "gain": 0.00011492800414775184,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 38.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h48)|w96|max",
+   "gain": 0.00011347885313819223,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 48.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h71.5)|w96|max",
+   "gain": 0.00011347885313819223,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 71.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|nuniq|w5|max",
+   "gain": 0.00011123768368571929,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "nuniq",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w96|max",
+   "gain": 0.00011046968602633489,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 96,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w101|max",
+   "gain": 0.00011012435884766303,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w4|max",
+   "gain": 0.00010862833368543989,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h2)|w4|max",
+   "gain": 0.00010862833368543989,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 4,
+    "hl": 2.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h2.5)|w4|max",
+   "gain": 0.00010862833368543989,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 4,
+    "hl": 2.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h2.1)|w4|max",
+   "gain": 0.00010862833368543989,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 4,
+    "hl": 2.1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w101|max",
+   "gain": 0.00010756619610722412,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w114|max",
+   "gain": 0.0001067369847677635,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 114,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w2|max",
+   "gain": 0.00010652250295518223,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h2)|w2|max",
+   "gain": 0.00010652250295518223,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 2,
+    "hl": 2.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w3|max",
+   "gain": 0.00010629595110842743,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w6|max",
+   "gain": 0.00010456629062523953,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w101|max",
+   "gain": 0.0001042605210376038,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|dec(h50.5)|w101|max",
+   "gain": 0.0001042605210376038,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "dec",
+    "window": 101,
+    "hl": 50.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|dec(h43)|w101|max",
+   "gain": 0.0001042605210376038,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "dec",
+    "window": 101,
+    "hl": 43.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h34.4)|all|max",
+   "gain": 0.00010286731974478575,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 34.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w61|max",
+   "gain": 0.00010209534442621321,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 61,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w107|max",
+   "gain": 0.00010184862153803792,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 107,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w83|max",
+   "gain": 0.0001007526906671441,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 83,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w66|max",
+   "gain": 0.00010061828321356048,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 66,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w140|max",
+   "gain": 9.799293353194433e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 140,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|all|max",
+   "gain": 9.718779593385213e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w26|max",
+   "gain": 9.573600888265754e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 26,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w1|max",
+   "gain": 8.832864472350238e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w140|max",
+   "gain": 6.102885020291271e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 140,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w2|max",
+   "gain": 6.050997628778004e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w5|max",
+   "gain": 6.028696379715981e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h8.2)|all|max",
+   "gain": 5.895833827660596e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 8.2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h7.8)|all|max",
+   "gain": 5.895833827660596e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 7.8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h5.3)|all|max",
+   "gain": 5.895833827660596e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 5.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w2|mean",
+   "gain": 5.8615696189430466e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w90|max",
+   "gain": 5.808912927222909e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 90,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
+   "gain": 5.794123807516954e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 7,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 7,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w36|max",
+   "gain": 5.7422779289974246e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 36,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h8.8)|all|max",
+   "gain": 5.638717051521802e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 8.8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w2|max",
+   "gain": 5.618732296986534e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|all|max",
+   "gain": 5.514439361796464e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|dec(h32.1)|w101|max",
+   "gain": 5.430956964783129e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "dec",
+    "window": 101,
+    "hl": 32.1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w21|max",
+   "gain": 5.422747277862572e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 21,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w3|max",
+   "gain": 5.3715476898634484e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h12.3)|all|max",
+   "gain": 5.264861533343934e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 12.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h11.8)|all|max",
+   "gain": 5.264861533343934e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 11.8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w32|max",
+   "gain": 5.109161029295817e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 32,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|all|max",
+   "gain": 5.053307401022e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h29.9)|all|max",
+   "gain": 5.053307401022e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 29.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h23.5)|all|max",
+   "gain": 5.053307401022e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 23.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h25.9)|all|max",
+   "gain": 5.053307401022e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 25.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|all|max",
+   "gain": 4.965078038179915e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w140|max",
+   "gain": 4.965078038179915e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 140,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w84|max",
+   "gain": 4.871782127010421e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 84,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w50|max",
+   "gain": 4.865689056492151e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 50,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w6|mean",
+   "gain": 4.784094459625576e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w11|max",
+   "gain": 4.706056319485341e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 11,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w13|max",
+   "gain": 4.585412828413127e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 13,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w5|mean",
+   "gain": 4.575989704565242e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w2|max",
+   "gain": 4.523013727873726e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h29.9)|w2|max",
+   "gain": 4.523013727873726e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 2,
+    "hl": 29.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w18|max",
+   "gain": 4.511009221070533e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 18,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w17|max",
+   "gain": 4.498885591674995e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 17,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w4|max",
+   "gain": 4.483697836083628e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w3|max",
+   "gain": 4.447122549373905e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w3|max",
+   "gain": 4.433736159117907e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|full|dec(h43)|w101|max",
+   "gain": 4.364735548974957e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "dec",
+    "window": 101,
+    "hl": 43.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w18|max",
+   "gain": 4.2475075237455306e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 18,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w17|max",
+   "gain": 4.2356607653427913e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 17,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w7|max",
+   "gain": 4.012920849791324e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 7,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w10|max",
+   "gain": 3.741786766740113e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 10,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w20|mean",
+   "gain": 3.395982131974146e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w6|max",
+   "gain": 3.3094906047581585e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h48)|w96|mean",
+   "gain": 3.2439640399908876e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 48.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w1|max",
+   "gain": 3.221833388991624e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 1,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h28.4)|w1|max",
+   "gain": 3.221833388991624e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 1,
+    "hl": 28.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h13.8)|w1|max",
+   "gain": 3.221833388991624e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 1,
+    "hl": 13.8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w9|max",
+   "gain": 3.200680794637062e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h7.8)|all|mean",
+   "gain": 3.097600071223783e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 7.8,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w10|max",
+   "gain": 2.9846425717176828e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 10,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w5|max",
+   "gain": 2.6102766267334376e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w60|min",
+   "gain": 2.2580786492545912e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w61|mean",
+   "gain": 2.107756565816049e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 61,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w3|mean",
+   "gain": 2.0732950562998842e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w1|mean",
+   "gain": 2.037222854597842e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|all|min",
+   "gain": 1.722857927400484e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w140|min",
+   "gain": 1.555960533104056e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 140,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w103|min",
+   "gain": 1.418362757799052e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 103,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w28|max",
+   "gain": 1.2068564108028146e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 28,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:actor|full|cnt|w1|sum / ua:actor|watch|cnt|w1|sum]",
+   "gain": 1.1598625654613004e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[ua:actor|drop|cnt|w3|sum / ua:actor|watch|cnt|w3|sum]",
+   "gain": 9.849662993256791e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w6|max",
+   "gain": 9.214116148112406e-06,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w2|max / a:genre|watch|cnt|w99|max]",
+   "gain": 8.630361104509932e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 99,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|long|cnt|w5|max / ua:director|watch|cnt|w5|max]",
+   "gain": 8.448962875585997e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w3|min",
+   "gain": 8.410564077569738e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:director|long|cnt|w6|max",
+   "gain": 8.294263142701042e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:director",
+    "event": "long",
+    "agg": "cnt",
+    "window": 6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|watch|cnt|w4|sum]",
+   "gain": 6.921922522995505e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h65)|w112|max",
+   "gain": 6.443629752710123e-06,
+   "gen": 4,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "window": 112,
+    "hl": 65.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w3|max / ua:director|watch|cnt|w3|max]",
+   "gain": 5.773853430812714e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|w23|max",
+   "gain": 5.101474497039293e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 23,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|long|nuniq|w2",
+   "gain": 5.05189568759945e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w2",
+   "gain": 5.05189568759945e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|min / ua:director|full|cnt|w7|min]",
+   "gain": 4.574270591181651e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 7,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|max / ua:director|watch|cnt|w2|max]",
+   "gain": 4.295517354077627e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|max / user|full|cnt|w2]",
+   "gain": 4.288498860360868e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[ua:country|full|cnt|w3|min / ua:country|watch|cnt|w3|min]",
+   "gain": 4.17529014957313e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "full",
+     "agg": "cnt",
+     "window": 3,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "ua:director|full|cnt|w2|min",
+   "gain": 3.8623504652474105e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w2|mean",
+   "gain": 3.7795980964358544e-06,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w119|min",
+   "gain": 3.5477110183132488e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 119,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|w101|mean",
+   "gain": 3.2133333298309252e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 101,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w84|max",
+   "gain": 3.200315939574927e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 84,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w2|min",
+   "gain": 3.1407591288001857e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:director|full|days|w47|sum",
+   "gain": 3.131548452689481e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "days",
+    "window": 47,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w84|min",
+   "gain": 2.6365321758106686e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 84,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|watch|cnt|w3|sum",
+   "gain": 2.5810619448535244e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|w140|sum",
+   "gain": 2.5599164092254822e-06,
+   "gen": 4,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 140,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "user|long|days|w4",
+   "gain": 2.3914124238147427e-06,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "days",
+    "window": 4
+   }
+  },
+  {
+   "name": "a:studio|full|cnt|w40|sum",
+   "gain": 2.3602359977628606e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 40,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|full|cnt|w34|sum",
+   "gain": 2.3602359977628606e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 34,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|watch|cnt|w23|max",
+   "gain": 2.336882283626718e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 23,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|watch|dec(h67.6)|all|max",
+   "gain": 2.2674728882288164e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 67.6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|drop|cnt|w6|mean",
+   "gain": 2.2674728882288164e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|all|mean",
+   "gain": 2.2131897951804813e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:director|full|days|w47|min",
+   "gain": 2.0089449681848226e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "days",
+    "window": 47,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w26|min",
+   "gain": 1.9564797674939682e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 26,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:sex|drop|last|w3",
+   "gain": 1.8997652139821075e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|w37|mean",
+   "gain": 1.8868549790107547e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 37,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|watch|last|w3",
+   "gain": 1.7218229924759187e-06,
+   "gen": 1,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w23|max / ua:director|watch|cnt|w23|max]",
+   "gain": 1.6565712899624385e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 23,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 23,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:age|full|last|w4",
+   "gain": 1.513052313828478e-06,
+   "gen": 4,
+   "feature": {
+    "key": "s:age",
+    "event": "full",
+    "agg": "last",
+    "window": 4
+   }
+  },
+  {
+   "name": "a:studio|drop|dec(h0.9)|w116|sum",
+   "gain": 1.5110522168515494e-06,
+   "gen": 5,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "dec",
+    "window": 116,
+    "hl": 0.9,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:sex|long|last|w3",
+   "gain": 1.4199809567141952e-06,
+   "gen": 1,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "user|long|days|w9",
+   "gain": 1.4031504459444122e-06,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "days",
+    "window": 9
+   }
+  },
+  {
+   "name": "s:income|watch|days|w4",
+   "gain": 1.3533553552338984e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "days",
+    "window": 4
+   }
+  },
+  {
+   "name": "ua:director|drop|cnt|w4|sum",
+   "gain": 1.301637057193883e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w1|sum / ua:director|drop|cnt|w4|sum]",
+   "gain": 1.2768892590081515e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 1,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[ua:studio|watch|cnt|w3|max / user|watch|cnt|w3]",
+   "gain": 1.2296444241027826e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:actor|watch|last|all|mean",
+   "gain": 1.1870860941523564e-06,
+   "gen": 4,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "last",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w54|min",
+   "gain": 1.155684504622334e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 54,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|long|last|w8|min",
+   "gain": 1.1441245988050297e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "last",
+    "window": 8,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:studio|watch|sum(pct)|all|sum",
+   "gain": 1.046643712546147e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "sum",
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:ctype|long|dec(h2.9)|all",
+   "gain": 1.0299736480645638e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 2.9
+   }
+  },
+  {
+   "name": "a:ctype|long|cnt|w2",
+   "gain": 1.0299736480645638e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w1 / a:ctype|long|cnt|w3]",
+   "gain": 1.0299736480645638e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "R[ua:studio|watch|cnt|w6|max / user|watch|cnt|w6]",
+   "gain": 1.0255466870931484e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "a:studio|watch|nuniq|all|max",
+   "gain": 9.816738331044905e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "nuniq",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:director|watch|last|all|max",
+   "gain": 8.639937463944536e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "last",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w60|min",
+   "gain": 7.33528323047794e-07,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 60,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:studio|drop|cnt|w4|mean",
+   "gain": 6.632621041974263e-07,
+   "gen": 1,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[a:studio|full|cnt|w6|min / a:studio|full|cnt|w56|min]",
+   "gain": 6.585339758086173e-07,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:studio",
+     "event": "full",
+     "agg": "cnt",
+     "window": 6,
+     "red": "min"
+    },
+    "den": {
+     "key": "a:studio",
+     "event": "full",
+     "agg": "cnt",
+     "window": 56,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w8|mean",
+   "gain": 3.9085499929647494e-07,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 8,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:studio|drop|cnt|w101|max",
+   "gain": 3.4687484172513106e-07,
+   "gen": 4,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w20 / a:ctype|watch|cnt|w20]",
+   "gain": 1.7028672801011613e-07,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 20
+    }
+   }
+  },
+  {
+   "name": "a:ctype|long|dec(h3.8)|all",
+   "gain": 1.7028672801011613e-07,
+   "gen": 4,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 3.8
+   }
+  },
+  {
+   "name": "a:ctype|watch|cnt|w86",
+   "gain": 1.7028672801011613e-07,
+   "gen": 4,
+   "feature": {
+    "key": "a:ctype",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 86
+   }
+  },
+  {
+   "name": "R[a:ctype|watch|cnt|w1 / a:ctype|watch|cnt|w2]",
+   "gain": 1.7028672801011613e-07,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:ctype|drop|cnt|w5",
+   "gain": 1.7028672801011613e-07,
+   "gen": 5,
+   "feature": {
+    "key": "a:ctype",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|drop|cnt|w7|sum]",
+   "gain": 1.5429785896886594e-07,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 7,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|long|cnt|w90|mean / ua:director|watch|cnt|w90|mean]",
+   "gain": 4.692135324724234e-08,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "long",
+     "agg": "cnt",
+     "window": 90,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 90,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:genre|drop|cnt|w4|min",
+   "gain": 8.695287191662349e-09,
+   "gen": 4,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:country|drop|last|w15|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "last",
+    "window": 15,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w23|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 23,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:ctype|watch|first|w102",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "watch",
+    "agg": "first",
+    "window": 102
+   }
+  },
+  {
+   "name": "ua:studio|full|cnt|w10|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 10,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:studio|drop|cnt|w10|max",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 10,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|full|cnt|w6|min",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "cnt",
+    "window": 6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:studio|watch|cnt|all|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|last|w6|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "last",
+    "window": 6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:ctype|drop|last|w2",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "drop",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:studio|long|first|w3|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "first",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:studio|watch|days|w3|sum",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "watch",
+    "agg": "days",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:ctype|long|last|w91",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "last",
+    "window": 91
+   }
+  },
+  {
+   "name": "a:genre|watch|days|w21|max",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "days",
+    "window": 21,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:studio|long|last|w125|mean",
+   "gain": 0.0,
+   "gen": 3,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "last",
+    "window": 125,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|long|days|w3|max",
+   "gain": 0.0,
+   "gen": 3,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "days",
+    "window": 3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w66|max",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 66,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:director|drop|cnt|w1|mean",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w96|max",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 96,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:studio|long|last|w13|mean",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "last",
+    "window": 13,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|watch|last|w6|min",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "last",
+    "window": 6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:studio|drop|cnt|w2|min",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "ua:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w5|max",
+   "gain": 0.0,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:director|drop|cnt|w1|min",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:studio|long|last|w34|mean",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "last",
+    "window": 34,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:studio|long|cnt|w13|mean / ua:studio|watch|cnt|w13|mean]",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:studio",
+     "event": "long",
+     "agg": "cnt",
+     "window": 13,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 13,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|days|w4|max",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "days",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w4|max",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|days|w114|max",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "days",
+    "window": 114,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|last|all|max",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "last",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:country|full|cnt|w4|max / ua:country|watch|cnt|w4|max]",
+   "gain": -3.1986224005575714e-07,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w20|sum",
+   "gain": -1.0296858099292927e-06,
+   "gen": 5,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 20,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w21|min",
+   "gain": -1.0526449136655236e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 21,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w9|mean",
+   "gain": -1.0768570826227841e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:director|watch|cnt|w2|mean / ua:director|watch|cnt|w69|mean]",
+   "gain": -1.2320019589298625e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 69,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:director|full|mean(pct)|w8|max",
+   "gain": -1.232051053151606e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "mean",
+    "window": 8,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w2|max / user|full|cnt|w2]",
+   "gain": -1.235921451132882e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "s:sex|long|last|w32",
+   "gain": -1.2709123353368823e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "last",
+    "window": 32
+   }
+  },
+  {
+   "name": "a:director|long|last|w33|min",
+   "gain": -1.4918649865400258e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:director",
+    "event": "long",
+    "agg": "last",
+    "window": 33,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:age|long|last|w3",
+   "gain": -1.5508580997469767e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[item|drop|cnt|w65 / item|watch|cnt|w65]",
+   "gain": -1.6382401858139328e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 65
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 65
+    }
+   }
+  },
+  {
+   "name": "ua:director|long|dec(h67.2)|w5|max",
+   "gain": -1.73330554163742e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:director",
+    "event": "long",
+    "agg": "dec",
+    "window": 5,
+    "hl": 67.2,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:actor|long|cnt|w16|mean / ua:actor|long|cnt|w20|mean]",
+   "gain": -1.8208039331141235e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 16,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w2|min",
+   "gain": -1.8751068743549926e-06,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:director|drop|mean(pct)|w19|sum",
+   "gain": -2.2010310179593207e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "mean",
+    "window": 19,
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[ua:ctype|drop|cnt|w2 / user|drop|cnt|w2]",
+   "gain": -2.313122535922696e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "s:sex|drop|days|w3",
+   "gain": -2.466283772456501e-06,
+   "gen": 1,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "days",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:actor|drop|cnt|w1|mean",
+   "gain": -2.548055125083104e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|full|cnt|w6",
+   "gain": -2.5832208882803354e-06,
+   "gen": 5,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "cnt",
+    "window": 6
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w3|mean",
+   "gain": -2.622507528846074e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|drop|cnt|w5|min",
+   "gain": -2.624687426816541e-06,
+   "gen": 4,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[user|drop|cnt|w2 / user|drop|cnt|w3]",
+   "gain": -2.717890402244294e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|all|sum",
+   "gain": -3.1332320950747117e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w96|sum / user|drop|cnt|w96]",
+   "gain": -3.2460714776486044e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 96,
+     "red": "sum"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 96
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w3|mean",
+   "gain": -3.911922438933069e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "item|full|last|w32",
+   "gain": -4.589041007960204e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
+    "agg": "last",
+    "window": 32
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|all|mean",
+   "gain": -4.838127452173879e-06,
+   "gen": 5,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:director|watch|first|w20|min",
+   "gain": -4.914869792815857e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "first",
+    "window": 20,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:income|full|mean(pct)|all",
+   "gain": -5.206866673927724e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "mean",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "s:sex|full|days|w22",
+   "gain": -5.560081609443102e-06,
+   "gen": 5,
+   "feature": {
+    "key": "s:sex",
+    "event": "full",
+    "agg": "days",
+    "window": 22
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w9 / user|watch|cnt|w9]",
+   "gain": -5.609261886502237e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h47.6)|w2|min",
+   "gain": -5.637213162719423e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 2,
+    "hl": 47.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:director|full|first|w20|mean",
+   "gain": -6.372841629478931e-06,
+   "gen": 5,
+   "feature": {
+    "key": "a:director",
+    "event": "full",
+    "agg": "first",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w2|sum / ua:genre|watch|cnt|w2|sum]",
+   "gain": -6.7085139388786685e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|nuniq|w2|mean",
+   "gain": -6.889333899307015e-06,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "nuniq",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|full|mean(pct)|w70",
+   "gain": -7.048731676430331e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "mean",
+    "window": 70,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "R[ua:ctype|full|cnt|w1 / ua:ctype|watch|cnt|w1]",
+   "gain": -7.143580439163133e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "R[ua:country|drop|cnt|w2|min / user|drop|cnt|w2]",
+   "gain": -7.531026546034325e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "item|drop|cnt|w6",
+   "gain": -7.65360467160775e-06,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 6
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w60|sum",
+   "gain": -7.976214333411946e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w9 / s:age|drop|cnt|w49]",
+   "gain": -8.351742229920078e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 49
+    }
+   }
+  },
+  {
+   "name": "ua:country|drop|last|w11|mean",
+   "gain": -8.409596565964184e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "last",
+    "window": 11,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w96|max / a:genre|watch|cnt|w96|max]",
+   "gain": -8.806034559563636e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 96,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 96,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
+   "gain": -8.834278452482525e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 120
+    },
+    "den": {
+     "key": "s:age",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 120
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|mean(hours)|w60|min",
+   "gain": -9.303233014387735e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:ctype|drop|cnt|w4 / user|drop|cnt|w4]",
+   "gain": -9.952586442159295e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|watch|cnt|w101|min / user|watch|cnt|w101]",
+   "gain": -1.054918995758991e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 101,
+     "red": "min"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 101
+    }
+   }
+  },
+  {
+   "name": "ua:director|watch|mean(hours)|w3|max",
+   "gain": -1.1431187600552395e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:genre|long|last|w4|mean",
+   "gain": -1.1440280966931726e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "last",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|watch|mean(hours)|w1",
+   "gain": -1.1757710687877732e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "mean",
+    "window": 1,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|all|mean",
+   "gain": -1.2015191908069933e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|watch|dec(h3.4)|all|min",
+   "gain": -1.208709299087285e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:country",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 3.4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:genre|long|cnt|w21|mean",
+   "gain": -1.223071447065821e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 21,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w64|min",
+   "gain": -1.2947238706741138e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 64,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:actor|long|cnt|w20|mean / ua:actor|watch|cnt|w20|mean]",
+   "gain": -1.3042869331639229e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 20,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|mean(hours)|w4",
+   "gain": -1.3062068316686826e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[s:kids|long|cnt|w8 / item|long|cnt|w8]",
+   "gain": -1.3115624814312443e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "long",
+     "agg": "cnt",
+     "window": 8
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "s:income|drop|cnt|w61",
+   "gain": -1.3336162617408331e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 61
+   }
+  },
+  {
+   "name": "a:country|drop|dec(h1.3)|w28|max",
+   "gain": -1.358518534268216e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 28,
+    "hl": 1.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w2|min",
+   "gain": -1.4314074226917661e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w8|max / a:genre|watch|cnt|w8|max]",
+   "gain": -1.4456070642591967e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 8,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 8,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|nuniq|all|max",
+   "gain": -1.4777124206333259e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "nuniq",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w4|max",
+   "gain": -1.4884400699972933e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w29|mean / ua:genre|watch|cnt|w29|mean]",
+   "gain": -1.4894778373644724e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "item|long|cnt|w109",
+   "gain": -1.4992072254964295e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "long",
+    "agg": "cnt",
+    "window": 109
+   }
+  },
+  {
+   "name": "item|drop|cnt|w140",
+   "gain": -1.5378655129467955e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 140
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w2|mean",
+   "gain": -1.5417328861386248e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|watch|mean(hours)|w3",
+   "gain": -1.5743157903064242e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[s:income|long|cnt|w2 / item|long|cnt|w2]",
+   "gain": -1.5995659246016702e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w5|max",
+   "gain": -1.6194270134661792e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "user|full|days|all",
+   "gain": -1.633711920105696e-05,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "a:actor|drop|sum(pct)|w41|sum",
+   "gain": -1.6501038012817215e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "sum",
+    "window": 41,
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[s:income|drop|cnt|w22 / s:income|watch|cnt|w22]",
+   "gain": -1.6946156476654872e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 22
+    },
+    "den": {
+     "key": "s:income",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 22
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|cnt|all|max",
+   "gain": -1.710999754960668e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|cnt|w7",
+   "gain": -1.717092814359361e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "R[user|drop|cnt|w4 / user|watch|cnt|w4]",
+   "gain": -1.7180135938814345e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w38 / ua:ctype|watch|cnt|w83]",
+   "gain": -1.7926371847415412e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 38
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "ua:genre|watch|cnt|w140|min",
+   "gain": -1.7987048612916334e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 140,
+    "red": "min"
+   }
+  },
+  {
+   "name": "item|drop|cnt|w5",
+   "gain": -1.847709770652628e-05,
+   "gen": 4,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h34.4)|all|min",
+   "gain": -1.882686205290779e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 34.4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:actor|long|days|w3|sum",
+   "gain": -1.955510421396134e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "days",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:country|full|mean(hours)|w10|sum",
+   "gain": -2.005946222415067e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:country",
+    "event": "full",
+    "agg": "mean",
+    "window": 10,
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w5 / user|long|cnt|w37]",
+   "gain": -2.0140210682410842e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 37
+    }
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w4 / s:age|watch|cnt|w4]",
+   "gain": -2.0568536032425366e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4
+    },
+    "den": {
+     "key": "s:age",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "user|full|cnt|w50",
+   "gain": -2.061216827184409e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt",
+    "window": 50
+   }
+  },
+  {
+   "name": "ua:ctype|full|last|w126",
+   "gain": -2.0710389288060294e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 126
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|all|max",
+   "gain": -2.0965521602328563e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 8.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:actor|long|sum(pct)|w75|mean",
+   "gain": -2.127141556888812e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 75,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w2 / ua:ctype|watch|cnt|w3]",
+   "gain": -2.12984543783018e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "ua:genre|long|dec(h43)|w101|min",
+   "gain": -2.1588968406656417e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "dec",
+    "window": 101,
+    "hl": 43.0,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:genre|drop|cnt|w15|mean / user|drop|cnt|w15]",
+   "gain": -2.180898455022423e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 15,
+     "red": "mean"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 15
+    }
+   }
+  },
+  {
+   "name": "s:sex|drop|cnt|w92",
+   "gain": -2.1987016003151283e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 92
+   }
+  },
+  {
+   "name": "a:country|long|dec(h1.9)|all|max",
+   "gain": -2.2182936056776292e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w72|max",
+   "gain": -2.2291723416174858e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 72,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|all|sum",
+   "gain": -2.2491799246140975e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:kids|drop|dec(h3.3)|all",
+   "gain": -2.2696907455738158e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.3
+   }
+  },
+  {
+   "name": "a:director|drop|cnt|w2|mean",
+   "gain": -2.2739288736722818e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:director",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w85|sum",
+   "gain": -2.2975145322519375e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 85,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[a:actor|full|cnt|w2|sum / a:actor|watch|cnt|w2|sum]",
+   "gain": -2.3193875910189343e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:actor",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "sum"
+    },
+    "den": {
+     "key": "a:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "ua:genre|watch|mean(pct)|all|sum",
+   "gain": -2.357523309597792e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "watch",
+    "agg": "mean",
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w60|max",
+   "gain": -2.367928708562478e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.3)|w39|max",
+   "gain": -2.3742179616800807e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 39,
+    "hl": 1.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:income|full|last|all",
+   "gain": -2.4779476238731557e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w101|max / a:genre|watch|cnt|w101|max]",
+   "gain": -2.5400698389674292e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 101,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 101,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:income|drop|mean(pct)|all",
+   "gain": -2.5857206683986556e-05,
+   "gen": 1,
+   "feature": {
+    "key": "s:income",
+    "event": "drop",
+    "agg": "mean",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "s:sex|drop|dec(h1)|w9",
+   "gain": -2.622272823260552e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "dec",
+    "window": 9,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "s:sex|long|mean(hours)|w61",
+   "gain": -2.6634515648944757e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "mean",
+    "window": 61,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w16|max / a:genre|watch|cnt|w16|max]",
+   "gain": -2.6796606192487638e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 16,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 16,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w62 / s:sex|watch|cnt|w62]",
+   "gain": -2.693718859537314e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 62
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 62
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h48)|w96|sum",
+   "gain": -2.708971186499154e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 48.0,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[s:kids|drop|cnt|w5 / item|drop|cnt|w5]",
+   "gain": -2.7370937500069414e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "item|drop|cnt|w11",
+   "gain": -2.76920751334786e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 11
+   }
+  },
+  {
+   "name": "s:sex|watch|nuniq|w108",
+   "gain": -2.8162055493316518e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 108
+   }
+  },
+  {
+   "name": "R[user|drop|cnt|w3 / user|watch|cnt|w3]",
+   "gain": -2.8229879608779318e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:actor|long|days|w86|max",
+   "gain": -2.8373830336228534e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "days",
+    "window": 86,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:country|drop|cnt|w5|min",
+   "gain": -2.8565685761025583e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:income|full|cnt|w12 / s:income|watch|cnt|w12]",
+   "gain": -2.8567026946167695e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "full",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "s:income",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w53|sum / user|long|cnt|w53]",
+   "gain": -2.858254278696737e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 53,
+     "red": "sum"
+    },
+    "den": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 53
+    }
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h3.9)|all|min",
+   "gain": -2.880018738188328e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.9,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:income|long|last|w72",
+   "gain": -2.8807542997701108e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "last",
+    "window": 72
+   }
+  },
+  {
+   "name": "R[ua:country|drop|cnt|w82|mean / user|drop|cnt|w82]",
+   "gain": -2.8821057348880907e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82,
+     "red": "mean"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|all|mean",
+   "gain": -2.8941057277062643e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:actor|watch|first|all|mean",
+   "gain": -2.9054205057721383e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "first",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w116",
+   "gain": -2.9625763792472115e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 116
+   }
+  },
+  {
+   "name": "R[s:sex|full|cnt|w2 / item|full|cnt|w2]",
+   "gain": -2.9642945961382006e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w90 / s:sex|watch|cnt|w90]",
+   "gain": -2.9673015707616657e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 90
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w5|min",
+   "gain": -3.0066741780597483e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:sex|drop|cnt|all",
+   "gain": -3.0218301988738094e-05,
+   "gen": 4,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|all",
+   "gain": -3.0267732944476433e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w3",
+   "gain": -3.0610575967329745e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:ctype|long|dec(h0.7)|all",
+   "gain": -3.159116922148153e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 0.7
+   }
+  },
+  {
+   "name": "a:country|long|dec(h2.7)|w124|min",
+   "gain": -3.212623672235043e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 124,
+    "hl": 2.7,
+    "red": "min"
+   }
+  },
+  {
+   "name": "user|long|days|all",
+   "gain": -3.215839581193619e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w81|max",
+   "gain": -3.2544512895041344e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 81,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w5|max / a:genre|watch|cnt|w5|max]",
+   "gain": -3.291748229037467e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "item|long|cnt|w5",
+   "gain": -3.312670484207497e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "long",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "R[item|long|cnt|w1 / item|watch|cnt|w1]",
+   "gain": -3.3307217228335795e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w64|max",
+   "gain": -3.405561692196302e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 64,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w66|max",
+   "gain": -3.405561692196302e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 66,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h0.6)|w7|min",
+   "gain": -3.4260087404085204e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "window": 7,
+    "hl": 0.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:income|full|mean(hours)|w92",
+   "gain": -3.488580953409787e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "mean",
+    "window": 92,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w3|sum",
+   "gain": -3.5196938595348504e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:kids|full|cnt|w3",
+   "gain": -3.5328933766835824e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:ctype|drop|dec(h46.4)|w137",
+   "gain": -3.546810468844919e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "drop",
+    "agg": "dec",
+    "window": 137,
+    "hl": 46.4
+   }
+  },
+  {
+   "name": "s:age|watch|cnt|w12",
+   "gain": -3.6740205495995604e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 12
+   }
+  },
+  {
+   "name": "a:genre|drop|mean(hours)|w4|max",
+   "gain": -3.6858075793726186e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:income|watch|nuniq|w5",
+   "gain": -3.694695704307277e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 5
+   }
+  },
+  {
+   "name": "s:kids|long|mean(hours)|all",
+   "gain": -3.712597731522077e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:kids",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:genre|full|mean(pct)|w51|max",
+   "gain": -3.740794716472484e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "mean",
+    "window": 51,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:actor|watch|dec(h22.9)|w1|min",
+   "gain": -3.786338528180555e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 1,
+    "hl": 22.9,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:director|watch|dec(h0.6)|w22|min",
+   "gain": -3.795265814995896e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "dec",
+    "window": 22,
+    "hl": 0.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[a:genre|full|cnt|w9|mean / a:genre|watch|cnt|w9|mean]",
+   "gain": -3.896319103485757e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:actor|drop|dec(h48)|w96|mean",
+   "gain": -3.9342659271662805e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:actor",
+    "event": "drop",
+    "agg": "dec",
+    "window": 96,
+    "hl": 48.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|long|dec(h1.4)|all",
+   "gain": -3.999947410298493e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.4
+   }
+  },
+  {
+   "name": "a:actor|long|nuniq|all|min",
+   "gain": -4.024212203074945e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "nuniq",
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:age|long|cnt|w8 / s:age|watch|cnt|w8]",
+   "gain": -4.028493610803985e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "long",
+     "agg": "cnt",
+     "window": 8
+    },
+    "den": {
+     "key": "s:age",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "s:income|full|dec(h3.9)|all",
+   "gain": -4.03435612059827e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "dec",
+    "hl": 3.9
+   }
+  },
+  {
+   "name": "a:actor|watch|dec(h0.6)|w11|mean",
+   "gain": -4.072508266216718e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 11,
+    "hl": 0.6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w1|max / a:genre|long|cnt|w101|max]",
+   "gain": -4.088493094431267e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 101,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|dec(h4.9)|all",
+   "gain": -4.200225265432039e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 4.9
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w101|sum",
+   "gain": -4.2615466004772284e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 101,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w107|mean",
+   "gain": -4.265598858188557e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 107,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w2 / s:sex|drop|cnt|w82]",
+   "gain": -4.332240369615131e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w140|sum",
+   "gain": -4.367982071777632e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 140,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:actor|full|cnt|all|min",
+   "gain": -4.371398638194218e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "full",
+    "agg": "cnt",
+    "red": "min"
+   }
+  },
+  {
+   "name": "item|watch|cnt|w18",
+   "gain": -4.3841369832174626e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 18
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w5|sum",
+   "gain": -4.4645799833223365e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[a:director|drop|cnt|w4|max / a:director|watch|cnt|w4|max]",
+   "gain": -4.538663762463507e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w3|max / a:genre|watch|cnt|w7|max]",
+   "gain": -4.5553478818211035e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 7,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:country|drop|cnt|w63|sum / a:country|watch|cnt|w63|sum]",
+   "gain": -4.558582041926107e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:country",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 63,
+     "red": "sum"
+    },
+    "den": {
+     "key": "a:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 63,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|mean(pct)|w5|max",
+   "gain": -4.565782192633011e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "mean",
+    "window": 5,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|all|mean",
+   "gain": -4.628780621439288e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|drop|nuniq|all",
+   "gain": -4.6998010780008315e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "drop",
+    "agg": "nuniq"
+   }
+  },
+  {
+   "name": "R[s:sex|full|cnt|w13 / s:sex|watch|cnt|w13]",
+   "gain": -4.704307495929233e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "full",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "item|full|nuniq|w2",
+   "gain": -4.737270770202584e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[s:kids|watch|cnt|w2 / item|watch|cnt|w2]",
+   "gain": -4.748310770995995e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:country|watch|cnt|w100|mean",
+   "gain": -4.748786431586077e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 100,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|watch|cnt|w3",
+   "gain": -4.792216480051931e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:sex|watch|mean(pct)|w3",
+   "gain": -4.9115213629956356e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w47",
+   "gain": -5.0959563346400505e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 47
+   }
+  },
+  {
+   "name": "a:director|drop|cnt|all|sum",
+   "gain": -5.1290657610357504e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:director",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w53|mean",
+   "gain": -5.1308890724285905e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 53,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:actor|watch|dec(h1.4)|w5|max",
+   "gain": -5.138478582100009e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 5,
+    "hl": 1.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:age|long|cnt|all",
+   "gain": -5.248205310633136e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "a:director|long|cnt|w114|mean",
+   "gain": -5.27976154562626e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "long",
+    "agg": "cnt",
+    "window": 114,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w1|sum",
+   "gain": -5.315398795698034e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[a:director|long|cnt|w4|max / a:director|watch|cnt|w4|max]",
+   "gain": -5.359052931549341e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "long",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[item|full|cnt|w2 / item|full|cnt|w4]",
+   "gain": -5.4737998772841356e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "s:income|long|cnt|w16",
+   "gain": -5.568634411216855e-05,
+   "gen": 1,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "cnt",
+    "window": 16
+   }
+  },
+  {
+   "name": "a:country|drop|cnt|all|sum",
+   "gain": -5.680326651256312e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[s:kids|long|cnt|w2 / item|long|cnt|w2]",
+   "gain": -5.69986998024824e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w66|mean",
+   "gain": -5.74709971829096e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 66,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|drop|dec(h59.4)|w91|min",
+   "gain": -6.0466970073454196e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 91,
+    "hl": 59.4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:sex|full|mean(hours)|w26",
+   "gain": -6.060780587519021e-05,
+   "gen": 5,
+   "feature": {
+    "key": "s:sex",
+    "event": "full",
+    "agg": "mean",
+    "window": 26,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w140|max / a:genre|watch|cnt|w140|max]",
+   "gain": -6.445053652776034e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 140,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 140,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:actor|drop|cnt|w5|sum",
+   "gain": -6.448168057555936e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "item|watch|sum(pct)|all",
+   "gain": -6.674449790929765e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "sum",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "a:actor|long|cnt|w20|min",
+   "gain": -6.685509996656736e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 20,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:sex|drop|sum(pct)|w8",
+   "gain": -6.744082264942275e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "sum",
+    "window": 8,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "a:director|full|cnt|w3|min",
+   "gain": -7.154994181066826e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:director",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w11|max / a:genre|watch|cnt|w11|max]",
+   "gain": -7.957160443202577e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 11,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 11,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w5|mean / a:genre|watch|cnt|w5|mean]",
+   "gain": -8.000232658170181e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 5,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w5|max / a:genre|long|cnt|w54|max]",
+   "gain": -8.244485528322715e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 54,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|all|mean",
+   "gain": -8.308710474296682e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|long|cnt|w114|min",
+   "gain": -8.865613001306921e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "cnt",
+    "window": 114,
+    "red": "min"
+   }
+  },
+  {
+   "name": "item|long|mean(hours)|w60",
+   "gain": -8.871934294787248e-05,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "a:country|long|mean(hours)|all|sum",
+   "gain": -9.052271432646863e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "item|watch|first|w56",
+   "gain": -9.378355672713667e-05,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "first",
+    "window": 56
+   }
+  },
+  {
+   "name": "R[a:genre|full|cnt|w12|max / a:genre|watch|cnt|w12|max]",
+   "gain": -9.621857526437294e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 12,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w61|max / a:genre|watch|cnt|w61|max]",
+   "gain": -0.00010485276414795575,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 61,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 61,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|long|mean(pct)|w101|max",
+   "gain": -0.00011378680739025648,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 101,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:country|drop|cnt|w25|sum",
+   "gain": -0.00011419040071633524,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 25,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w5|max",
+   "gain": -0.0001450096755474528,
+   "gen": 5,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 5,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w4|max / a:genre|drop|cnt|w87|max]",
+   "gain": -0.00016336984888850464,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 87,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:actor|watch|first|w91|max",
+   "gain": -0.00018839591274501938,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 91,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:country|long|cnt|w4|min / a:country|watch|cnt|w4|min]",
+   "gain": -0.00021308138715338265,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:country",
+     "event": "long",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    },
+    "den": {
+     "key": "a:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "a:country|long|mean(hours)|all|mean",
+   "gain": -0.00023072551149564552,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w5|max / a:genre|drop|cnt|w7|max]",
+   "gain": -0.0002872166901904463,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 7,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w2|max / a:genre|drop|cnt|w15|max]",
+   "gain": -0.0003716497595945001,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 15,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w2|max / a:genre|drop|cnt|w5|max]",
+   "gain": -0.00044068121084187006,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w10|max / a:genre|drop|cnt|w101|max]",
+   "gain": -0.0009266640987721786,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 10,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 101,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w98|max / a:genre|watch|cnt|w98|max]",
+   "gain": -0.0009411579682384597,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 98,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 98,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w8|max / a:genre|watch|cnt|w101|max]",
+   "gain": -0.001022950820168303,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 8,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 101,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|mean(pct)|w3|max",
+   "gain": -0.0011088500891996214,
+   "gen": 4,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "mean",
+    "window": 3,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w3|max / a:genre|watch|cnt|w3|max]",
+   "gain": -0.002211818350835372,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w140|max / a:genre|watch|cnt|w140|max]",
+   "gain": -0.002625778165335921,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 140,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 140,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w5|max / a:genre|watch|cnt|w5|max]",
+   "gain": -0.0033434912211650902,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|drop|cnt|w1|max / a:genre|drop|cnt|w31|max]",
+   "gain": -0.003792263398440743,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 1,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 31,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w107|max / a:genre|watch|cnt|w114|max]",
+   "gain": -0.005430215024861226,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 107,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 114,
+     "red": "max"
+    }
+   }
+  }
+ ]
+}

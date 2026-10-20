@@ -1,0 +1,245 @@
+{
+ "dataset": "kion",
+ "tag": "manual+lgcn",
+ "n_features": 54,
+ "feature_sec": 0.021152999997866573,
+ "train_sec": 31.297195700000884,
+ "best_iter": 207,
+ "val_logloss": 0.05078516803523877,
+ "val_predict_sec": 5.665278099997522,
+ "val": {
+  "logloss": 0.05078516803523898,
+  "auc": 0.7927451550313604,
+  "ndcg@10": 0.15632019157088659,
+  "recall@10": 0.22967175764018938,
+  "map@10": 0.10881874788989672,
+  "groups": 15000
+ },
+ "test_predict_sec": 8.659106399998564,
+ "test": {
+  "logloss": 0.05071351920398276,
+  "auc": 0.7910168578429414,
+  "ndcg@10": 0.15072522162005592,
+  "recall@10": 0.22732456387724415,
+  "map@10": 0.10280984978898966,
+  "groups": 30000
+ },
+ "importance": [
+  [
+   "item|watch|cnt|w1",
+   0.2495303980862228
+  ],
+  [
+   "pop_rank",
+   0.1310643365660477
+  ],
+  [
+   "als_score",
+   0.0798550822300676
+  ],
+  [
+   "als_rank",
+   0.047409976444608926
+  ],
+  [
+   "R[ua:genre|watch|cnt|all|mean / user|watch|cnt|all]",
+   0.032912929668179484
+  ],
+  [
+   "user|watch|first|all",
+   0.03210540182526898
+  ],
+  [
+   "ua:actor|watch|cnt|all|sum",
+   0.030124055457866315
+  ],
+  [
+   "ua:genre|watch|last|all|min",
+   0.025947949339352783
+  ],
+  [
+   "R[ua:ctype|watch|cnt|all / user|watch|cnt|all]",
+   0.023371158916076825
+  ],
+  [
+   "s:sex|watch|cnt|w30",
+   0.020058963057143577
+  ],
+  [
+   "ua:genre|watch|cnt|w30|max",
+   0.018553816453029677
+  ],
+  [
+   "ua:country|watch|cnt|all|max",
+   0.015552020129368817
+  ],
+  [
+   "lgcn_ctype",
+   0.015480393826536196
+  ],
+  [
+   "a:genre|watch|cnt|w30|mean",
+   0.015272387019533163
+  ],
+  [
+   "item|watch|cnt|all",
+   0.015211088296400626
+  ],
+  [
+   "user|watch|cnt|w7",
+   0.01351446732491728
+  ],
+  [
+   "R[item|watch|cnt|w7 / item|watch|cnt|w30]",
+   0.012728383778559914
+  ],
+  [
+   "ua:genre|watch|mean(pct)|all|mean",
+   0.01221942258063004
+  ],
+  [
+   "lgcn_ui",
+   0.01212961923048691
+  ],
+  [
+   "user|watch|mean(pct)|w30",
+   0.012005915480523082
+  ],
+  [
+   "user|watch|sum(hours)|w30",
+   0.011905840096995935
+  ],
+  [
+   "item|watch|cnt|w14",
+   0.0107956501806807
+  ],
+  [
+   "user|watch|cnt|all",
+   0.010591247220198385
+  ],
+  [
+   "item|watch|cnt|w7",
+   0.010430398644259221
+  ],
+  [
+   "R[s:age|watch|cnt|w30 / item|watch|cnt|w30]",
+   0.01042427381716288
+  ],
+  [
+   "user|watch|mean(pct)|all",
+   0.009140581504186467
+  ],
+  [
+   "a:actor|watch|cnt|w30|max",
+   0.00848246842304804
+  ],
+  [
+   "R[user|full|cnt|all / user|watch|cnt|all]",
+   0.008039345296261404
+  ],
+  [
+   "ua:genre|watch|cnt|all|sum",
+   0.008017477432384677
+  ],
+  [
+   "item|watch|mean(pct)|w30",
+   0.007956069323089057
+  ],
+  [
+   "s:age|watch|cnt|w30",
+   0.007842536716204418
+  ],
+  [
+   "s:income|watch|cnt|w30",
+   0.007272052531989712
+  ],
+  [
+   "item|watch|cnt|w30",
+   0.00663204058367812
+  ],
+  [
+   "s:kids|watch|cnt|w30",
+   0.006299754575222045
+  ],
+  [
+   "year",
+   0.0059614137498078075
+  ],
+  [
+   "user|watch|last|all",
+   0.005861413751235011
+  ],
+  [
+   "item|watch|first|all",
+   0.005607252994529387
+  ],
+  [
+   "item|watch|mean(pct)|all",
+   0.0053752467922433406
+  ],
+  [
+   "R[item|full|cnt|w30 / item|watch|cnt|w30]",
+   0.005320826885149706
+  ],
+  [
+   "a:director|watch|cnt|w30|max",
+   0.005105097816390133
+  ]
+ ],
+ "features": [
+  "als_rank",
+  "als_score",
+  "pop_rank",
+  "in_als",
+  "in_pop",
+  "age",
+  "income",
+  "sex",
+  "kids",
+  "ctype",
+  "year",
+  "for_kids",
+  "age_rating",
+  "user|watch|cnt|w7",
+  "user|watch|cnt|w30",
+  "user|watch|cnt|all",
+  "user|watch|mean(pct)|w30",
+  "user|watch|mean(pct)|all",
+  "user|watch|sum(hours)|w30",
+  "user|watch|last|all",
+  "user|watch|first|all",
+  "R[user|full|cnt|all / user|watch|cnt|all]",
+  "item|watch|cnt|w1",
+  "item|watch|cnt|w7",
+  "item|watch|cnt|w14",
+  "item|watch|cnt|w30",
+  "item|watch|cnt|all",
+  "R[item|watch|cnt|w7 / item|watch|cnt|w30]",
+  "item|watch|mean(pct)|w30",
+  "item|watch|mean(pct)|all",
+  "R[item|full|cnt|w30 / item|watch|cnt|w30]",
+  "item|watch|first|all",
+  "item|watch|last|all",
+  "s:age|watch|cnt|w30",
+  "s:sex|watch|cnt|w30",
+  "s:income|watch|cnt|w30",
+  "s:kids|watch|cnt|w30",
+  "R[s:age|watch|cnt|w30 / item|watch|cnt|w30]",
+  "a:genre|watch|cnt|w30|mean",
+  "a:actor|watch|cnt|w30|max",
+  "a:director|watch|cnt|w30|max",
+  "ua:genre|watch|cnt|all|sum",
+  "ua:genre|watch|cnt|all|max",
+  "ua:genre|watch|cnt|w30|max",
+  "R[ua:genre|watch|cnt|all|mean / user|watch|cnt|all]",
+  "ua:genre|watch|mean(pct)|all|mean",
+  "ua:genre|watch|last|all|min",
+  "ua:actor|watch|cnt|all|sum",
+  "ua:director|watch|cnt|all|sum",
+  "ua:country|watch|cnt|all|max",
+  "ua:studio|watch|cnt|all|max",
+  "R[ua:ctype|watch|cnt|all / user|watch|cnt|all]",
+  "lgcn_ui",
+  "lgcn_ctype"
+ ]
+}

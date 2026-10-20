@@ -1,0 +1,4698 @@
+{
+ "tag": "autofe",
+ "dataset": "kion",
+ "n_start": 0,
+ "selected": [
+  {
+   "key": "ua:country",
+   "event": "long",
+   "agg": "dec",
+   "hl": 1.1,
+   "red": "mean"
+  },
+  {
+   "key": "ua:actor",
+   "event": "long",
+   "agg": "cnt",
+   "window": 20,
+   "red": "mean"
+  },
+  {
+   "key": "ua:genre",
+   "event": "full",
+   "agg": "cnt",
+   "window": 4,
+   "red": "mean"
+  },
+  {
+   "key": "ua:ctype",
+   "event": "watch",
+   "agg": "cnt",
+   "window": 7
+  },
+  {
+   "key": "ua:country",
+   "event": "full",
+   "agg": "sum",
+   "window": 7,
+   "value": "hours",
+   "red": "mean"
+  },
+  {
+   "key": "ua:actor",
+   "event": "watch",
+   "agg": "first",
+   "window": 27,
+   "red": "mean"
+  },
+  {
+   "key": "ua:ctype",
+   "event": "watch",
+   "agg": "last",
+   "window": 2
+  },
+  {
+   "key": "ua:actor",
+   "event": "full",
+   "agg": "dec",
+   "hl": 8.9,
+   "red": "mean"
+  },
+  {
+   "key": "a:genre",
+   "event": "drop",
+   "agg": "dec",
+   "window": 5,
+   "hl": 2.5,
+   "red": "max"
+  },
+  {
+   "key": "a:genre",
+   "event": "drop",
+   "agg": "dec",
+   "hl": 59.8,
+   "red": "mean"
+  },
+  {
+   "num": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 33
+   },
+   "den": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 33
+   }
+  },
+  {
+   "key": "a:genre",
+   "event": "long",
+   "agg": "cnt",
+   "window": 5,
+   "red": "max"
+  },
+  {
+   "key": "a:actor",
+   "event": "watch",
+   "agg": "last",
+   "red": "mean"
+  },
+  {
+   "key": "s:sex",
+   "event": "drop",
+   "agg": "cnt"
+  }
+ ],
+ "selected_names": [
+  "ua:country|long|dec(h1.1)|all|mean",
+  "ua:actor|long|cnt|w20|mean",
+  "ua:genre|full|cnt|w4|mean",
+  "ua:ctype|watch|cnt|w7",
+  "ua:country|full|sum(hours)|w7|mean",
+  "ua:actor|watch|first|w27|mean",
+  "ua:ctype|watch|last|w2",
+  "ua:actor|full|dec(h8.9)|all|mean",
+  "a:genre|drop|dec(h2.5)|w5|max",
+  "a:genre|drop|dec(h59.8)|all|mean",
+  "R[s:sex|drop|cnt|w33 / item|drop|cnt|w33]",
+  "a:genre|long|cnt|w5|max",
+  "a:actor|watch|last|all|mean",
+  "s:sex|drop|cnt|all"
+ ],
+ "log": [
+  {
+   "gen": 0,
+   "candidates": 160,
+   "best_gain": 0.00025796224041668703,
+   "accepted": [
+    "ua:country|long|dec(h1.1)|all|mean",
+    "ua:actor|long|cnt|w20|mean",
+    "ua:genre|full|cnt|w4|mean",
+    "ua:ctype|watch|cnt|w7",
+    "ua:country|full|sum(hours)|w7|mean",
+    "ua:actor|watch|first|w27|mean",
+    "ua:ctype|watch|last|w2",
+    "ua:actor|full|dec(h8.9)|all|mean"
+   ],
+   "n_selected": 8,
+   "val_logloss": 0.051579716659330054,
+   "feature_sec": 118.55916360000265,
+   "elapsed_sec": 355.55550009999934
+  },
+  {
+   "gen": 1,
+   "candidates": 60,
+   "best_gain": 0.00020303422107972174,
+   "accepted": [
+    "a:genre|drop|dec(h2.5)|w5|max",
+    "a:genre|drop|dec(h59.8)|all|mean",
+    "R[s:sex|drop|cnt|w33 / item|drop|cnt|w33]"
+   ],
+   "n_selected": 11,
+   "val_logloss": 0.051520403708407526,
+   "feature_sec": 76.2042419999998,
+   "elapsed_sec": 550.4032445999983
+  },
+  {
+   "gen": 2,
+   "candidates": 60,
+   "best_gain": 4.3196922401782245e-05,
+   "accepted": [],
+   "n_selected": 11,
+   "val_logloss": 0.051520403708407526,
+   "feature_sec": 59.37679170000047,
+   "elapsed_sec": 737.9171782999983
+  },
+  {
+   "gen": 3,
+   "candidates": 60,
+   "best_gain": 4.004627126365928e-05,
+   "accepted": [
+    "a:genre|long|cnt|w5|max",
+    "a:actor|watch|last|all|mean",
+    "s:sex|drop|cnt|all"
+   ],
+   "n_selected": 14,
+   "val_logloss": 0.05146015941235135,
+   "feature_sec": 73.49415450000015,
+   "elapsed_sec": 927.7779402999986
+  }
+ ],
+ "timing": {
+  "features": 327.63435180000306,
+  "screen": 369.89904310000566,
+  "train": 227.24163850000332
+ },
+ "n_evaluated": 340,
+ "archive": [
+  {
+   "name": "ua:country|long|dec(h1.1)|all|mean",
+   "gain": 0.00025796224041668703,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w20|mean",
+   "gain": 0.0002535412727900435,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w4|mean",
+   "gain": 0.00024576530030653854,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|cnt|w7",
+   "gain": 0.00023526484759089222,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w7|mean",
+   "gain": 0.0002312359014207399,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 7,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w3|mean",
+   "gain": 0.00022977596771034392,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|first|w27|mean",
+   "gain": 0.00022350536034315,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 27,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|last|w2",
+   "gain": 0.00021008012788369806,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|all|mean",
+   "gain": 0.0002079848466929532,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|all|max",
+   "gain": 0.00020475458187436957,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h2.5)|w5|max",
+   "gain": 0.00020303422107972174,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 5,
+    "hl": 2.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w5|max",
+   "gain": 0.00019972746687857423,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|full|last|w126",
+   "gain": 0.0001951893909891908,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 126
+   }
+  },
+  {
+   "name": "ua:ctype|long|mean(hours)|w4",
+   "gain": 0.0001859052465497668,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[ua:ctype|full|cnt|w1 / ua:ctype|watch|cnt|w1]",
+   "gain": 0.00018388876837158868,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w14",
+   "gain": 0.00017570588316736385,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 14
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w3|min",
+   "gain": 0.0001726212518207565,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "min"
+   }
+  },
+  {
+   "name": "user|watch|last|w6",
+   "gain": 0.0001525700124787588,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "watch",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w2|max / user|full|cnt|w2]",
+   "gain": 0.0001461370112354199,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w5 / user|long|cnt|w37]",
+   "gain": 0.0001448512880204908,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 37
+    }
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w38 / ua:ctype|watch|cnt|w83]",
+   "gain": 0.00013875168892626966,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 38
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "user|watch|last|all",
+   "gain": 0.00013439611268249024,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "watch",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|all|sum",
+   "gain": 0.00012463334717028457,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:actor|long|sum(pct)|w132|mean",
+   "gain": 0.0001219431397047055,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 132,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "user|long|days|w9",
+   "gain": 0.00012100265775828734,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "days",
+    "window": 9
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w9 / user|watch|cnt|w9]",
+   "gain": 0.00011192228052658848,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9
+    }
+   }
+  },
+  {
+   "name": "a:genre|long|nuniq|w2|mean",
+   "gain": 0.00010849116838267114,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:studio|watch|cnt|w6|max / user|watch|cnt|w6]",
+   "gain": 9.808393636510232e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|all|max",
+   "gain": 9.289538596903013e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w29|mean / ua:genre|watch|cnt|w29|mean]",
+   "gain": 9.217074921357565e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:director|watch|first|w20|min",
+   "gain": 8.882393502111091e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "first",
+    "window": 20,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|all|max",
+   "gain": 8.839980877658332e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h59.8)|all|mean",
+   "gain": 8.371977967996241e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 59.8,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|w23|max",
+   "gain": 8.284844710579331e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 23,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|drop|last|w11|mean",
+   "gain": 8.08383380421357e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "last",
+    "window": 11,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|watch|cnt|w4|sum]",
+   "gain": 7.018109646623333e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w7|max",
+   "gain": 6.733949844450055e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 7,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|min / ua:director|full|cnt|w7|min]",
+   "gain": 5.9330237960390775e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 7,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "ua:director|full|mean(pct)|w8|max",
+   "gain": 5.5847248562113094e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "mean",
+    "window": 8,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:director|full|mean(hours)|w22|max",
+   "gain": 5.0882769528741434e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "mean",
+    "window": 22,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|drop|dec(h46.4)|w137",
+   "gain": 4.634447037458328e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "drop",
+    "agg": "dec",
+    "window": 137,
+    "hl": 46.4
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|max / ua:director|watch|cnt|w2|max]",
+   "gain": 4.4982579831806535e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w3 / s:sex|watch|cnt|w3]",
+   "gain": 4.384061118817978e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w28|max",
+   "gain": 4.3196922401782245e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 28,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|all|mean",
+   "gain": 4.120587819519267e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:director|watch|mean(hours)|w3|max",
+   "gain": 4.028452957786227e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w5|max",
+   "gain": 4.004627126365928e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:age|watch|last|all",
+   "gain": 3.982311456159765e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "R[ua:country|drop|cnt|w2|min / user|drop|cnt|w2]",
+   "gain": 3.959239149946281e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|all|sum",
+   "gain": 3.918477658110958e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
+   "gain": 3.9008366885626145e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 120
+    },
+    "den": {
+     "key": "s:age",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 120
+    }
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w85|sum",
+   "gain": 3.8301809760658834e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 85,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:country|long|cnt|all|max",
+   "gain": 3.787353368298746e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w9 / s:age|drop|cnt|w49]",
+   "gain": 3.3919882736759e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 49
+    }
+   }
+  },
+  {
+   "name": "ua:director|full|days|w47|min",
+   "gain": 3.330721315025764e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "days",
+    "window": 47,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w33 / item|drop|cnt|w33]",
+   "gain": 3.3252351830076465e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 33
+    },
+    "den": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 33
+    }
+   }
+  },
+  {
+   "name": "s:sex|watch|mean(hours)|w3",
+   "gain": 3.201203958344556e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "item|watch|cnt|all",
+   "gain": 3.1372358467979256e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[item|drop|cnt|w65 / item|watch|cnt|w65]",
+   "gain": 3.061141518978516e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 65
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 65
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h47.6)|all|mean",
+   "gain": 3.050985582610244e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 47.6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:actor|watch|last|all|mean",
+   "gain": 2.797670184866846e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "last",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "item|drop|cnt|all",
+   "gain": 2.45568569035709e-05,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h3.9)|all|min",
+   "gain": 2.2763110382996443e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.9,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:sex|watch|cnt|w3",
+   "gain": 2.229660043212567e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:sex|drop|cnt|all",
+   "gain": 2.219955853521166e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "s:sex|long|last|w32",
+   "gain": 2.1512026144900054e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "last",
+    "window": 32
+   }
+  },
+  {
+   "name": "s:kids|full|mean(hours)|w111",
+   "gain": 1.686360783003521e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "full",
+    "agg": "mean",
+    "window": 111,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:actor|full|cnt|all|mean",
+   "gain": 1.607482130576432e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|full|nuniq|all|mean",
+   "gain": 1.607482130576432e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "nuniq",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w2 / s:sex|drop|cnt|w82]",
+   "gain": 1.6053667769924673e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
+   "name": "R[item|long|cnt|w1 / item|watch|cnt|w1]",
+   "gain": 1.567739128138096e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w116",
+   "gain": 1.417640400866449e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 116
+   }
+  },
+  {
+   "name": "s:sex|drop|last|w3",
+   "gain": 1.4048772714020386e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:genre|drop|cnt|w134|sum",
+   "gain": 1.2555562273683374e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 134,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "item|drop|cnt|w11",
+   "gain": 1.1774598905361922e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 11
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w4|max / user|full|cnt|w4]",
+   "gain": 1.0236362198053073e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "s:income|full|mean(pct)|all",
+   "gain": 8.305318125047256e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "mean",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "s:kids|drop|dec(h3.3)|all",
+   "gain": 6.569161867475692e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.3
+   }
+  },
+  {
+   "name": "s:sex|drop|dec(h1)|w9",
+   "gain": 6.538730176815222e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "dec",
+    "window": 9,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w90 / s:sex|watch|cnt|w90]",
+   "gain": 6.30928220220206e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 90
+    }
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|all|max",
+   "gain": 6.070836496757659e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|last|w3",
+   "gain": 5.862622373592474e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:age|watch|mean(hours)|w1",
+   "gain": 5.792717993460816e-06,
+   "gen": 1,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "mean",
+    "window": 1,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "user|full|cnt|w4",
+   "gain": 5.545584438465534e-06,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "s:kids|drop|days|all",
+   "gain": 5.098313981183322e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "R[a:director|long|cnt|w98|min / a:director|watch|cnt|w98|min]",
+   "gain": 4.791496212526447e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "long",
+     "agg": "cnt",
+     "window": 98,
+     "red": "min"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 98,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "item|long|last|w43",
+   "gain": 4.773624150453126e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "long",
+    "agg": "last",
+    "window": 43
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|all|mean",
+   "gain": 4.662644848572872e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|long|last|w3",
+   "gain": 4.637060823479977e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[s:income|drop|cnt|w22 / s:income|watch|cnt|w22]",
+   "gain": 4.573638018701143e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 22
+    },
+    "den": {
+     "key": "s:income",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 22
+    }
+   }
+  },
+  {
+   "name": "a:director|watch|last|w26|mean",
+   "gain": 4.328735396581795e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "last",
+    "window": 26,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:director|watch|last|all|max",
+   "gain": 4.155646836700999e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "last",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|w1|sum",
+   "gain": 3.8139020823099723e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 1,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:actor|full|cnt|w20|mean",
+   "gain": 3.8086648054824757e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "cnt",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|drop|cnt|w92",
+   "gain": 3.7297135864616804e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 92
+   }
+  },
+  {
+   "name": "ua:director|drop|cnt|all|max",
+   "gain": 3.7208948735351077e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|w26|sum",
+   "gain": 3.68857576561743e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 26,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "user|full|cnt|w3",
+   "gain": 3.6259482676451182e-06,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w122|sum / ua:director|full|cnt|w123|sum]",
+   "gain": 3.3544785353958884e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 122,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 123,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w20 / a:ctype|watch|cnt|w20]",
+   "gain": 3.0080645015140295e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 20
+    }
+   }
+  },
+  {
+   "name": "R[ua:actor|full|cnt|w58|sum / ua:actor|watch|cnt|w58|sum]",
+   "gain": 2.6155177727180123e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "full",
+     "agg": "cnt",
+     "window": 58,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 58,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|full|last|w2",
+   "gain": 2.454136580974653e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[s:kids|watch|cnt|w2 / item|watch|cnt|w2]",
+   "gain": 2.3140223798095994e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:director|drop|last|w2|min",
+   "gain": 2.1434130009559405e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "last",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:studio|long|mean(pct)|w4|max",
+   "gain": 2.0502909568106964e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:studio",
+    "event": "long",
+    "agg": "mean",
+    "window": 4,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|full|first|w3|min",
+   "gain": 1.6782863033540374e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "first",
+    "window": 3,
+    "red": "min"
+   }
+  },
+  {
+   "name": "user|watch|first|w6",
+   "gain": 1.115783339868115e-06,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "watch",
+    "agg": "first",
+    "window": 6
+   }
+  },
+  {
+   "name": "ua:genre|drop|cnt|w4|mean",
+   "gain": 1.0471543233289693e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|all|mean",
+   "gain": 6.601292494023969e-07,
+   "gen": 3,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:ctype|long|dec(h2.9)|all",
+   "gain": 5.995019235552346e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 2.9
+   }
+  },
+  {
+   "name": "a:ctype|long|cnt|w2",
+   "gain": 5.995019235552346e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w1 / a:ctype|long|cnt|w3]",
+   "gain": 5.995019235552346e-07,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:ctype|full|cnt|w97",
+   "gain": 5.995019235552346e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "full",
+    "agg": "cnt",
+    "window": 97
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w55 / a:ctype|long|cnt|w83]",
+   "gain": 5.995019235552346e-07,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 55
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "R[ua:actor|drop|cnt|w73|sum / user|drop|cnt|w73]",
+   "gain": 5.8160334456131e-07,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 73,
+     "red": "sum"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 73
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w13|min",
+   "gain": 5.470347388056296e-07,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 13,
+    "red": "min"
+   }
+  },
+  {
+   "name": "user|watch|last|w5",
+   "gain": 4.621365683257772e-07,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "watch",
+    "agg": "last",
+    "window": 5
+   }
+  },
+  {
+   "name": "user|watch|last|w4",
+   "gain": 3.518299290031224e-07,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "watch",
+    "agg": "last",
+    "window": 4
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w20|sum",
+   "gain": 5.5670754520176224e-08,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 20,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|full|mean(hours)|w43|mean",
+   "gain": 1.1312228598292506e-08,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "full",
+    "agg": "mean",
+    "window": 43,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|drop|last|w15|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "last",
+    "window": 15,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w23|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 23,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:ctype|watch|first|w102",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "watch",
+    "agg": "first",
+    "window": 102
+   }
+  },
+  {
+   "name": "ua:studio|full|cnt|w10|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 10,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:studio|drop|cnt|w10|max",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 10,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|full|cnt|w6|min",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "cnt",
+    "window": 6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:studio|watch|cnt|all|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|last|w6|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "last",
+    "window": 6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:ctype|drop|last|w2",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "drop",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:studio|long|first|w3|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "first",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:studio|watch|days|w3|sum",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "watch",
+    "agg": "days",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:country|watch|last|w10|max",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "last",
+    "window": 10,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:studio|watch|cnt|w40|mean",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:studio",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 40,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|drop|first|w1|max",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "first",
+    "window": 1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|full|last|w23|min",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "last",
+    "window": 23,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|drop|last|w5|max",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "last",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:country|long|last|w5|min",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "last",
+    "window": 5,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:director|long|last|w1|min",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "a:director",
+    "event": "long",
+    "agg": "last",
+    "window": 1,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:studio|full|days|all|sum",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "ua:studio",
+    "event": "full",
+    "agg": "days",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:studio|full|dec(h10.3)|all|mean",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "ua:studio",
+    "event": "full",
+    "agg": "dec",
+    "hl": 10.3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:studio|long|cnt|w3|sum / ua:studio|watch|cnt|w3|sum]",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:studio",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:ctype|full|last|w126",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 126
+   }
+  },
+  {
+   "name": "a:genre|drop|first|w5|max",
+   "gain": 0.0,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "first",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:studio|long|dec(h1)|w3|sum",
+   "gain": 0.0,
+   "gen": 3,
+   "feature": {
+    "key": "ua:studio",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|drop|cnt|w6|mean",
+   "gain": -3.200348948143028e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 6,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[a:studio|long|cnt|w11|mean / a:studio|long|cnt|w69|mean]",
+   "gain": -3.380931878835258e-07,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:studio",
+     "event": "long",
+     "agg": "cnt",
+     "window": 11,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:studio",
+     "event": "long",
+     "agg": "cnt",
+     "window": 69,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "a:studio|watch|nuniq|all|max",
+   "gain": -5.854836866367452e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "nuniq",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w84|min",
+   "gain": -5.865457489012682e-07,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 84,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:director|watch|cnt|w28|max / user|watch|cnt|w28]",
+   "gain": -7.491051511390734e-07,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 28,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 28
+    }
+   }
+  },
+  {
+   "name": "ua:actor|long|nuniq|w20|mean",
+   "gain": -7.758851917546994e-07,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "user|full|last|w6",
+   "gain": -7.991607093790765e-07,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "a:studio|watch|sum(pct)|all|sum",
+   "gain": -9.104750690186458e-07,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "sum",
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "user|long|last|w6",
+   "gain": -9.635682949385438e-07,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "a:studio|watch|dec(h67.6)|all|max",
+   "gain": -1.1074569750066376e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 67.6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|full|cnt|w40|sum",
+   "gain": -1.5743575251525588e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 40,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:ctype|full|cnt|w1",
+   "gain": -1.8605468390039959e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "R[ua:actor|long|cnt|w71|sum / ua:actor|watch|cnt|w71|sum]",
+   "gain": -2.1434235316988848e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 71,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 71,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:studio|long|dec(h1.2)|all|sum",
+   "gain": -2.143644486231333e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.2,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[ua:country|drop|cnt|w82|mean / user|drop|cnt|w82]",
+   "gain": -2.341354652685146e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:country",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82,
+     "red": "mean"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
+   "name": "ua:director|drop|mean(pct)|w12|min",
+   "gain": -2.953612989908816e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "drop",
+    "agg": "mean",
+    "window": 12,
+    "value": "pct",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:country|long|mean(hours)|all|mean",
+   "gain": -2.973102995365573e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:income|watch|nuniq|w5",
+   "gain": -3.106639380599796e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 5
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w2|mean",
+   "gain": -3.2887554924018736e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w21|mean",
+   "gain": -3.4880430967929033e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 21,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|mean(pct)|w51|max",
+   "gain": -4.046598056278716e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "mean",
+    "window": 51,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w4|mean / user|full|cnt|w4]",
+   "gain": -4.857812038995546e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "mean"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w10|mean",
+   "gain": -5.06823421771857e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 10,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|watch|nuniq|w2",
+   "gain": -6.2328907787928545e-06,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:actor|long|sum(pct)|w140|mean",
+   "gain": -6.567818017173821e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 140,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w7|min",
+   "gain": -6.59139642481682e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 7,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w1|max / user|full|cnt|w1]",
+   "gain": -6.985698654649042e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "s:sex|long|mean(hours)|w61",
+   "gain": -6.999003188533359e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "mean",
+    "window": 61,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w12|mean",
+   "gain": -7.5808749674388665e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 12,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w11|mean",
+   "gain": -7.806071731480957e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 11,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|mean(hours)|w4|mean",
+   "gain": -8.21567346220159e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|cnt|w3|mean",
+   "gain": -9.078065787336553e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "cnt",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w3|mean",
+   "gain": -9.562417283677516e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "item|watch|cnt|w18",
+   "gain": -9.618346336323635e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 18
+   }
+  },
+  {
+   "name": "ua:genre|long|last|w4|mean",
+   "gain": -1.0427098990052619e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "last",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|drop|dec(h1.3)|w28|max",
+   "gain": -1.0651563513874862e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 28,
+    "hl": 1.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w62 / s:sex|watch|cnt|w62]",
+   "gain": -1.0790872817828534e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 62
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 62
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|drop|cnt|w14",
+   "gain": -1.1119339954485108e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 14
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w4|mean",
+   "gain": -1.125674063963411e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 4,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|w26|mean",
+   "gain": -1.1331301547394534e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "window": 26,
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:kids|long|cnt|w8 / item|long|cnt|w8]",
+   "gain": -1.1451520510484536e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "long",
+     "agg": "cnt",
+     "window": 8
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h54.3)|all|mean",
+   "gain": -1.1544806099328397e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 54.3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|cnt|w15",
+   "gain": -1.1622516481499257e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 15
+   }
+  },
+  {
+   "name": "s:income|watch|days|w4",
+   "gain": -1.1648081041946978e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "days",
+    "window": 4
+   }
+  },
+  {
+   "name": "ua:ctype|watch|last|all",
+   "gain": -1.19064205514538e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|w27|mean",
+   "gain": -1.2049765833778425e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 27,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|sum(hours)|w4|mean",
+   "gain": -1.209957163586517e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "sum",
+    "window": 4,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|drop|cnt|all|sum",
+   "gain": -1.2348674638770762e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:actor|watch|first|w19|mean",
+   "gain": -1.2564231359597777e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 19,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|cnt|w20|mean",
+   "gain": -1.2732380695205936e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|first|w39|mean",
+   "gain": -1.2864312116715737e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 39,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|first|w4|mean",
+   "gain": -1.3068487036617393e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "first",
+    "window": 4,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:kids|drop|dec(h38.1)|w55",
+   "gain": -1.3078009215856945e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "dec",
+    "window": 55,
+    "hl": 38.1
+   }
+  },
+  {
+   "name": "R[ua:actor|long|cnt|w20|mean / ua:actor|watch|cnt|w20|mean]",
+   "gain": -1.3249886767034702e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 20,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w7",
+   "gain": -1.3427553708318662e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "ua:genre|full|cnt|w5|mean",
+   "gain": -1.3474711795601058e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w2|mean",
+   "gain": -1.367861754998645e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 2,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|nuniq|w27|mean",
+   "gain": -1.3732953496992106e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 27,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w57 / ua:ctype|watch|cnt|w124]",
+   "gain": -1.4641692901627701e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 57
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 124
+    }
+   }
+  },
+  {
+   "name": "a:actor|full|dec(h5.5)|all|mean",
+   "gain": -1.5080844323257792e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 5.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "user|long|dec(h1)|w3",
+   "gain": -1.5285216189320217e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w1|mean / ua:genre|full|cnt|w4|mean]",
+   "gain": -1.5369243369908747e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "user|full|cnt|w50",
+   "gain": -1.5812671402035128e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt",
+    "window": 50
+   }
+  },
+  {
+   "name": "R[ua:ctype|long|cnt|w7 / ua:ctype|watch|cnt|w7]",
+   "gain": -1.5885577191482314e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 7
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 7
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w5|mean",
+   "gain": -1.6133157993356018e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 5,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|first|w35|mean",
+   "gain": -1.6302825384104103e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 35,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|all|mean",
+   "gain": -1.6756416637342397e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|cnt|w2",
+   "gain": -1.6926614942451568e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "item|drop|dec(h59.8)|all",
+   "gain": -1.744236703377089e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 59.8
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|w11|mean",
+   "gain": -1.749551047107445e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "window": 11,
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:kids|watch|cnt|w20 / s:kids|watch|cnt|w58]",
+   "gain": -1.7789745101061405e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 20
+    },
+    "den": {
+     "key": "s:kids",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 58
+    }
+   }
+  },
+  {
+   "name": "ua:actor|full|first|w27|mean",
+   "gain": -1.7876227980953563e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "first",
+    "window": 27,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|full|dec(h8.9)|all",
+   "gain": -1.787627285766008e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "dec",
+    "hl": 8.9
+   }
+  },
+  {
+   "name": "ua:country|full|sum(pct)|w7|mean",
+   "gain": -1.7949240744059847e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 7,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|watch|dec(h1.1)|all|mean",
+   "gain": -1.7969309205632944e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:genre|full|dec(h2)|w4|mean",
+   "gain": -1.8209776977660963e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "dec",
+    "window": 4,
+    "hl": 2.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:actor|long|nuniq|all|min",
+   "gain": -1.8394635839059925e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "nuniq",
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|drop|dec(h2.5)|w5|mean",
+   "gain": -1.8612131196735215e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 5,
+    "hl": 2.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w16",
+   "gain": -1.8614578052460196e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 16
+   }
+  },
+  {
+   "name": "a:actor|long|sum(pct)|w75|mean",
+   "gain": -1.896600304352597e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 75,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "item|full|last|w32",
+   "gain": -1.9221173150188453e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
+    "agg": "last",
+    "window": 32
+   }
+  },
+  {
+   "name": "s:income|long|dec(h1)|w3",
+   "gain": -1.9238276891937744e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|w6|mean",
+   "gain": -1.9287278096170868e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "window": 6,
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|dec(h10)|w20|mean",
+   "gain": -1.9478020594383694e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "dec",
+    "window": 20,
+    "hl": 10.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h0.5)|w3|mean",
+   "gain": -1.9737937604222267e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 0.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|full|dec(h1)|w3|mean",
+   "gain": -1.9808460412620854e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w64|min",
+   "gain": -1.9973825098655584e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 64,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h22.1)|all|mean",
+   "gain": -2.024429658487037e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 22.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|first|w27",
+   "gain": -2.0588131791031417e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "first",
+    "window": 27
+   }
+  },
+  {
+   "name": "ua:ctype|watch|nuniq|w2",
+   "gain": -2.095935909369323e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:country|full|dec(h3.5)|w7|mean",
+   "gain": -2.116477803423139e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "dec",
+    "window": 7,
+    "hl": 3.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w53|mean",
+   "gain": -2.1169444857277453e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 53,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|drop|cnt|w7",
+   "gain": -2.16468881654025e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "ua:actor|long|first|w20|mean",
+   "gain": -2.1985373131035157e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "first",
+    "window": 20,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|mean(hours)|w60|min",
+   "gain": -2.228257887641749e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w5|max / user|long|cnt|w5]",
+   "gain": -2.2305105209875775e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "R[s:sex|full|cnt|w24 / s:sex|watch|cnt|w24]",
+   "gain": -2.2343871111420166e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "full",
+     "agg": "cnt",
+     "window": 24
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 24
+    }
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h8.9)|all|max",
+   "gain": -2.2398962790021182e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 8.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w3",
+   "gain": -2.245490488472779e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w7|max",
+   "gain": -2.2808252763226178e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 7,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|long|first|w27|mean",
+   "gain": -2.316603145848667e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "first",
+    "window": 27,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|long|cnt|w24",
+   "gain": -2.325434988151298e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 24
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w9|mean",
+   "gain": -2.3503035249429483e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 9,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:genre|full|cnt|w4|mean / ua:genre|watch|cnt|w4|mean]",
+   "gain": -2.3566693552135032e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w15|mean",
+   "gain": -2.430610541299255e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 15,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|watch|dec(h13.5)|w27|mean",
+   "gain": -2.4816435307370432e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 27,
+    "hl": 13.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|drop|sum(pct)|w8",
+   "gain": -2.494332057177001e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "sum",
+    "window": 8,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "user|drop|cnt|w137",
+   "gain": -2.5050181850477804e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 137
+   }
+  },
+  {
+   "name": "R[ua:ctype|full|cnt|w2 / ua:ctype|watch|cnt|w2]",
+   "gain": -2.5207745792836522e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|full|cnt|w9|mean / a:genre|watch|cnt|w9|mean]",
+   "gain": -2.550769033199396e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|full|last|w140",
+   "gain": -2.5535529584681804e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 140
+   }
+  },
+  {
+   "name": "R[a:director|drop|cnt|w4|max / a:director|watch|cnt|w4|max]",
+   "gain": -2.603323930826934e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[s:sex|long|cnt|w104 / s:sex|watch|cnt|w104]",
+   "gain": -2.61875051510152e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "long",
+     "agg": "cnt",
+     "window": 104
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 104
+    }
+   }
+  },
+  {
+   "name": "R[ua:ctype|full|cnt|w27 / ua:ctype|full|cnt|w115]",
+   "gain": -2.644802972720517e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "full",
+     "agg": "cnt",
+     "window": 27
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "full",
+     "agg": "cnt",
+     "window": 115
+    }
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w34|mean",
+   "gain": -2.65761638119158e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 34,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|full|dec(h13.5)|all|mean",
+   "gain": -2.69716303414394e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 13.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|drop|cnt|w9",
+   "gain": -2.7288107215771296e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:age",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 9
+   }
+  },
+  {
+   "name": "ua:actor|watch|dec(h8.9)|all|mean",
+   "gain": -2.7778379602057257e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 8.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:age|watch|cnt|w12",
+   "gain": -2.8080345242195714e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 12
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w3|mean",
+   "gain": -2.8348815675288686e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 3,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:actor|long|sum(hours)|w20|mean",
+   "gain": -2.838748163975363e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 20,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|days|all|mean",
+   "gain": -2.856990446724328e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "days",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|mean(hours)|all|mean",
+   "gain": -2.8663991156738233e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|watch|mean(hours)|w2",
+   "gain": -2.874790817691819e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "watch",
+    "agg": "mean",
+    "window": 2,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:ctype|long|dec(h1.1)|all",
+   "gain": -3.028273238161322e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1
+   }
+  },
+  {
+   "name": "user|long|last|all",
+   "gain": -3.0294158180191322e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "ua:ctype|long|mean(hours)|w3",
+   "gain": -3.127959924244944e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "mean",
+    "window": 3,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "a:actor|long|days|w86|max",
+   "gain": -3.16379752778595e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "days",
+    "window": 86,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.3)|all|mean",
+   "gain": -3.207389279298589e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:ctype|long|cnt|w3 / ua:ctype|long|cnt|w14]",
+   "gain": -3.2177223623343354e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 14
+    }
+   }
+  },
+  {
+   "name": "ua:actor|long|mean(hours)|w4|min",
+   "gain": -3.2220541284974646e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|all|mean",
+   "gain": -3.2884932445041704e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|full|last|w79",
+   "gain": -3.320806594599157e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 79
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w5 / user|watch|cnt|w5]",
+   "gain": -3.367079873904666e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|w79|mean",
+   "gain": -3.385007162704651e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 79,
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|long|mean(hours)|all|sum",
+   "gain": -3.4410971412518476e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "mean",
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:kids|watch|mean(pct)|all",
+   "gain": -3.4892945898160055e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "watch",
+    "agg": "mean",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w3 / user|long|cnt|w5]",
+   "gain": -3.5504965186977655e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.2)|all|mean",
+   "gain": -3.555357199986481e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|long|dec(h2.7)|w124|min",
+   "gain": -3.561037319391863e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 124,
+    "hl": 2.7,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|full|sum(hours)|w4|mean",
+   "gain": -3.5776969717994656e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "sum",
+    "window": 4,
+    "value": "hours",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:income|full|cnt|w73",
+   "gain": -3.611546936312798e-05,
+   "gen": 1,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "cnt",
+    "window": 73
+   }
+  },
+  {
+   "name": "a:country|long|dec(h1.9)|all|max",
+   "gain": -3.666298224513226e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|all|mean",
+   "gain": -3.68568298966393e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:director|drop|cnt|w4|min",
+   "gain": -3.690993369208362e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:director",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|w89|mean",
+   "gain": -3.725817647624169e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 89,
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.7)|all|mean",
+   "gain": -3.768169832096824e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.7,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|watch|cnt|w7|min",
+   "gain": -3.817848719974565e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|full|dec(h1.1)|all|mean",
+   "gain": -3.8411528951717844e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:kids|long|cnt|w2 / item|long|cnt|w2]",
+   "gain": -3.9076123725882705e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h0.8)|all|mean",
+   "gain": -4.029447933953656e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 0.8,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:ctype|long|cnt|w14 / ua:ctype|watch|cnt|w14]",
+   "gain": -4.140328234129159e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 14
+    }
+   }
+  },
+  {
+   "name": "s:age|long|dec(h1.4)|all",
+   "gain": -4.1688999307856744e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.4
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|w95|mean",
+   "gain": -4.210010505580064e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 95,
+    "hl": 1.1,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:income|long|last|w72",
+   "gain": -4.227913659766297e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "last",
+    "window": 72
+   }
+  },
+  {
+   "name": "s:sex|drop|cnt|w33",
+   "gain": -4.291664412083701e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 33
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|all|sum",
+   "gain": -4.425268882570638e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "user|long|dec(h1.1)|all",
+   "gain": -4.5334897455125145e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|all|max",
+   "gain": -4.534245120557667e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|long|mean(pct)|w20|mean",
+   "gain": -4.6244095187865375e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "mean",
+    "window": 20,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:income|long|cnt|w4",
+   "gain": -4.737670884912698e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "a:actor|long|cnt|all|sum",
+   "gain": -4.7473913529286205e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h0.6)|w7|min",
+   "gain": -4.816168392444281e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "window": 7,
+    "hl": 0.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:age|full|cnt|w5",
+   "gain": -4.8205451085518713e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "full",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "s:kids|full|cnt|w3",
+   "gain": -4.828865059318399e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w47",
+   "gain": -4.941525979262895e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 47
+   }
+  },
+  {
+   "name": "a:director|long|cnt|w114|mean",
+   "gain": -5.0004394935451724e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "long",
+    "agg": "cnt",
+    "window": 114,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:ctype|long|dec(h4.9)|all",
+   "gain": -5.0399300995492e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 4.9
+   }
+  },
+  {
+   "name": "a:director|watch|dec(h0.6)|w22|min",
+   "gain": -5.0572824310465836e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "dec",
+    "window": 22,
+    "hl": 0.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[item|watch|cnt|w30 / item|watch|cnt|w31]",
+   "gain": -5.3666480760265756e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 30
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 31
+    }
+   }
+  },
+  {
+   "name": "a:country|watch|cnt|w100|mean",
+   "gain": -5.3790333265066326e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 100,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:income|full|last|all",
+   "gain": -5.380177952162696e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "a:actor|watch|cnt|w7|sum",
+   "gain": -5.6661621116262106e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 7,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w1|sum",
+   "gain": -6.024139989545263e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:actor|watch|mean(hours)|all|sum",
+   "gain": -6.036061748222049e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "mean",
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:country|drop|dec(h59.4)|w91|min",
+   "gain": -6.196658359974849e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 91,
+    "hl": 59.4,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:director|full|sum(hours)|w7|max",
+   "gain": -6.36411589522573e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:director",
+    "event": "full",
+    "agg": "sum",
+    "window": 7,
+    "value": "hours",
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[s:income|drop|cnt|w53 / item|drop|cnt|w53]",
+   "gain": -6.443624718981827e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 53
+    },
+    "den": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 53
+    }
+   }
+  },
+  {
+   "name": "a:genre|full|sum(hours)|w7|sum",
+   "gain": -6.505383916639851e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "sum",
+    "window": 7,
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:country|drop|cnt|all|sum",
+   "gain": -6.689507343371481e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:age|long|cnt|all",
+   "gain": -6.72891351624072e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "a:director|full|dec(h4)|all|sum",
+   "gain": -6.78620202894803e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:director",
+    "event": "full",
+    "agg": "dec",
+    "hl": 4.0,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:actor|full|cnt|all|min",
+   "gain": -7.007175489923134e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "full",
+    "agg": "cnt",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:country|watch|mean(hours)|w12|min",
+   "gain": -7.019125680114008e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "mean",
+    "window": 12,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w3|sum",
+   "gain": -7.05771419050108e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "item|full|nuniq|w2",
+   "gain": -7.15836483977314e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[a:director|full|cnt|w113|mean / a:director|watch|cnt|w113|mean]",
+   "gain": -7.269949527229091e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 113,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 113,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "R[item|full|cnt|w2 / item|full|cnt|w4]",
+   "gain": -7.445343531786025e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "a:actor|watch|dec(h1.4)|w5|max",
+   "gain": -7.460291224253152e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 5,
+    "hl": 1.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:director|long|cnt|w4|max / a:director|watch|cnt|w4|max]",
+   "gain": -8.446542241783567e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "long",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:age|full|dec(h17.7)|all",
+   "gain": -8.90897425595838e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "full",
+    "agg": "dec",
+    "hl": 17.7
+   }
+  },
+  {
+   "name": "R[a:actor|long|cnt|w13|sum / a:actor|watch|cnt|w13|sum]",
+   "gain": -8.957038044146715e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:actor",
+     "event": "long",
+     "agg": "cnt",
+     "window": 13,
+     "red": "sum"
+    },
+    "den": {
+     "key": "a:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 13,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "item|drop|days|all",
+   "gain": -0.00010071551813634061,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "R[a:country|long|cnt|w4|min / a:country|watch|cnt|w4|min]",
+   "gain": -0.000233757826816422,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:country",
+     "event": "long",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    },
+    "den": {
+     "key": "a:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "a:country|drop|cnt|w25|sum",
+   "gain": -0.00029304492317039355,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 25,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:country|watch|sum(hours)|all|sum",
+   "gain": -0.0005566325798150029,
+   "gen": 3,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "sum",
+    "value": "hours",
+    "red": "sum"
+   }
+  }
+ ]
+}

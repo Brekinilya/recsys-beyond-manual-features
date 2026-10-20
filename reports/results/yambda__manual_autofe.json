@@ -1,0 +1,275 @@
+{
+ "dataset": "yambda",
+ "tag": "manual_autofe",
+ "n_features": 82,
+ "feature_sec": 29.582015399999364,
+ "train_sec": 13.507368400001724,
+ "best_iter": 285,
+ "val_logloss": 0.4375370304521052,
+ "val_predict_sec": 0.817994599998201,
+ "val": {
+  "logloss": 0.43753703045210546,
+  "auc": 0.8304624994232577,
+  "gauc": 0.5806691322170195,
+  "ndcg@10": 0.7784031061964651,
+  "recall@10": 0.5334501162393516,
+  "map@10": 0.6812460629952114,
+  "groups": 3858
+ },
+ "test_predict_sec": 1.3694062000031408,
+ "test": {
+  "logloss": 0.4332368622028424,
+  "auc": 0.8409550351698933,
+  "gauc": 0.5867028653844176,
+  "ndcg@10": 0.7754904036570168,
+  "recall@10": 0.5184534972627035,
+  "map@10": 0.6776960178477391,
+  "groups": 9056
+ },
+ "importance": [
+  [
+   "R[user|recplus|cnt|w30 / user|rec|cnt|w30]",
+   0.5669770350488536
+  ],
+  [
+   "R[user|recplus|cnt|w7 / user|rec|cnt|w7]",
+   0.0638793778773995
+  ],
+  [
+   "R[user|lplus|cnt|w30 / user|listen|cnt|w30]",
+   0.05376329206909826
+  ],
+  [
+   "user|listen|mean(played)|w30",
+   0.03164550001043969
+  ],
+  [
+   "user|lplus|mean(played)|w110",
+   0.021495659123030367
+  ],
+  [
+   "ui|listen|mean(played)|all",
+   0.01765493623297323
+  ],
+  [
+   "R[user|recskip|cnt|w1 / user|rec|cnt|w1]",
+   0.013077091050571543
+  ],
+  [
+   "user|like|last|w18",
+   0.012975029272869256
+  ],
+  [
+   "user|org|last|w39",
+   0.012587094272409064
+  ],
+  [
+   "user|listen|cnt|w30",
+   0.011594393176517349
+  ],
+  [
+   "user|listen|last|all",
+   0.010841172933133148
+  ],
+  [
+   "user|rec|cnt|w30",
+   0.010700881685865514
+  ],
+  [
+   "user|lplus|days|w110",
+   0.01063162039971388
+  ],
+  [
+   "user|unlike|last|w75",
+   0.010357688700152393
+  ],
+  [
+   "R[user|org|cnt|w30 / user|listen|cnt|w30]",
+   0.010347341681794542
+  ],
+  [
+   "user|listen|nuniq|w30",
+   0.009399207738732573
+  ],
+  [
+   "user|rec|cnt|w42",
+   0.008905328131981086
+  ],
+  [
+   "user|listen|cnt|w7",
+   0.008659292274844434
+  ],
+  [
+   "user|rec|cnt|w7",
+   0.008117754645116496
+  ],
+  [
+   "user|listen|cnt|w1",
+   0.007865851615833771
+  ],
+  [
+   "R[a:album|recplus|cnt|w77 / a:album|rec|cnt|w77]",
+   0.007756398171417165
+  ],
+  [
+   "item|listen|mean(played)|all",
+   0.007597549984413383
+  ],
+  [
+   "user|recskip|dec(h0.5)|w2",
+   0.007356897880878983
+  ],
+  [
+   "user|like|cnt|w30",
+   0.0072327323386312614
+  ],
+  [
+   "user|skip|dec(h10.1)|w1",
+   0.0071106759641788725
+  ],
+  [
+   "user|recskip|last|w2",
+   0.006075244079239612
+  ],
+  [
+   "user|recskip|last|w1",
+   0.0059529970034193185
+  ],
+  [
+   "user|recskip|dec(h10.1)|w1",
+   0.00475962296156399
+  ],
+  [
+   "R[user|dislike|cnt|w18 / user|rec|cnt|w18]",
+   0.004370424832547367
+  ],
+  [
+   "R[item|recplus|cnt|w30 / item|rec|cnt|w30]",
+   0.004211328813597567
+  ],
+  [
+   "ui|lplus|cnt|all",
+   0.00367760648539821
+  ],
+  [
+   "R[ua:artist|skip|cnt|w30 / ua:artist|listen|cnt|w30]",
+   0.0036009140302019522
+  ],
+  [
+   "length",
+   0.002958502379068265
+  ],
+  [
+   "user|dislike|cnt|w30",
+   0.0028613439340409263
+  ],
+  [
+   "item|listen|first|all",
+   0.0021718670473463556
+  ],
+  [
+   "R[item|org|cnt|w148 / item|listen|cnt|w148]",
+   0.0013498770261111154
+  ],
+  [
+   "ua:artist|lplus|cnt|w30",
+   0.0013335469234397649
+  ],
+  [
+   "R[ui|recplus|cnt|w30 / ui|rec|cnt|w30]",
+   0.0013161591360247608
+  ],
+  [
+   "R[a:artist|recplus|cnt|w30 / a:artist|rec|cnt|w30]",
+   0.0012688232988261679
+  ],
+  [
+   "R[item|lplus|cnt|w30 / item|listen|cnt|w30]",
+   0.0012594777645795047
+  ]
+ ],
+ "features": [
+  "length",
+  "user|listen|cnt|w1",
+  "user|listen|cnt|w7",
+  "user|listen|cnt|w30",
+  "user|rec|cnt|w7",
+  "user|rec|cnt|w30",
+  "R[user|recplus|cnt|w7 / user|rec|cnt|w7]",
+  "R[user|recplus|cnt|w30 / user|rec|cnt|w30]",
+  "R[user|lplus|cnt|w30 / user|listen|cnt|w30]",
+  "R[user|org|cnt|w30 / user|listen|cnt|w30]",
+  "user|listen|mean(played)|w30",
+  "user|like|cnt|w30",
+  "user|dislike|cnt|w30",
+  "user|listen|last|all",
+  "user|listen|nuniq|w30",
+  "item|listen|cnt|w1",
+  "item|listen|cnt|w7",
+  "item|listen|cnt|w30",
+  "item|listen|cnt|all",
+  "item|rec|cnt|w7",
+  "R[item|recplus|cnt|w7 / item|rec|cnt|w7]",
+  "R[item|recplus|cnt|w30 / item|rec|cnt|w30]",
+  "R[item|lplus|cnt|w30 / item|listen|cnt|w30]",
+  "R[item|like|cnt|w30 / item|listen|cnt|w30]",
+  "item|like|cnt|w30",
+  "item|dislike|cnt|w30",
+  "item|listen|first|all",
+  "item|listen|nuniq|w30",
+  "a:artist|listen|cnt|w7",
+  "a:artist|listen|cnt|w30",
+  "a:artist|like|cnt|w30",
+  "R[a:artist|recplus|cnt|w30 / a:artist|rec|cnt|w30]",
+  "a:album|listen|cnt|w30",
+  "ui|listen|cnt|w7",
+  "ui|listen|cnt|w30",
+  "ui|listen|cnt|all",
+  "ui|lplus|cnt|all",
+  "ui|skip|cnt|w30",
+  "ui|listen|last|all",
+  "ui|listen|mean(played)|all",
+  "ui|like|cnt|all",
+  "ui|unlike|cnt|all",
+  "ui|dislike|cnt|all",
+  "ui|rec|cnt|w30",
+  "R[ui|recplus|cnt|w30 / ui|rec|cnt|w30]",
+  "ua:artist|listen|cnt|w7",
+  "ua:artist|listen|cnt|w30",
+  "ua:artist|listen|cnt|all",
+  "ua:artist|lplus|cnt|w30",
+  "R[ua:artist|skip|cnt|w30 / ua:artist|listen|cnt|w30]",
+  "ua:artist|like|cnt|all",
+  "ua:artist|dislike|cnt|all",
+  "ua:artist|listen|last|all",
+  "R[ua:artist|listen|cnt|w30 / user|listen|cnt|w30]",
+  "ua:album|listen|cnt|w30",
+  "ua:album|listen|cnt|all",
+  "ua:album|like|cnt|all",
+  "ua:album|listen|last|all",
+  "user|recskip|dec(h10.1)|w1",
+  "R[a:album|recplus|cnt|w77 / a:album|rec|cnt|w77]",
+  "user|lplus|mean(played)|w110",
+  "item|listen|mean(played)|all",
+  "R[a:artist|org|cnt|w2 / a:artist|listen|cnt|w2]",
+  "ua:artist|skip|cnt|w2",
+  "user|skip|dec(h10.1)|w1",
+  "user|rec|cnt|w42",
+  "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+  "R[user|recskip|cnt|w1 / user|rec|cnt|w1]",
+  "ua:artist|recskip|dec(h10.1)|w1",
+  "R[item|dislike|cnt|w246 / item|listen|cnt|w246]",
+  "user|recskip|last|w1",
+  "user|lplus|days|w110",
+  "user|org|last|w39",
+  "R[item|org|cnt|w148 / item|listen|cnt|w148]",
+  "ua:artist|skip|cnt|w4",
+  "ua:artist|recskip|dec(h2.3)|all",
+  "user|recskip|dec(h0.5)|w2",
+  "user|unlike|last|w75",
+  "ua:artist|recskip|mean(played)|all",
+  "R[user|dislike|cnt|w18 / user|rec|cnt|w18]",
+  "user|like|last|w18",
+  "user|recskip|last|w2"
+ ]
+}

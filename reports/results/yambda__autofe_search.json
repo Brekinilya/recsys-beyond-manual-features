@@ -1,0 +1,7980 @@
+{
+ "tag": "autofe",
+ "dataset": "yambda",
+ "n_start": 0,
+ "selected": [
+  {
+   "key": "user",
+   "event": "lplus",
+   "agg": "mean",
+   "window": 110,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 265
+   },
+   "den": {
+    "key": "ua:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 265
+   }
+  },
+  {
+   "num": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 119
+   },
+   "den": {
+    "key": "ua:album",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 119
+   }
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 204
+   },
+   "den": {
+    "key": "ui",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 204
+   }
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 89
+   },
+   "den": {
+    "key": "ui",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 89
+   }
+  },
+  {
+   "key": "user",
+   "event": "recskip",
+   "agg": "mean",
+   "window": 6,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 34
+   },
+   "den": {
+    "key": "ui",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 34
+   }
+  },
+  {
+   "num": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 77
+   },
+   "den": {
+    "key": "a:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 77
+   }
+  },
+  {
+   "key": "user",
+   "event": "recskip",
+   "agg": "mean",
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "rec",
+   "agg": "mean",
+   "window": 110,
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "recskip",
+   "agg": "dec",
+   "window": 1,
+   "hl": 10.1
+  },
+  {
+   "key": "ua:artist",
+   "event": "listen",
+   "agg": "mean",
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 204
+   },
+   "den": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 204
+   }
+  },
+  {
+   "key": "user",
+   "event": "recplus",
+   "agg": "dec",
+   "window": 1,
+   "hl": 10.1
+  },
+  {
+   "key": "ua:album",
+   "event": "recplus",
+   "agg": "sum",
+   "window": 10,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 90
+   },
+   "den": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 90
+   }
+  },
+  {
+   "num": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 156
+   },
+   "den": {
+    "key": "a:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 156
+   }
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt",
+    "window": 5
+   },
+   "den": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 83
+   },
+   "den": {
+    "key": "item",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 83
+   }
+  },
+  {
+   "num": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 51
+   },
+   "den": {
+    "key": "a:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 51
+   }
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt",
+    "window": 3
+   },
+   "den": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "key": "item",
+   "event": "skip",
+   "agg": "dec",
+   "window": 9,
+   "hl": 4.5
+  },
+  {
+   "key": "item",
+   "event": "org",
+   "agg": "dec",
+   "window": 18,
+   "hl": 122.6
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 1
+   },
+   "den": {
+    "key": "item",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "key": "user",
+   "event": "recskip",
+   "agg": "mean",
+   "window": 3,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "ua:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 5
+   },
+   "den": {
+    "key": "user",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "num": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 3
+   },
+   "den": {
+    "key": "ua:artist",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "key": "user",
+   "event": "lplus",
+   "agg": "dec",
+   "hl": 112.7
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 34
+   },
+   "den": {
+    "key": "user",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 34
+   }
+  },
+  {
+   "key": "ui",
+   "event": "recskip",
+   "agg": "mean",
+   "window": 30,
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "lplus",
+   "agg": "cnt",
+   "window": 110
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 7
+   },
+   "den": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 204
+   }
+  },
+  {
+   "num": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 13
+   },
+   "den": {
+    "key": "user",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 13
+   }
+  },
+  {
+   "key": "user",
+   "event": "unlike",
+   "agg": "dec",
+   "window": 55,
+   "hl": 21.6
+  },
+  {
+   "key": "item",
+   "event": "listen",
+   "agg": "mean",
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "item",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 13
+   },
+   "den": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 13
+   }
+  },
+  {
+   "key": "item",
+   "event": "rec",
+   "agg": "mean",
+   "window": 76,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "a:artist",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 14
+   },
+   "den": {
+    "key": "a:artist",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 14
+   }
+  },
+  {
+   "num": {
+    "key": "a:artist",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 19
+   },
+   "den": {
+    "key": "a:artist",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 19
+   }
+  },
+  {
+   "key": "ua:album",
+   "event": "recplus",
+   "agg": "sum",
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "like",
+   "agg": "cnt"
+  },
+  {
+   "key": "user",
+   "event": "rec",
+   "agg": "last",
+   "window": 110
+  },
+  {
+   "num": {
+    "key": "ui",
+    "event": "org",
+    "agg": "cnt",
+    "window": 18
+   },
+   "den": {
+    "key": "user",
+    "event": "org",
+    "agg": "cnt",
+    "window": 18
+   }
+  },
+  {
+   "key": "user",
+   "event": "lplus",
+   "agg": "mean",
+   "window": 213,
+   "value": "played"
+  },
+  {
+   "num": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 51
+   },
+   "den": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 194
+   }
+  },
+  {
+   "num": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "cnt",
+    "window": 37
+   },
+   "den": {
+    "key": "a:album",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 37
+   }
+  },
+  {
+   "num": {
+    "key": "user",
+    "event": "like",
+    "agg": "cnt",
+    "window": 9
+   },
+   "den": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 9
+   }
+  },
+  {
+   "key": "ua:artist",
+   "event": "lplus",
+   "agg": "mean",
+   "window": 6,
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "recskip",
+   "agg": "last",
+   "window": 6
+  },
+  {
+   "key": "user",
+   "event": "listen",
+   "agg": "mean",
+   "window": 110,
+   "value": "played"
+  },
+  {
+   "key": "user",
+   "event": "like",
+   "agg": "cnt",
+   "window": 3
+  },
+  {
+   "key": "ua:album",
+   "event": "recskip",
+   "agg": "dec",
+   "window": 1,
+   "hl": 10.1
+  }
+ ],
+ "selected_names": [
+  "user|lplus|mean(played)|w110",
+  "R[ua:album|recplus|cnt|w265 / ua:album|rec|cnt|w265]",
+  "R[ua:album|skip|cnt|w119 / ua:album|listen|cnt|w119]",
+  "R[ui|recskip|cnt|w204 / ui|rec|cnt|w204]",
+  "R[ui|skip|cnt|w89 / ui|listen|cnt|w89]",
+  "user|recskip|mean(played)|w6",
+  "R[ui|skip|cnt|w34 / ui|listen|cnt|w34]",
+  "R[a:album|recplus|cnt|w77 / a:album|rec|cnt|w77]",
+  "user|recskip|mean(played)|all",
+  "user|rec|mean(played)|w110",
+  "user|recskip|dec(h10.1)|w1",
+  "ua:artist|listen|mean(played)|all",
+  "R[ui|recskip|cnt|w204 / user|recskip|cnt|w204]",
+  "user|recplus|dec(h10.1)|w1",
+  "ua:album|recplus|sum(played)|w10",
+  "R[ui|recskip|cnt|w90 / user|recskip|cnt|w90]",
+  "R[a:album|recplus|cnt|w156 / a:album|rec|cnt|w156]",
+  "R[item|org|cnt|w5 / item|listen|cnt|w5]",
+  "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+  "R[a:album|recplus|cnt|w51 / a:album|rec|cnt|w51]",
+  "R[item|org|cnt|w3 / item|listen|cnt|w3]",
+  "item|skip|dec(h4.5)|w9",
+  "item|org|dec(h122.6)|w18",
+  "R[item|recskip|cnt|w1 / item|rec|cnt|w1]",
+  "user|recskip|mean(played)|w3",
+  "R[ua:album|rec|cnt|w5 / user|rec|cnt|w5]",
+  "R[ua:artist|recskip|cnt|w3 / ua:artist|rec|cnt|w3]",
+  "user|lplus|dec(h112.7)|all",
+  "R[ui|skip|cnt|w34 / user|skip|cnt|w34]",
+  "ui|recskip|mean(played)|w30",
+  "user|lplus|cnt|w110",
+  "R[ui|recskip|cnt|w7 / ui|recskip|cnt|w204]",
+  "R[user|recskip|cnt|w13 / user|rec|cnt|w13]",
+  "user|unlike|dec(h21.6)|w55",
+  "item|listen|mean(played)|all",
+  "R[item|skip|cnt|w13 / item|listen|cnt|w13]",
+  "item|rec|mean(played)|w76",
+  "R[a:artist|recskip|cnt|w14 / a:artist|rec|cnt|w14]",
+  "R[a:artist|recskip|cnt|w19 / a:artist|rec|cnt|w19]",
+  "ua:album|recplus|sum(played)|all",
+  "user|like|cnt|all",
+  "user|rec|last|w110",
+  "R[ui|org|cnt|w18 / user|org|cnt|w18]",
+  "user|lplus|mean(played)|w213",
+  "R[a:album|recplus|cnt|w51 / a:album|recplus|cnt|w194]",
+  "R[a:album|like|cnt|w37 / a:album|lplus|cnt|w37]",
+  "R[user|like|cnt|w9 / user|lplus|cnt|w9]",
+  "ua:artist|lplus|mean(played)|w6",
+  "user|recskip|last|w6",
+  "user|listen|mean(played)|w110",
+  "user|like|cnt|w3",
+  "ua:album|recskip|dec(h10.1)|w1"
+ ],
+ "log": [
+  {
+   "gen": 0,
+   "candidates": 160,
+   "rescreened": 0,
+   "best_gain": 0.09775204525524267,
+   "accepted": [
+    "user|lplus|mean(played)|w110",
+    "R[ua:album|recplus|cnt|w265 / ua:album|rec|cnt|w265]",
+    "R[ua:album|skip|cnt|w119 / ua:album|listen|cnt|w119]",
+    "R[ui|recskip|cnt|w204 / ui|rec|cnt|w204]",
+    "R[ui|skip|cnt|w89 / ui|listen|cnt|w89]",
+    "user|recskip|mean(played)|w6",
+    "R[ui|skip|cnt|w34 / ui|listen|cnt|w34]",
+    "R[a:album|recplus|cnt|w77 / a:album|rec|cnt|w77]"
+   ],
+   "n_selected": 8,
+   "val_logloss": 0.46101353116965466,
+   "feature_sec": 0.20450229999914882,
+   "elapsed_sec": 162.76412110000092
+  },
+  {
+   "gen": 1,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.004761084062156307,
+   "accepted": [
+    "user|recskip|mean(played)|all",
+    "user|rec|mean(played)|w110",
+    "user|recskip|dec(h10.1)|w1",
+    "ua:artist|listen|mean(played)|all",
+    "R[ui|recskip|cnt|w204 / user|recskip|cnt|w204]",
+    "user|recplus|dec(h10.1)|w1",
+    "ua:album|recplus|sum(played)|w10",
+    "R[ui|recskip|cnt|w90 / user|recskip|cnt|w90]"
+   ],
+   "n_selected": 16,
+   "val_logloss": 0.4416148815012194,
+   "feature_sec": 0.10061359999963315,
+   "elapsed_sec": 265.33672579999984
+  },
+  {
+   "gen": 2,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00020629499824997843,
+   "accepted": [
+    "R[a:album|recplus|cnt|w156 / a:album|rec|cnt|w156]",
+    "R[item|org|cnt|w5 / item|listen|cnt|w5]",
+    "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+    "R[a:album|recplus|cnt|w51 / a:album|rec|cnt|w51]",
+    "R[item|org|cnt|w3 / item|listen|cnt|w3]",
+    "item|skip|dec(h4.5)|w9",
+    "item|org|dec(h122.6)|w18",
+    "R[item|recskip|cnt|w1 / item|rec|cnt|w1]"
+   ],
+   "n_selected": 24,
+   "val_logloss": 0.4406612817553815,
+   "feature_sec": 221.79867860000013,
+   "elapsed_sec": 582.0970117000033
+  },
+  {
+   "gen": 3,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00033180884220596063,
+   "accepted": [
+    "user|recskip|mean(played)|w3",
+    "R[ua:album|rec|cnt|w5 / user|rec|cnt|w5]",
+    "R[ua:artist|recskip|cnt|w3 / ua:artist|rec|cnt|w3]",
+    "user|lplus|dec(h112.7)|all",
+    "R[ui|skip|cnt|w34 / user|skip|cnt|w34]",
+    "ui|recskip|mean(played)|w30",
+    "user|lplus|cnt|w110",
+    "R[ui|recskip|cnt|w7 / ui|recskip|cnt|w204]"
+   ],
+   "n_selected": 32,
+   "val_logloss": 0.44028813830169666,
+   "feature_sec": 247.71319349999976,
+   "elapsed_sec": 945.2099757000033
+  },
+  {
+   "gen": 4,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.0006789931367162105,
+   "accepted": [
+    "R[user|recskip|cnt|w13 / user|rec|cnt|w13]",
+    "user|unlike|dec(h21.6)|w55",
+    "item|listen|mean(played)|all",
+    "R[item|skip|cnt|w13 / item|listen|cnt|w13]",
+    "item|rec|mean(played)|w76",
+    "R[a:artist|recskip|cnt|w14 / a:artist|rec|cnt|w14]",
+    "R[a:artist|recskip|cnt|w19 / a:artist|rec|cnt|w19]",
+    "ua:album|recplus|sum(played)|all"
+   ],
+   "n_selected": 40,
+   "val_logloss": 0.4375118215356643,
+   "feature_sec": 225.1388091000008,
+   "elapsed_sec": 1265.3897951
+  },
+  {
+   "gen": 5,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.00023367848420891013,
+   "accepted": [
+    "user|like|cnt|all",
+    "user|rec|last|w110",
+    "R[ui|org|cnt|w18 / user|org|cnt|w18]",
+    "user|lplus|mean(played)|w213",
+    "R[a:album|recplus|cnt|w51 / a:album|recplus|cnt|w194]",
+    "R[a:album|like|cnt|w37 / a:album|lplus|cnt|w37]",
+    "R[user|like|cnt|w9 / user|lplus|cnt|w9]",
+    "ua:artist|lplus|mean(played)|w6"
+   ],
+   "n_selected": 48,
+   "val_logloss": 0.4365691725371029,
+   "feature_sec": 236.2797771000005,
+   "elapsed_sec": 1621.6111034000023
+  },
+  {
+   "gen": 6,
+   "candidates": 60,
+   "rescreened": 40,
+   "best_gain": 0.000259099617057057,
+   "accepted": [
+    "user|recskip|last|w6",
+    "user|listen|mean(played)|w110",
+    "user|like|cnt|w3",
+    "ua:album|recskip|dec(h10.1)|w1"
+   ],
+   "n_selected": 52,
+   "val_logloss": 0.4361372430043484,
+   "feature_sec": 209.1169837999987,
+   "elapsed_sec": 1995.4308365000034
+  }
+ ],
+ "timing": {
+  "features": 1140.3525579999987,
+  "screen": 586.4152791999986,
+  "train": 264.3669381999971,
+  "final_train_sec": 9.459595000000263
+ },
+ "n_evaluated": 520,
+ "archive": [
+  {
+   "name": "user|lplus|mean(played)|w110",
+   "gain": 0.09775204525524267,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w265 / ua:album|rec|cnt|w265]",
+   "gain": 0.05051771711819841,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 265
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w119 / ua:album|listen|cnt|w119]",
+   "gain": 0.047052471000129104,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 119
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 119
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w204 / ui|rec|cnt|w204]",
+   "gain": 0.03869458059541531,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 204
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 204
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w89 / ui|listen|cnt|w89]",
+   "gain": 0.0351135930426244,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 89
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 89
+    }
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w6",
+   "gain": 0.027860067786733556,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 6,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w34 / ui|listen|cnt|w34]",
+   "gain": 0.026521487646278707,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 34
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 34
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w77 / a:album|rec|cnt|w77]",
+   "gain": 0.025895561047238114,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 77
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 77
+    }
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|all",
+   "gain": 0.004761084062156307,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|rec|mean(played)|w110",
+   "gain": 0.004104479044978238,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h10.1)|w1",
+   "gain": 0.0020254102144567354,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "ua:artist|listen|mean(played)|all",
+   "gain": 0.0017270656267542872,
+   "gen": 1,
+   "feature": {
+    "key": "ua:artist",
+    "event": "listen",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[user|recskip|cnt|w13 / user|rec|cnt|w13]",
+   "gain": 0.0006789931367162105,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "user",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w204 / user|recskip|cnt|w204]",
+   "gain": 0.0004253848880109712,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 204
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 204
+    }
+   }
+  },
+  {
+   "name": "user|recplus|dec(h10.1)|w1",
+   "gain": 0.0003992094740051244,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "recplus",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "ua:album|recplus|sum(played)|w10",
+   "gain": 0.0003905504564631346,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "sum",
+    "window": 10,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w90 / user|recskip|cnt|w90]",
+   "gain": 0.00038871383967820083,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 90
+    }
+   }
+  },
+  {
+   "name": "user|recskip|last|w6",
+   "gain": 0.000259099617057057,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w156 / a:album|rec|cnt|w156]",
+   "gain": 0.00020629499824997843,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 156
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 156
+    }
+   }
+  },
+  {
+   "name": "R[item|org|cnt|w5 / item|listen|cnt|w5]",
+   "gain": 0.00018002578954068316,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+   "gain": 0.00017587928750273374,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 83
+    },
+    "den": {
+     "key": "item",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w51 / a:album|rec|cnt|w51]",
+   "gain": 0.00016507771517532133,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 51
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 51
+    }
+   }
+  },
+  {
+   "name": "R[item|org|cnt|w3 / item|listen|cnt|w3]",
+   "gain": 0.00015391556649813065,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "item|skip|dec(h4.5)|w9",
+   "gain": 0.0001464250902328823,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "dec",
+    "window": 9,
+    "hl": 4.5
+   }
+  },
+  {
+   "name": "item|org|dec(h122.6)|w18",
+   "gain": 0.0001318930719865219,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "dec",
+    "window": 18,
+    "hl": 122.6
+   }
+  },
+  {
+   "name": "R[item|recskip|cnt|w1 / item|rec|cnt|w1]",
+   "gain": 0.00013188464765123697,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "item",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w56",
+   "gain": 0.00012814761043794531,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 56,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h44.9)|w1",
+   "gain": 0.000123644706838677,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 44.9
+   }
+  },
+  {
+   "name": "user|recskip|dec(h26.2)|w1",
+   "gain": 0.00012206331365904877,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 26.2
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w3",
+   "gain": 0.00011422654436626933,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 3,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w103",
+   "gain": 0.0001105741147842676,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 103,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|listen|mean(played)|w110",
+   "gain": 0.0001070322771666854,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "listen",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h3.8)|w1",
+   "gain": 0.00010665415413940726,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 3.8
+   }
+  },
+  {
+   "name": "user|recskip|dec(h9.2)|w1",
+   "gain": 0.0001050929386495203,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 9.2
+   }
+  },
+  {
+   "name": "R[ua:album|rec|cnt|w5 / user|rec|cnt|w5]",
+   "gain": 0.00010402556244731853,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "user",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "user|like|cnt|all",
+   "gain": 0.00010072626973073318,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "like",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[ua:artist|recskip|cnt|w3 / ua:artist|rec|cnt|w3]",
+   "gain": 9.926199016474513e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "user|recskip|dec(h13.9)|w1",
+   "gain": 9.06690960187917e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 13.9
+   }
+  },
+  {
+   "name": "user|recskip|dec(h2.7)|w1",
+   "gain": 8.831047400043035e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 2.7
+   }
+  },
+  {
+   "name": "user|recplus|dec(h15.6)|w1",
+   "gain": 8.728852115974517e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recplus",
+    "agg": "dec",
+    "window": 1,
+    "hl": 15.6
+   }
+  },
+  {
+   "name": "user|lplus|dec(h112.7)|all",
+   "gain": 8.69040661581888e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "dec",
+    "hl": 112.7
+   }
+  },
+  {
+   "name": "user|rec|last|w110",
+   "gain": 7.504378295636327e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "last",
+    "window": 110
+   }
+  },
+  {
+   "name": "R[ui|org|cnt|w18 / user|org|cnt|w18]",
+   "gain": 7.38989802422374e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "org",
+     "agg": "cnt",
+     "window": 18
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 18
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w213",
+   "gain": 7.233319572252928e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 213,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|unlike|dec(h21.6)|w55",
+   "gain": 6.864089917685279e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "unlike",
+    "agg": "dec",
+    "window": 55,
+    "hl": 21.6
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w34 / user|skip|cnt|w34]",
+   "gain": 6.763641565266099e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 34
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 34
+    }
+   }
+  },
+  {
+   "name": "item|listen|mean(played)|all",
+   "gain": 6.555545313519096e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w51 / a:album|recplus|cnt|w194]",
+   "gain": 6.320791016717342e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 51
+    },
+    "den": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 194
+    }
+   }
+  },
+  {
+   "name": "user|like|cnt|w3",
+   "gain": 6.205427861810664e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "like",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[a:album|like|cnt|w37 / a:album|lplus|cnt|w37]",
+   "gain": 5.791998570919832e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "like",
+     "agg": "cnt",
+     "window": 37
+    },
+    "den": {
+     "key": "a:album",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 37
+    }
+   }
+  },
+  {
+   "name": "R[item|skip|cnt|w13 / item|listen|cnt|w13]",
+   "gain": 5.382939504600115e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "ui|recskip|mean(played)|w30",
+   "gain": 5.274626387913317e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 30,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|rec|mean(played)|w76",
+   "gain": 5.162765758254251e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "rec",
+    "agg": "mean",
+    "window": 76,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[user|like|cnt|w9 / user|lplus|cnt|w9]",
+   "gain": 5.132185942130496e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "like",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "user",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 9
+    }
+   }
+  },
+  {
+   "name": "ua:artist|lplus|mean(played)|w6",
+   "gain": 5.096703702622829e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 6,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|cnt|w110",
+   "gain": 4.956749420081952e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 110
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w219",
+   "gain": 4.614682990389252e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 219,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:artist|recskip|cnt|w14 / a:artist|rec|cnt|w14]",
+   "gain": 4.185389453320587e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 14
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w7 / ui|recskip|cnt|w204]",
+   "gain": 4.016321055250183e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 7
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 204
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w177",
+   "gain": 3.8240681199286364e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 177,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:album|recskip|dec(h10.1)|w1",
+   "gain": 3.637805099676594e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "R[a:artist|recskip|cnt|w19 / a:artist|rec|cnt|w19]",
+   "gain": 3.595219746477252e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 19
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 19
+    }
+   }
+  },
+  {
+   "name": "ua:album|recskip|dec(h3.8)|w1",
+   "gain": 3.513272411442836e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 3.8
+   }
+  },
+  {
+   "name": "item|like|nuniq|all",
+   "gain": 3.252138446963038e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "like",
+    "agg": "nuniq"
+   }
+  },
+  {
+   "name": "ua:album|recplus|sum(played)|all",
+   "gain": 3.234040629362944e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "sum",
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|listen|mean(played)|w2",
+   "gain": 3.229228650397653e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "mean",
+    "window": 2,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w22 / ui|listen|cnt|w22]",
+   "gain": 3.192374248556229e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 22
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 22
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w101",
+   "gain": 3.128306441202433e-05,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 101,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:artist|rec|mean(played)|w110",
+   "gain": 3.127088010718149e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:artist",
+    "event": "rec",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w247 / ui|rec|cnt|w247]",
+   "gain": 3.080434724039849e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 247
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 247
+    }
+   }
+  },
+  {
+   "name": "a:album|like|cnt|w56",
+   "gain": 3.0777088300348865e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "cnt",
+    "window": 56
+   }
+  },
+  {
+   "name": "item|like|days|all",
+   "gain": 3.0705500045857814e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "like",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "ui|recskip|cnt|w5",
+   "gain": 3.058186323290357e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w9 / ui|recskip|cnt|w262]",
+   "gain": 3.056671478596229e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 262
+    }
+   }
+  },
+  {
+   "name": "R[item|skip|cnt|w15 / item|listen|cnt|w15]",
+   "gain": 3.0052903146227106e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 15
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 15
+    }
+   }
+  },
+  {
+   "name": "user|recskip|nuniq|all",
+   "gain": 2.9679204195165454e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "nuniq"
+   }
+  },
+  {
+   "name": "ua:album|skip|cnt|w2",
+   "gain": 2.967546593196646e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w217",
+   "gain": 2.955320341962997e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 217,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|dislike|cnt|w40 / user|dislike|cnt|w40]",
+   "gain": 2.892979636842652e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 40
+    },
+    "den": {
+     "key": "user",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 40
+    }
+   }
+  },
+  {
+   "name": "a:album|unlike|nuniq|w64",
+   "gain": 2.8513697017507056e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "nuniq",
+    "window": 64
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w81",
+   "gain": 2.846271513162746e-05,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 81,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|org|cnt|w197",
+   "gain": 2.840458193126283e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt",
+    "window": 197
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w10 / ui|listen|cnt|w10]",
+   "gain": 2.8122229206228866e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 10
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 10
+    }
+   }
+  },
+  {
+   "name": "ua:album|recplus|dec(h36.5)|w73",
+   "gain": 2.7100054386275385e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "dec",
+    "window": 73,
+    "hl": 36.5
+   }
+  },
+  {
+   "name": "ui|recplus|sum(played)|w10",
+   "gain": 2.491908633855955e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ui",
+    "event": "recplus",
+    "agg": "sum",
+    "window": 10,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|skip|cnt|w13",
+   "gain": 2.3775562535577333e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 13
+   }
+  },
+  {
+   "name": "user|recskip|days|w6",
+   "gain": 2.3363745912552414e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "days",
+    "window": 6
+   }
+  },
+  {
+   "name": "ua:artist|recplus|days|all",
+   "gain": 2.3274820013408082e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recplus",
+    "agg": "days"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w104",
+   "gain": 2.3066988563247293e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 104,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recskip|cnt|w2 / a:album|rec|cnt|w2]",
+   "gain": 2.3023005741029667e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:artist|lplus|cnt|w9",
+   "gain": 2.205775706887181e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 9
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w36 / item|listen|cnt|w36]",
+   "gain": 2.168693811044342e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 36
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 36
+    }
+   }
+  },
+  {
+   "name": "ui|recskip|cnt|w204",
+   "gain": 2.1219355495760706e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 204
+   }
+  },
+  {
+   "name": "ui|listen|cnt|w4",
+   "gain": 2.038524654135454e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "R[ua:album|org|cnt|w83 / user|org|cnt|w83]",
+   "gain": 2.020683386977362e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "org",
+     "agg": "cnt",
+     "window": 83
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "ua:album|rec|cnt|w2",
+   "gain": 1.95339827748775e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:artist|skip|cnt|w2",
+   "gain": 1.9192333936379757e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w5 / ui|rec|cnt|w5]",
+   "gain": 1.8614783784287603e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "user|unlike|last|w75",
+   "gain": 1.8368222544917767e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "unlike",
+    "agg": "last",
+    "window": 75
+   }
+  },
+  {
+   "name": "ua:artist|listen|mean(played)|w120",
+   "gain": 1.7899537185783743e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "listen",
+    "agg": "mean",
+    "window": 120,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|like|last|w41",
+   "gain": 1.7708766260227105e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "last",
+    "window": 41
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w52 / a:album|rec|cnt|w52]",
+   "gain": 1.693826440085644e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 52
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 52
+    }
+   }
+  },
+  {
+   "name": "item|skip|cnt|w4",
+   "gain": 1.6432423946943775e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "item|listen|last|w44",
+   "gain": 1.6395856101636408e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "last",
+    "window": 44
+   }
+  },
+  {
+   "name": "ua:album|recskip|mean(played)|w18",
+   "gain": 1.5926573505187225e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 18,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:album|org|days|w15",
+   "gain": 1.577423994786331e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "org",
+    "agg": "days",
+    "window": 15
+   }
+  },
+  {
+   "name": "ui|skip|days|w3",
+   "gain": 1.4982505176508454e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "days",
+    "window": 3
+   }
+  },
+  {
+   "name": "ui|like|last|w14",
+   "gain": 1.4466910491339746e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ui",
+    "event": "like",
+    "agg": "last",
+    "window": 14
+   }
+  },
+  {
+   "name": "a:album|dislike|nuniq|w27",
+   "gain": 1.3934536054138746e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "dislike",
+    "agg": "nuniq",
+    "window": 27
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w2 / ua:album|rec|cnt|w2]",
+   "gain": 1.3832870260577224e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:album|org|first|all",
+   "gain": 1.3767235429840152e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "first"
+   }
+  },
+  {
+   "name": "item|skip|dec(h49.8)|w9",
+   "gain": 1.3634634676740198e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "dec",
+    "window": 9,
+    "hl": 49.8
+   }
+  },
+  {
+   "name": "ua:artist|recplus|cnt|all",
+   "gain": 1.3544129498777036e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recplus",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w4 / ui|recskip|cnt|w117]",
+   "gain": 1.3532740043953329e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 4
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 117
+    }
+   }
+  },
+  {
+   "name": "ua:album|recskip|cnt|w143",
+   "gain": 1.3509840098513415e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 143
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w10 / ui|recskip|cnt|w291]",
+   "gain": 1.2373152617151106e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 10
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 291
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w29 / ua:album|skip|cnt|w119]",
+   "gain": 1.2159666334221608e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 29
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 119
+    }
+   }
+  },
+  {
+   "name": "ua:album|recskip|mean(played)|all",
+   "gain": 1.1831710423793051e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:album|skip|cnt|w22",
+   "gain": 1.145343580732927e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 22
+   }
+  },
+  {
+   "name": "ua:artist|org|nuniq|w187",
+   "gain": 1.1447046295576246e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "org",
+    "agg": "nuniq",
+    "window": 187
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w204",
+   "gain": 1.1099245171342087e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 204,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ui|skip|cnt|w81",
+   "gain": 1.0123832270281241e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 81
+   }
+  },
+  {
+   "name": "ua:album|like|last|all",
+   "gain": 1.0075369931250577e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "like",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "item|recplus|days|w12",
+   "gain": 9.991460578229194e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "recplus",
+    "agg": "days",
+    "window": 12
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w119 / user|skip|cnt|w119]",
+   "gain": 9.90857488047947e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 119
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 119
+    }
+   }
+  },
+  {
+   "name": "item|skip|dec(h73.5)|w9",
+   "gain": 9.85286485488679e-06,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "dec",
+    "window": 9,
+    "hl": 73.5
+   }
+  },
+  {
+   "name": "R[ua:album|dislike|cnt|w5 / ua:album|rec|cnt|w5]",
+   "gain": 9.342823431346403e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "R[item|like|cnt|w74 / item|lplus|cnt|w74]",
+   "gain": 8.796434378510742e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "like",
+     "agg": "cnt",
+     "window": 74
+    },
+    "den": {
+     "key": "item",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 74
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|dislike|cnt|w6 / ua:artist|rec|cnt|w6]",
+   "gain": 7.901636878915319e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "ua:album|recskip|dec(h13.6)|w9",
+   "gain": 7.661305430339826e-06,
+   "gen": 4,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 9,
+    "hl": 13.6
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w45 / a:album|rec|cnt|w45]",
+   "gain": 7.275380480398219e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 45
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 45
+    }
+   }
+  },
+  {
+   "name": "ua:album|recskip|cnt|w16",
+   "gain": 7.092733268099227e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 16
+   }
+  },
+  {
+   "name": "ui|listen|cnt|all",
+   "gain": 6.658380416635357e-06,
+   "gen": 6,
+   "feature": {
+    "key": "ui",
+    "event": "listen",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "ui|recskip|cnt|w8",
+   "gain": 6.311808900816285e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 8
+   }
+  },
+  {
+   "name": "a:album|listen|cnt|w2",
+   "gain": 6.166545720998062e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w244 / item|listen|cnt|w244]",
+   "gain": 5.777586932043111e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 244
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 244
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|all",
+   "gain": 5.6898307733699305e-06,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w12 / ui|skip|cnt|w148]",
+   "gain": 5.203264057507262e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 148
+    }
+   }
+  },
+  {
+   "name": "a:album|listen|last|w8",
+   "gain": 4.7642954131843496e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "last",
+    "window": 8
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w90 / ui|recskip|cnt|w175]",
+   "gain": 4.576212833118376e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 175
+    }
+   }
+  },
+  {
+   "name": "ua:album|lplus|mean(played)|w110",
+   "gain": 4.2008268306692464e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:album",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w109 / a:album|rec|cnt|w109]",
+   "gain": 3.7063290946326433e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 109
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 109
+    }
+   }
+  },
+  {
+   "name": "user|recskip|dec(h8.5)|w1",
+   "gain": 3.482807692523071e-06,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 8.5
+   }
+  },
+  {
+   "name": "item|lplus|days|w2",
+   "gain": 3.4337430653841317e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "lplus",
+    "agg": "days",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w14 / ui|skip|cnt|w142]",
+   "gain": 3.394183156535391e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 142
+    }
+   }
+  },
+  {
+   "name": "R[ui|org|cnt|w2 / ui|listen|cnt|w2]",
+   "gain": 3.3884781328041846e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:artist|lplus|days|w2",
+   "gain": 3.3655068459315096e-06,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "lplus",
+    "agg": "days",
+    "window": 2
+   }
+  },
+  {
+   "name": "a:album|skip|dec(h37.1)|w2",
+   "gain": 2.9116284698815775e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "dec",
+    "window": 2,
+    "hl": 37.1
+   }
+  },
+  {
+   "name": "item|dislike|cnt|w22",
+   "gain": 2.5468910637149733e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 22
+   }
+  },
+  {
+   "name": "user|rec|mean(played)|w48",
+   "gain": 2.1443445856195176e-06,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "mean",
+    "window": 48,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ui|unlike|cnt|w23",
+   "gain": 2.0867732690721397e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "unlike",
+    "agg": "cnt",
+    "window": 23
+   }
+  },
+  {
+   "name": "ua:album|skip|cnt|w10",
+   "gain": 1.7067694338401829e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 10
+   }
+  },
+  {
+   "name": "item|listen|first|w209",
+   "gain": 1.4518481702419095e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "first",
+    "window": 209
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w13 / ui|recskip|cnt|w300]",
+   "gain": 1.385966695466312e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 300
+    }
+   }
+  },
+  {
+   "name": "ua:artist|recskip|dec(h10.1)|w1",
+   "gain": 1.3593004132284037e-06,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "R[a:album|listen|cnt|w70 / a:album|listen|cnt|w91]",
+   "gain": 1.2775307078882747e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 70
+    },
+    "den": {
+     "key": "a:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 91
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|like|cnt|w32 / ua:album|like|cnt|w256]",
+   "gain": 1.2300939946086054e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "like",
+     "agg": "cnt",
+     "window": 32
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "like",
+     "agg": "cnt",
+     "window": 256
+    }
+   }
+  },
+  {
+   "name": "ua:artist|lplus|days|w1",
+   "gain": 4.497516052359707e-07,
+   "gen": 6,
+   "feature": {
+    "key": "ua:artist",
+    "event": "lplus",
+    "agg": "days",
+    "window": 1
+   }
+  },
+  {
+   "name": "ua:artist|like|cnt|w1",
+   "gain": 3.370737842733895e-07,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w89 / item|rec|cnt|w89]",
+   "gain": 3.1135905048662593e-07,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 89
+    },
+    "den": {
+     "key": "item",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 89
+    }
+   }
+  },
+  {
+   "name": "R[a:artist|recskip|cnt|w28 / a:artist|rec|cnt|w28]",
+   "gain": 2.4843879004032843e-07,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 28
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 28
+    }
+   }
+  },
+  {
+   "name": "ua:album|dislike|cnt|w23",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 23
+   }
+  },
+  {
+   "name": "ui|dislike|cnt|w12",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 12
+   }
+  },
+  {
+   "name": "ui|dislike|cnt|w5",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "ui|unlike|last|w5",
+   "gain": 0.0,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "unlike",
+    "agg": "last",
+    "window": 5
+   }
+  },
+  {
+   "name": "ui|dislike|dec(h10.4)|all",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "ui",
+    "event": "dislike",
+    "agg": "dec",
+    "hl": 10.4
+   }
+  },
+  {
+   "name": "ui|dislike|last|w5",
+   "gain": 0.0,
+   "gen": 5,
+   "feature": {
+    "key": "ui",
+    "event": "dislike",
+    "agg": "last",
+    "window": 5
+   }
+  },
+  {
+   "name": "ua:artist|recskip|mean(played)|w6",
+   "gain": -9.717042576129487e-08,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 6,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ui|recskip|cnt|w90",
+   "gain": -1.0747228929020025e-07,
+   "gen": 6,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 90
+   }
+  },
+  {
+   "name": "ua:album|unlike|days|w175",
+   "gain": -6.12088491835916e-07,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "unlike",
+    "agg": "days",
+    "window": 175
+   }
+  },
+  {
+   "name": "user|lplus|days|w1",
+   "gain": -6.742049128982686e-07,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "days",
+    "window": 1
+   }
+  },
+  {
+   "name": "R[a:artist|org|cnt|w5 / a:artist|listen|cnt|w5]",
+   "gain": -6.770906612052485e-07,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|unlike|cnt|w50 / ua:album|unlike|cnt|w137]",
+   "gain": -1.0302174583420864e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 50
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 137
+    }
+   }
+  },
+  {
+   "name": "user|unlike|days|w1",
+   "gain": -1.3340852061949349e-06,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "unlike",
+    "agg": "days",
+    "window": 1
+   }
+  },
+  {
+   "name": "user|org|dec(h31.8)|all",
+   "gain": -1.359996785632589e-06,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "dec",
+    "hl": 31.8
+   }
+  },
+  {
+   "name": "item|rec|dec(h28.7)|all",
+   "gain": -1.4359116682349793e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "rec",
+    "agg": "dec",
+    "hl": 28.7
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w38 / item|rec|cnt|w38]",
+   "gain": -1.7084588610494222e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 38
+    },
+    "den": {
+     "key": "item",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 38
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w234 / a:album|rec|cnt|w234]",
+   "gain": -2.2114133301220917e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 234
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 234
+    }
+   }
+  },
+  {
+   "name": "ui|skip|cnt|w89",
+   "gain": -2.895537707658935e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 89
+   }
+  },
+  {
+   "name": "user|like|cnt|w1",
+   "gain": -3.0061326183883352e-06,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "like",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "ua:album|dislike|cnt|w88",
+   "gain": -3.105925951096822e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:album",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 88
+   }
+  },
+  {
+   "name": "user|recskip|dec(h10.4)|w1",
+   "gain": -3.140182764260757e-06,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.4
+   }
+  },
+  {
+   "name": "a:artist|dislike|last|w48",
+   "gain": -3.596698053942582e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "dislike",
+    "agg": "last",
+    "window": 48
+   }
+  },
+  {
+   "name": "item|listen|first|w150",
+   "gain": -3.648938407374569e-06,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "first",
+    "window": 150
+   }
+  },
+  {
+   "name": "ua:album|recskip|cnt|all",
+   "gain": -4.0274374847326655e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recskip",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "a:album|skip|cnt|w2",
+   "gain": -4.104170580998545e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[ui|dislike|cnt|w58 / user|dislike|cnt|w58]",
+   "gain": -4.229688240209306e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 58
+    },
+    "den": {
+     "key": "user",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 58
+    }
+   }
+  },
+  {
+   "name": "ua:album|recplus|sum(played)|w7",
+   "gain": -4.6259327958209084e-06,
+   "gen": 5,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "sum",
+    "window": 7,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w9 / a:album|recplus|cnt|w77]",
+   "gain": -4.821398121912512e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 77
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w10 / ua:album|listen|cnt|w10]",
+   "gain": -4.950316590257575e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 10
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 10
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w34 / a:album|rec|cnt|w34]",
+   "gain": -5.108364730777026e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 34
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 34
+    }
+   }
+  },
+  {
+   "name": "R[a:album|skip|cnt|w14 / a:album|listen|cnt|w14]",
+   "gain": -5.473431123337313e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "a:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 14
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|dislike|cnt|w6 / ua:artist|listen|cnt|w6]",
+   "gain": -6.2356406255181795e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "ua:artist|unlike|cnt|w237",
+   "gain": -6.304716766714069e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "unlike",
+    "agg": "cnt",
+    "window": 237
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w265 / user|recplus|cnt|w265]",
+   "gain": -6.323657441908992e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    },
+    "den": {
+     "key": "user",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    }
+   }
+  },
+  {
+   "name": "R[item|org|cnt|w4 / item|listen|cnt|w4]",
+   "gain": -6.697022259860574e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 4
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "R[a:artist|recskip|cnt|w2 / a:artist|rec|cnt|w2]",
+   "gain": -6.723502438799045e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w208 / ui|rec|cnt|w208]",
+   "gain": -6.874028849856995e-06,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 208
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 208
+    }
+   }
+  },
+  {
+   "name": "ua:album|dislike|cnt|w127",
+   "gain": -7.002523711385766e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 127
+   }
+  },
+  {
+   "name": "user|recplus|cnt|w1",
+   "gain": -7.769459252127131e-06,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "a:album|unlike|nuniq|w3",
+   "gain": -7.852818363796032e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "nuniq",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[ua:artist|recskip|cnt|w99 / user|recskip|cnt|w99]",
+   "gain": -8.444704674204218e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 99
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 99
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w142 / ui|listen|cnt|w142]",
+   "gain": -8.78066720877424e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 142
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 142
+    }
+   }
+  },
+  {
+   "name": "a:album|org|dec(h72)|w8",
+   "gain": -8.946655921160396e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "dec",
+    "window": 8,
+    "hl": 72.0
+   }
+  },
+  {
+   "name": "a:album|skip|last|w19",
+   "gain": -8.970168595467953e-06,
+   "gen": 5,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "last",
+    "window": 19
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w274 / ua:album|rec|cnt|w274]",
+   "gain": -8.975360911267494e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 274
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 274
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w212 / ui|rec|cnt|w212]",
+   "gain": -9.148974635275753e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 212
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 212
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w210 / ui|rec|cnt|w210]",
+   "gain": -9.18962746820906e-06,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 210
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 210
+    }
+   }
+  },
+  {
+   "name": "R[ui|org|cnt|w84 / user|org|cnt|w84]",
+   "gain": -9.516546958132643e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "org",
+     "agg": "cnt",
+     "window": 84
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 84
+    }
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w1",
+   "gain": -9.619795334481207e-06,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 1,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|recplus|first|w81",
+   "gain": -9.707312912499155e-06,
+   "gen": 6,
+   "feature": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "first",
+    "window": 81
+   }
+  },
+  {
+   "name": "a:album|skip|cnt|w14",
+   "gain": -9.768766082995928e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 14
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w95 / a:album|rec|cnt|w95]",
+   "gain": -1.005620795357931e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 95
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 95
+    }
+   }
+  },
+  {
+   "name": "a:album|unlike|nuniq|w84",
+   "gain": -1.0253794921255555e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "nuniq",
+    "window": 84
+   }
+  },
+  {
+   "name": "ua:artist|org|cnt|w1",
+   "gain": -1.0780005236576962e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:artist",
+    "event": "org",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "R[ua:album|org|cnt|w2 / user|org|cnt|w2]",
+   "gain": -1.0973244942313887e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w119 / a:album|rec|cnt|w119]",
+   "gain": -1.1297934419285394e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 119
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 119
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w3 / ua:album|recplus|cnt|w265]",
+   "gain": -1.1513275749774898e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    }
+   }
+  },
+  {
+   "name": "ui|recskip|cnt|w17",
+   "gain": -1.1582468451842853e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 17
+   }
+  },
+  {
+   "name": "ua:album|org|cnt|w16",
+   "gain": -1.1956149584602116e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "org",
+    "agg": "cnt",
+    "window": 16
+   }
+  },
+  {
+   "name": "a:artist|dislike|cnt|w7",
+   "gain": -1.1995915720486305e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "dislike",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "R[a:album|unlike|cnt|w28 / a:album|like|cnt|w28]",
+   "gain": -1.300177148644277e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 28
+    },
+    "den": {
+     "key": "a:album",
+     "event": "like",
+     "agg": "cnt",
+     "window": 28
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w100 / ui|listen|cnt|w100]",
+   "gain": -1.3473947450493018e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 100
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 100
+    }
+   }
+  },
+  {
+   "name": "item|skip|mean(played)|w63",
+   "gain": -1.349997578092843e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "mean",
+    "window": 63,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w107 / a:album|rec|cnt|w107]",
+   "gain": -1.4252843799300585e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 107
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 107
+    }
+   }
+  },
+  {
+   "name": "a:artist|listen|mean(played)|w110",
+   "gain": -1.42741457233031e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recskip|cnt|w13 / ua:album|rec|cnt|w13]",
+   "gain": -1.451832514448581e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w300 / ua:album|rec|cnt|w300]",
+   "gain": -1.4702787903331238e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 300
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 300
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|skip|cnt|w8 / user|skip|cnt|w8]",
+   "gain": -1.4774805592754348e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 8
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "a:album|unlike|dec(h6)|w20",
+   "gain": -1.4880327854960296e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "dec",
+    "window": 20,
+    "hl": 6.0
+   }
+  },
+  {
+   "name": "a:album|like|cnt|w4",
+   "gain": -1.4944207046008184e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "ui|recskip|dec(h2.7)|all",
+   "gain": -1.5513703029712556e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "dec",
+    "hl": 2.7
+   }
+  },
+  {
+   "name": "a:artist|dislike|last|w100",
+   "gain": -1.5609343411937537e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "dislike",
+    "agg": "last",
+    "window": 100
+   }
+  },
+  {
+   "name": "ua:album|org|cnt|w2",
+   "gain": -1.5823000376002927e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "org",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "ui|recskip|last|w130",
+   "gain": -1.607966552918949e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "recskip",
+    "agg": "last",
+    "window": 130
+   }
+  },
+  {
+   "name": "a:album|like|last|w4",
+   "gain": -1.637095892842444e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "last",
+    "window": 4
+   }
+  },
+  {
+   "name": "ua:album|recplus|cnt|w36",
+   "gain": -1.678722379500064e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 36
+   }
+  },
+  {
+   "name": "R[a:artist|org|cnt|w2 / a:artist|listen|cnt|w2]",
+   "gain": -1.6929072353844e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w148 / ua:album|listen|cnt|w148]",
+   "gain": -1.6994358812028043e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 148
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 148
+    }
+   }
+  },
+  {
+   "name": "item|dislike|last|w2",
+   "gain": -1.731545786815003e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "dislike",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w240",
+   "gain": -1.7527542857942446e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 240,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w46 / a:album|recplus|cnt|w77]",
+   "gain": -1.7571362617874176e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 46
+    },
+    "den": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 77
+    }
+   }
+  },
+  {
+   "name": "item|unlike|cnt|all",
+   "gain": -1.775398022724195e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "unlike",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w108",
+   "gain": -1.7757916102312254e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 108,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h10.1)|all",
+   "gain": -1.814492928281508e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w86",
+   "gain": -1.825430634411207e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 86,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|recskip|last|all",
+   "gain": -1.8564904469831056e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "recskip",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "R[ua:artist|org|cnt|w8 / ua:artist|listen|cnt|w8]",
+   "gain": -1.8567699611726773e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 8
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w55",
+   "gain": -1.893794914403779e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 55,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:album|skip|cnt|w119",
+   "gain": -1.8979952710718173e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 119
+   }
+  },
+  {
+   "name": "a:album|rec|cnt|w190",
+   "gain": -1.9062410381021078e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 190
+   }
+  },
+  {
+   "name": "a:artist|dislike|nuniq|w7",
+   "gain": -1.9427277801131737e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "dislike",
+    "agg": "nuniq",
+    "window": 7
+   }
+  },
+  {
+   "name": "a:album|org|last|w43",
+   "gain": -2.0211506324363526e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "last",
+    "window": 43
+   }
+  },
+  {
+   "name": "R[ui|like|cnt|w59 / user|like|cnt|w59]",
+   "gain": -2.025453796528076e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "like",
+     "agg": "cnt",
+     "window": 59
+    },
+    "den": {
+     "key": "user",
+     "event": "like",
+     "agg": "cnt",
+     "window": 59
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w262 / ua:album|rec|cnt|w262]",
+   "gain": -2.026525324566597e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 262
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 262
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w196 / ui|rec|cnt|w196]",
+   "gain": -2.0454935008906716e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 196
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 196
+    }
+   }
+  },
+  {
+   "name": "ui|skip|cnt|w34",
+   "gain": -2.095650322847531e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ui",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 34
+   }
+  },
+  {
+   "name": "a:album|recplus|cnt|w77",
+   "gain": -2.1216845417282304e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 77
+   }
+  },
+  {
+   "name": "ua:album|recplus|mean(played)|all",
+   "gain": -2.145796257535526e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:artist|org|cnt|w3 / user|org|cnt|w3]",
+   "gain": -2.1514483196205525e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w30 / ui|listen|cnt|w30]",
+   "gain": -2.1627319158668e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 30
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 30
+    }
+   }
+  },
+  {
+   "name": "ua:artist|lplus|mean(played)|w110",
+   "gain": -2.1722866071050007e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:artist",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|like|cnt|w55 / ui|lplus|cnt|w55]",
+   "gain": -2.1881972992909837e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "like",
+     "agg": "cnt",
+     "window": 55
+    },
+    "den": {
+     "key": "ui",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 55
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w263 / ua:album|rec|cnt|w263]",
+   "gain": -2.2142158873306172e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 263
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 263
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w6 / ua:album|skip|cnt|w119]",
+   "gain": -2.249950928651101e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 119
+    }
+   }
+  },
+  {
+   "name": "item|recskip|dec(h2.7)|all",
+   "gain": -2.25828300882136e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "dec",
+    "hl": 2.7
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w79 / ui|listen|cnt|w79]",
+   "gain": -2.2756257654688028e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 79
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 79
+    }
+   }
+  },
+  {
+   "name": "ua:artist|like|cnt|w26",
+   "gain": -2.294206768421736e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 26
+   }
+  },
+  {
+   "name": "ua:album|recplus|dec(h0.6)|all",
+   "gain": -2.319768699349245e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "dec",
+    "hl": 0.6
+   }
+  },
+  {
+   "name": "R[a:album|skip|cnt|w50 / a:album|skip|cnt|w53]",
+   "gain": -2.34473710106764e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 50
+    },
+    "den": {
+     "key": "a:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 53
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w21 / a:album|rec|cnt|w21]",
+   "gain": -2.3497654050075312e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 21
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 21
+    }
+   }
+  },
+  {
+   "name": "ua:album|lplus|cnt|w55",
+   "gain": -2.4112796487341104e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 55
+   }
+  },
+  {
+   "name": "ua:artist|unlike|last|all",
+   "gain": -2.4309259619437196e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:artist",
+    "event": "unlike",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "item|listen|cnt|w64",
+   "gain": -2.4595485888512236e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 64
+   }
+  },
+  {
+   "name": "ua:artist|org|nuniq|w2",
+   "gain": -2.4626547406592092e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:artist",
+    "event": "org",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:album|recplus|cnt|w265",
+   "gain": -2.4663258462065407e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 265
+   }
+  },
+  {
+   "name": "ua:album|lplus|last|w94",
+   "gain": -2.4667590251048477e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:album",
+    "event": "lplus",
+    "agg": "last",
+    "window": 94
+   }
+  },
+  {
+   "name": "R[item|skip|cnt|w6 / item|listen|cnt|w6]",
+   "gain": -2.4837268769339893e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w11",
+   "gain": -2.5043819905867792e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 11,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|lplus|cnt|w36",
+   "gain": -2.547118604245835e-05,
+   "gen": 6,
+   "feature": {
+    "key": "item",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 36
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w152 / ui|rec|cnt|w152]",
+   "gain": -2.6190822971339234e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 152
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 152
+    }
+   }
+  },
+  {
+   "name": "item|org|dec(h122.6)|w5",
+   "gain": -2.6515059380616268e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "dec",
+    "window": 5,
+    "hl": 122.6
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w188 / ui|rec|cnt|w188]",
+   "gain": -2.6518540124031986e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 188
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 188
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recskip|cnt|w12 / a:album|rec|cnt|w12]",
+   "gain": -2.6728146905963257e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "item|dislike|dec(h49.3)|w4",
+   "gain": -2.6845069028891277e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "dislike",
+    "agg": "dec",
+    "window": 4,
+    "hl": 49.3
+   }
+  },
+  {
+   "name": "ua:album|skip|nuniq|w126",
+   "gain": -2.7043296870310485e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:album",
+    "event": "skip",
+    "agg": "nuniq",
+    "window": 126
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w81 / a:album|rec|cnt|w81]",
+   "gain": -2.7428625017533736e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 81
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 81
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|like|cnt|w6 / ua:artist|lplus|cnt|w6]",
+   "gain": -2.756507602447167e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "like",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "item|org|last|w18",
+   "gain": -2.759292897358545e-05,
+   "gen": 6,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "last",
+    "window": 18
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w139 / ua:album|listen|cnt|w139]",
+   "gain": -2.7710289031590563e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 139
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 139
+    }
+   }
+  },
+  {
+   "name": "a:artist|lplus|cnt|w96",
+   "gain": -2.7771816246968672e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 96
+   }
+  },
+  {
+   "name": "item|recskip|nuniq|w43",
+   "gain": -2.803445728216669e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "nuniq",
+    "window": 43
+   }
+  },
+  {
+   "name": "a:album|org|cnt|w26",
+   "gain": -2.8654752953383156e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "cnt",
+    "window": 26
+   }
+  },
+  {
+   "name": "a:album|like|last|w5",
+   "gain": -2.9435144225320453e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "like",
+    "agg": "last",
+    "window": 5
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w83 / ui|listen|cnt|w83]",
+   "gain": -2.977183148694662e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 83
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w254 / ua:album|rec|cnt|w254]",
+   "gain": -3.010967341482429e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 254
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 254
+    }
+   }
+  },
+  {
+   "name": "ua:artist|rec|last|w6",
+   "gain": -3.0196112060509872e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "rec",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "R[a:artist|org|cnt|w6 / a:artist|listen|cnt|w6]",
+   "gain": -3.0289530544069798e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "item|recskip|sum(played)|w235",
+   "gain": -3.0307509706395397e-05,
+   "gen": 6,
+   "feature": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "sum",
+    "window": 235,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w293 / ua:album|listen|cnt|w293]",
+   "gain": -3.049025748902423e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 293
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 293
+    }
+   }
+  },
+  {
+   "name": "a:album|recplus|cnt|w156",
+   "gain": -3.052509058804054e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 156
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w68 / ua:album|listen|cnt|w68]",
+   "gain": -3.078326853089841e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 68
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 68
+    }
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w60 / a:album|rec|cnt|w60]",
+   "gain": -3.107748276742761e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 60
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 60
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w109 / ua:album|listen|cnt|w109]",
+   "gain": -3.11109437911572e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 109
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 109
+    }
+   }
+  },
+  {
+   "name": "item|org|cnt|w3",
+   "gain": -3.1590104318302004e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[a:artist|recskip|cnt|w7 / a:artist|recskip|cnt|w40]",
+   "gain": -3.18387340185744e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 7
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 40
+    }
+   }
+  },
+  {
+   "name": "a:album|listen|cnt|all",
+   "gain": -3.207289930756696e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "ua:artist|skip|dec(h0.7)|all",
+   "gain": -3.208597354142917e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "skip",
+    "agg": "dec",
+    "hl": 0.7
+   }
+  },
+  {
+   "name": "ua:album|recplus|last|all",
+   "gain": -3.267695825331929e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "ua:album|recplus|mean(played)|w73",
+   "gain": -3.2696676850241246e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "mean",
+    "window": 73,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:artist|recplus|cnt|w14",
+   "gain": -3.294817345317336e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 14
+   }
+  },
+  {
+   "name": "a:album|org|cnt|w25",
+   "gain": -3.331952138729832e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "cnt",
+    "window": 25
+   }
+  },
+  {
+   "name": "a:album|dislike|first|all",
+   "gain": -3.401197342517426e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:album",
+    "event": "dislike",
+    "agg": "first"
+   }
+  },
+  {
+   "name": "a:artist|recskip|mean(played)|w90",
+   "gain": -3.4141384816721576e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 90,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|recplus|sum(played)|all",
+   "gain": -3.4217305842854095e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:album",
+    "event": "recplus",
+    "agg": "sum",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w41 / ui|listen|cnt|w41]",
+   "gain": -3.4274711378845524e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 41
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 41
+    }
+   }
+  },
+  {
+   "name": "R[item|org|cnt|w6 / item|listen|cnt|w6]",
+   "gain": -3.4446729085424455e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w20 / user|skip|cnt|w20]",
+   "gain": -3.468635701547873e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 20
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 20
+    }
+   }
+  },
+  {
+   "name": "item|org|nuniq|w2",
+   "gain": -3.525511824853389e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "a:artist|lplus|mean(played)|w8",
+   "gain": -3.580884366649606e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:artist",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 8,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|skip|last|w259",
+   "gain": -3.5844096094694855e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "last",
+    "window": 259
+   }
+  },
+  {
+   "name": "item|listen|cnt|w46",
+   "gain": -3.5860073490767697e-05,
+   "gen": 4,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 46
+   }
+  },
+  {
+   "name": "item|recskip|mean(played)|w30",
+   "gain": -3.5913530423981044e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 30,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w166 / user|recskip|cnt|w166]",
+   "gain": -3.606579383591546e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 166
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 166
+    }
+   }
+  },
+  {
+   "name": "item|org|cnt|w5",
+   "gain": -3.6367427628525295e-05,
+   "gen": 6,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt",
+    "window": 5
+   }
+  },
+  {
+   "name": "item|like|cnt|w238",
+   "gain": -3.6448012184164824e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "like",
+    "agg": "cnt",
+    "window": 238
+   }
+  },
+  {
+   "name": "R[item|lplus|cnt|w98 / item|lplus|cnt|w134]",
+   "gain": -3.659517232967868e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 98
+    },
+    "den": {
+     "key": "item",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 134
+    }
+   }
+  },
+  {
+   "name": "R[a:artist|org|cnt|w1 / a:artist|listen|cnt|w1]",
+   "gain": -3.6713511804509213e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "R[item|recskip|cnt|w3 / item|rec|cnt|w3]",
+   "gain": -3.6973722646660434e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 3
+    },
+    "den": {
+     "key": "item",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:artist|org|days|w153",
+   "gain": -3.717424705040884e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "days",
+    "window": 153
+   }
+  },
+  {
+   "name": "user|listen|cnt|all",
+   "gain": -3.7605155767006515e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "listen",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "a:artist|lplus|mean(played)|w4",
+   "gain": -3.766637880103785e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 4,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w92 / a:album|rec|cnt|w92]",
+   "gain": -3.771888156656189e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 92
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 92
+    }
+   }
+  },
+  {
+   "name": "a:artist|recskip|last|w54",
+   "gain": -3.7731151206976676e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:artist",
+    "event": "recskip",
+    "agg": "last",
+    "window": 54
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w108 / ua:album|listen|cnt|w108]",
+   "gain": -3.786151905244006e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 108
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 108
+    }
+   }
+  },
+  {
+   "name": "ua:artist|like|cnt|w66",
+   "gain": -3.8018826264196726e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 66
+   }
+  },
+  {
+   "name": "ua:artist|recskip|mean(played)|all",
+   "gain": -3.846640781007826e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|unlike|dec(h0.5)|all",
+   "gain": -3.852163918449669e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "dec",
+    "hl": 0.5
+   }
+  },
+  {
+   "name": "ua:album|recplus|dec(h10.1)|w1",
+   "gain": -3.8728128623599645e-05,
+   "gen": 3,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "dec",
+    "window": 1,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "R[ui|recplus|cnt|w51 / user|recplus|cnt|w51]",
+   "gain": -3.907793419022365e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 51
+    },
+    "den": {
+     "key": "user",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 51
+    }
+   }
+  },
+  {
+   "name": "item|org|cnt|all",
+   "gain": -3.948562774858111e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "item|like|cnt|w66",
+   "gain": -3.975204920125819e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "like",
+    "agg": "cnt",
+    "window": 66
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w13 / user|skip|cnt|w13]",
+   "gain": -4.037435109077725e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "user|recplus|dec(h16.2)|w1",
+   "gain": -4.0666222154261966e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "recplus",
+    "agg": "dec",
+    "window": 1,
+    "hl": 16.2
+   }
+  },
+  {
+   "name": "ua:artist|like|cnt|all",
+   "gain": -4.078414441710532e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[ua:artist|org|cnt|w1 / ua:artist|listen|cnt|w1]",
+   "gain": -4.129996847268558e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "ua:album|org|cnt|all",
+   "gain": -4.159517738588914e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "org",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w82",
+   "gain": -4.175515093618465e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 82,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w298 / ua:album|rec|cnt|w298]",
+   "gain": -4.1914861479419585e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 298
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 298
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w60 / user|recskip|cnt|w60]",
+   "gain": -4.239666075561699e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 60
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 60
+    }
+   }
+  },
+  {
+   "name": "ua:album|recplus|days|w162",
+   "gain": -4.260986475013162e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "days",
+    "window": 162
+   }
+  },
+  {
+   "name": "a:album|unlike|dec(h0.5)|w37",
+   "gain": -4.347905153828657e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "dec",
+    "window": 37,
+    "hl": 0.5
+   }
+  },
+  {
+   "name": "item|lplus|cnt|w10",
+   "gain": -4.4368418589402214e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 10
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w55 / ui|listen|cnt|w55]",
+   "gain": -4.4673840455533576e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 55
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 55
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|org|cnt|w40 / user|org|cnt|w40]",
+   "gain": -4.4766292610409764e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "org",
+     "agg": "cnt",
+     "window": 40
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 40
+    }
+   }
+  },
+  {
+   "name": "ui|lplus|last|w98",
+   "gain": -4.4830999233747004e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ui",
+    "event": "lplus",
+    "agg": "last",
+    "window": 98
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w259 / ua:album|rec|cnt|w259]",
+   "gain": -4.536817126576942e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 259
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 259
+    }
+   }
+  },
+  {
+   "name": "R[item|dislike|cnt|w168 / item|listen|cnt|w168]",
+   "gain": -4.5453673248041504e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 168
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 168
+    }
+   }
+  },
+  {
+   "name": "R[ui|lplus|cnt|w57 / ui|listen|cnt|w57]",
+   "gain": -4.5585578422102646e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 57
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 57
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|org|cnt|w147 / ua:artist|org|cnt|w187]",
+   "gain": -4.6003936005178936e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 147
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 187
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w171 / ui|rec|cnt|w171]",
+   "gain": -4.651607368111321e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 171
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 171
+    }
+   }
+  },
+  {
+   "name": "a:artist|org|last|w58",
+   "gain": -4.6562153657225824e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "last",
+    "window": 58
+   }
+  },
+  {
+   "name": "ua:album|org|dec(h2.3)|all",
+   "gain": -4.739341449200296e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "org",
+    "agg": "dec",
+    "hl": 2.3
+   }
+  },
+  {
+   "name": "ui|listen|cnt|w49",
+   "gain": -4.7570140304209474e-05,
+   "gen": 5,
+   "feature": {
+    "key": "ui",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 49
+   }
+  },
+  {
+   "name": "ua:artist|org|last|w2",
+   "gain": -4.762637413291415e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "org",
+    "agg": "last",
+    "window": 2
+   }
+  },
+  {
+   "name": "ui|rec|days|w84",
+   "gain": -4.881397108852381e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "rec",
+    "agg": "days",
+    "window": 84
+   }
+  },
+  {
+   "name": "R[ua:album|recskip|cnt|w13 / user|recskip|cnt|w13]",
+   "gain": -4.938520392189227e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "ua:album|recplus|sum(played)|w11",
+   "gain": -4.963648000205767e-05,
+   "gen": 6,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "sum",
+    "window": 11,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:album|unlike|first|w33",
+   "gain": -4.991941901855146e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:album",
+    "event": "unlike",
+    "agg": "first",
+    "window": 33
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w8",
+   "gain": -4.992927054064955e-05,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 8,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|dislike|dec(h2.2)|all",
+   "gain": -5.0376299289556226e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "dislike",
+    "agg": "dec",
+    "hl": 2.2
+   }
+  },
+  {
+   "name": "a:artist|listen|nuniq|w9",
+   "gain": -5.037732639306958e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "nuniq",
+    "window": 9
+   }
+  },
+  {
+   "name": "a:album|org|cnt|w58",
+   "gain": -5.0594712848572865e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "org",
+    "agg": "cnt",
+    "window": 58
+   }
+  },
+  {
+   "name": "a:artist|recplus|cnt|w7",
+   "gain": -5.0670628236937354e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:artist",
+    "event": "recplus",
+    "agg": "cnt",
+    "window": 7
+   }
+  },
+  {
+   "name": "R[ua:artist|like|cnt|w67 / ua:artist|lplus|cnt|w67]",
+   "gain": -5.079744001024178e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "like",
+     "agg": "cnt",
+     "window": 67
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 67
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|like|cnt|w153 / ua:album|lplus|cnt|w153]",
+   "gain": -5.1249994922231146e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "like",
+     "agg": "cnt",
+     "window": 153
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 153
+    }
+   }
+  },
+  {
+   "name": "a:artist|skip|last|w10",
+   "gain": -5.128379434643504e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "skip",
+    "agg": "last",
+    "window": 10
+   }
+  },
+  {
+   "name": "ui|rec|first|w64",
+   "gain": -5.1769212625729644e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "rec",
+    "agg": "first",
+    "window": 64
+   }
+  },
+  {
+   "name": "ui|lplus|last|w3",
+   "gain": -5.242316578990547e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "lplus",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "R[a:album|recplus|cnt|w17 / a:album|rec|cnt|w17]",
+   "gain": -5.277952803289798e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 17
+    },
+    "den": {
+     "key": "a:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 17
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w72",
+   "gain": -5.286824861744366e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 72,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|listen|cnt|w211",
+   "gain": -5.3152754043994666e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 211
+   }
+  },
+  {
+   "name": "a:artist|listen|nuniq|w4",
+   "gain": -5.328122724423956e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "nuniq",
+    "window": 4
+   }
+  },
+  {
+   "name": "a:album|listen|first|w2",
+   "gain": -5.386852646915852e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "first",
+    "window": 2
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w105",
+   "gain": -5.465011223204641e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 105,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w148 / ua:album|rec|cnt|w148]",
+   "gain": -5.5551338428827535e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 148
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 148
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w53 / ui|listen|cnt|w53]",
+   "gain": -5.5674103868086355e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 53
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 53
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w204 / ui|recskip|cnt|w287]",
+   "gain": -5.606737982372101e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 204
+    },
+    "den": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 287
+    }
+   }
+  },
+  {
+   "name": "ua:artist|listen|cnt|all",
+   "gain": -5.620101905845498e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "listen",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[item|skip|cnt|w19 / item|listen|cnt|w19]",
+   "gain": -5.648718162637456e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 19
+    },
+    "den": {
+     "key": "item",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 19
+    }
+   }
+  },
+  {
+   "name": "ua:artist|like|cnt|w167",
+   "gain": -5.6694911488630595e-05,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 167
+   }
+  },
+  {
+   "name": "a:album|recskip|cnt|w161",
+   "gain": -5.796139641334186e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 161
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w131 / ua:album|rec|cnt|w131]",
+   "gain": -5.919293435624473e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 131
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 131
+    }
+   }
+  },
+  {
+   "name": "ua:artist|like|nuniq|w44",
+   "gain": -5.919365591450232e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "nuniq",
+    "window": 44
+   }
+  },
+  {
+   "name": "a:artist|like|last|w22",
+   "gain": -6.005461352437402e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "last",
+    "window": 22
+   }
+  },
+  {
+   "name": "R[a:artist|skip|cnt|w22 / a:artist|listen|cnt|w22]",
+   "gain": -6.030257428873975e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 22
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 22
+    }
+   }
+  },
+  {
+   "name": "item|recskip|cnt|w226",
+   "gain": -6.0603647998036525e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 226
+   }
+  },
+  {
+   "name": "ui|lplus|last|w94",
+   "gain": -6.114879765239944e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "lplus",
+    "agg": "last",
+    "window": 94
+   }
+  },
+  {
+   "name": "ua:artist|skip|dec(h11.1)|all",
+   "gain": -6.150726370490744e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:artist",
+    "event": "skip",
+    "agg": "dec",
+    "hl": 11.1
+   }
+  },
+  {
+   "name": "a:artist|dislike|nuniq|w31",
+   "gain": -6.19641383546865e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "dislike",
+    "agg": "nuniq",
+    "window": 31
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w87 / ua:album|listen|cnt|w87]",
+   "gain": -6.215976685131075e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 87
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 87
+    }
+   }
+  },
+  {
+   "name": "a:artist|like|cnt|all",
+   "gain": -6.221810810214112e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w134",
+   "gain": -6.236322458313959e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 134,
+    "value": "played"
+   }
+  },
+  {
+   "name": "item|skip|nuniq|w90",
+   "gain": -6.236844814144771e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "skip",
+    "agg": "nuniq",
+    "window": 90
+   }
+  },
+  {
+   "name": "a:artist|listen|nuniq|w7",
+   "gain": -6.238014245357748e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "nuniq",
+    "window": 7
+   }
+  },
+  {
+   "name": "item|recplus|dec(h3.8)|all",
+   "gain": -6.273938608247764e-05,
+   "gen": 4,
+   "feature": {
+    "key": "item",
+    "event": "recplus",
+    "agg": "dec",
+    "hl": 3.8
+   }
+  },
+  {
+   "name": "a:artist|like|last|w48",
+   "gain": -6.42973932292179e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "last",
+    "window": 48
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w90 / ui|rec|cnt|w90]",
+   "gain": -6.462925561057098e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "ui",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 90
+    }
+   }
+  },
+  {
+   "name": "a:album|skip|mean(played)|all",
+   "gain": -6.492718753181581e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:album|recplus|last|w73",
+   "gain": -6.504093892784057e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:album",
+    "event": "recplus",
+    "agg": "last",
+    "window": 73
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w88 / ua:album|listen|cnt|w88]",
+   "gain": -6.523389219748044e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 88
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 88
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w129",
+   "gain": -6.611512793253116e-05,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 129,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w211 / user|recskip|cnt|w211]",
+   "gain": -6.683675037127967e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 211
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 211
+    }
+   }
+  },
+  {
+   "name": "a:album|listen|cnt|w3",
+   "gain": -6.71913399939994e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w9",
+   "gain": -6.73331490538831e-05,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 9,
+    "value": "played"
+   }
+  },
+  {
+   "name": "a:artist|skip|dec(h49.8)|w9",
+   "gain": -6.81599862139004e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:artist",
+    "event": "skip",
+    "agg": "dec",
+    "window": 9,
+    "hl": 49.8
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w118 / ua:album|listen|cnt|w118]",
+   "gain": -6.822132058226238e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 118
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 118
+    }
+   }
+  },
+  {
+   "name": "ua:album|lplus|sum(played)|w10",
+   "gain": -6.936334357304785e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:album",
+    "event": "lplus",
+    "agg": "sum",
+    "window": 10,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recskip|cnt|w14 / user|recskip|cnt|w14]",
+   "gain": -6.941612473543302e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 14
+    }
+   }
+  },
+  {
+   "name": "ua:album|lplus|cnt|w15",
+   "gain": -6.985803988812656e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:album",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 15
+   }
+  },
+  {
+   "name": "R[item|org|cnt|w2 / item|org|cnt|w17]",
+   "gain": -7.077436044605756e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "org",
+     "agg": "cnt",
+     "window": 17
+    }
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w63 / ui|listen|cnt|w63]",
+   "gain": -7.165666769015644e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 63
+    },
+    "den": {
+     "key": "ui",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 63
+    }
+   }
+  },
+  {
+   "name": "item|listen|cnt|w300",
+   "gain": -7.176520511070761e-05,
+   "gen": 4,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 300
+   }
+  },
+  {
+   "name": "R[ua:artist|org|cnt|w2 / user|org|cnt|w2]",
+   "gain": -7.19226974689735e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "a:album|listen|cnt|w64",
+   "gain": -7.252315399319809e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:album",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 64
+   }
+  },
+  {
+   "name": "item|recplus|last|w6",
+   "gain": -7.281813655635183e-05,
+   "gen": 5,
+   "feature": {
+    "key": "item",
+    "event": "recplus",
+    "agg": "last",
+    "window": 6
+   }
+  },
+  {
+   "name": "item|listen|cnt|w102",
+   "gain": -7.3163556014888e-05,
+   "gen": 4,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 102
+   }
+  },
+  {
+   "name": "a:artist|like|dec(h1.6)|all",
+   "gain": -7.321701756807242e-05,
+   "gen": 6,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "dec",
+    "hl": 1.6
+   }
+  },
+  {
+   "name": "R[ua:artist|skip|cnt|w113 / ua:artist|listen|cnt|w113]",
+   "gain": -7.358007960867052e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 113
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 113
+    }
+   }
+  },
+  {
+   "name": "ua:artist|recskip|dec(h5.9)|all",
+   "gain": -7.377293313420852e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "dec",
+    "hl": 5.9
+   }
+  },
+  {
+   "name": "a:artist|recskip|cnt|w12",
+   "gain": -7.546434439142935e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:artist",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 12
+   }
+  },
+  {
+   "name": "R[ua:album|rec|cnt|w13 / user|rec|cnt|w13]",
+   "gain": -7.67022508141868e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "user",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 13
+    }
+   }
+  },
+  {
+   "name": "R[ui|recskip|cnt|w86 / user|recskip|cnt|w86]",
+   "gain": -7.717770961884751e-05,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 86
+    },
+    "den": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 86
+    }
+   }
+  },
+  {
+   "name": "ua:album|rec|cnt|w74",
+   "gain": -7.744449712537849e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:album",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 74
+   }
+  },
+  {
+   "name": "R[a:artist|lplus|cnt|w1 / a:artist|listen|cnt|w1]",
+   "gain": -7.821199305019233e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "R[ua:artist|like|cnt|w65 / ua:artist|lplus|cnt|w65]",
+   "gain": -7.885112028138686e-05,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ua:artist",
+     "event": "like",
+     "agg": "cnt",
+     "window": 65
+    },
+    "den": {
+     "key": "ua:artist",
+     "event": "lplus",
+     "agg": "cnt",
+     "window": 65
+    }
+   }
+  },
+  {
+   "name": "item|listen|cnt|w36",
+   "gain": -7.919959957558564e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 36
+   }
+  },
+  {
+   "name": "a:artist|rec|cnt|w3",
+   "gain": -7.977952969068225e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "rec",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "user|rec|mean(played)|w78",
+   "gain": -8.064006120017675e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "mean",
+    "window": 78,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w24 / ua:album|recplus|cnt|w265]",
+   "gain": -8.108561186537244e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 24
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    }
+   }
+  },
+  {
+   "name": "item|org|dec(h122.6)|w50",
+   "gain": -8.358494159477203e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "org",
+    "agg": "dec",
+    "window": 50,
+    "hl": 122.6
+   }
+  },
+  {
+   "name": "a:artist|org|cnt|w4",
+   "gain": -8.421461113017337e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "cnt",
+    "window": 4
+   }
+  },
+  {
+   "name": "a:artist|listen|nuniq|w19",
+   "gain": -8.508931650919038e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "nuniq",
+    "window": 19
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w153",
+   "gain": -8.547251913060272e-05,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 153,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[a:artist|like|cnt|w9 / a:artist|like|cnt|w12]",
+   "gain": -8.596795545290359e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:artist",
+     "event": "like",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "a:artist",
+     "event": "like",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|skip|cnt|w94 / ua:album|listen|cnt|w94]",
+   "gain": -8.645989138544863e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 94
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 94
+    }
+   }
+  },
+  {
+   "name": "a:artist|unlike|cnt|w57",
+   "gain": -8.73194668095656e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "unlike",
+    "agg": "cnt",
+    "window": 57
+   }
+  },
+  {
+   "name": "ua:artist|skip|cnt|w113",
+   "gain": -8.832104347833436e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:artist",
+    "event": "skip",
+    "agg": "cnt",
+    "window": 113
+   }
+  },
+  {
+   "name": "user|recskip|last|w3",
+   "gain": -9.058363809455461e-05,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "a:artist|org|dec(h2.3)|all",
+   "gain": -9.148527964070174e-05,
+   "gen": 4,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "dec",
+    "hl": 2.3
+   }
+  },
+  {
+   "name": "a:album|skip|mean(played)|w80",
+   "gain": -9.156288690648218e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "mean",
+    "window": 80,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w162 / ua:album|rec|cnt|w162]",
+   "gain": -9.207903640229276e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 162
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 162
+    }
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w137 / ua:album|rec|cnt|w137]",
+   "gain": -9.246552794450746e-05,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 137
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 137
+    }
+   }
+  },
+  {
+   "name": "user|like|last|w18",
+   "gain": -9.251167006002481e-05,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "like",
+    "agg": "last",
+    "window": 18
+   }
+  },
+  {
+   "name": "a:artist|like|cnt|w103",
+   "gain": -9.436392499817536e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 103
+   }
+  },
+  {
+   "name": "a:artist|like|cnt|w11",
+   "gain": -9.550771254884793e-05,
+   "gen": 5,
+   "feature": {
+    "key": "a:artist",
+    "event": "like",
+    "agg": "cnt",
+    "window": 11
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w89 / user|skip|cnt|w89]",
+   "gain": -9.853907896001379e-05,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 89
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 89
+    }
+   }
+  },
+  {
+   "name": "ui|lplus|cnt|w55",
+   "gain": -9.975150975949365e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ui",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 55
+   }
+  },
+  {
+   "name": "a:artist|org|cnt|w242",
+   "gain": -0.00010056487487097865,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "cnt",
+    "window": 242
+   }
+  },
+  {
+   "name": "a:artist|org|cnt|w17",
+   "gain": -0.00010439012287993821,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "cnt",
+    "window": 17
+   }
+  },
+  {
+   "name": "a:artist|listen|last|w1",
+   "gain": -0.00010515396093868645,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "listen",
+    "agg": "last",
+    "window": 1
+   }
+  },
+  {
+   "name": "a:artist|org|cnt|w2",
+   "gain": -0.00010729292053768269,
+   "gen": 2,
+   "feature": {
+    "key": "a:artist",
+    "event": "org",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "ua:artist|recskip|first|all",
+   "gain": -0.0001080421414637045,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "recskip",
+    "agg": "first"
+   }
+  },
+  {
+   "name": "R[ua:album|recplus|cnt|w5 / ua:album|recplus|cnt|w265]",
+   "gain": -0.0001121264445455572,
+   "gen": 4,
+   "feature": {
+    "num": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 5
+    },
+    "den": {
+     "key": "ua:album",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 265
+    }
+   }
+  },
+  {
+   "name": "ua:artist|like|dec(h0.8)|all",
+   "gain": -0.00011419326451672651,
+   "gen": 4,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "dec",
+    "hl": 0.8
+   }
+  },
+  {
+   "name": "a:album|skip|mean(played)|w69",
+   "gain": -0.00012253559220198884,
+   "gen": 3,
+   "feature": {
+    "key": "a:album",
+    "event": "skip",
+    "agg": "mean",
+    "window": 69,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w45 / user|skip|cnt|w45]",
+   "gain": -0.00012424269104671648,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 45
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 45
+    }
+   }
+  },
+  {
+   "name": "a:artist|skip|sum(played)|w4",
+   "gain": -0.00012499927547388046,
+   "gen": 0,
+   "feature": {
+    "key": "a:artist",
+    "event": "skip",
+    "agg": "sum",
+    "window": 4,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|rec|last|w8",
+   "gain": -0.00012531307321483887,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "last",
+    "window": 8
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w252",
+   "gain": -0.00012583495568740943,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 252,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[ui|skip|cnt|w19 / user|skip|cnt|w19]",
+   "gain": -0.0001309002149026406,
+   "gen": 6,
+   "feature": {
+    "num": {
+     "key": "ui",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 19
+    },
+    "den": {
+     "key": "user",
+     "event": "skip",
+     "agg": "cnt",
+     "window": 19
+    }
+   }
+  },
+  {
+   "name": "user|lplus|dec(h31.6)|w279",
+   "gain": -0.00013139015380259078,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "dec",
+    "window": 279,
+    "hl": 31.6
+   }
+  },
+  {
+   "name": "user|org|last|all",
+   "gain": -0.00013273683009007442,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w15",
+   "gain": -0.00013558057838841675,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 15,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|dislike|dec(h7.2)|all",
+   "gain": -0.00014116894745580533,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "dislike",
+    "agg": "dec",
+    "hl": 7.2
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w138",
+   "gain": -0.0001461865659301287,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 138,
+    "value": "played"
+   }
+  },
+  {
+   "name": "ua:artist|like|last|w251",
+   "gain": -0.00016178347612522126,
+   "gen": 3,
+   "feature": {
+    "key": "ua:artist",
+    "event": "like",
+    "agg": "last",
+    "window": 251
+   }
+  },
+  {
+   "name": "R[user|recskip|cnt|w12 / user|rec|cnt|w12]",
+   "gain": -0.00016201506279045486,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "recskip",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "user",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w195",
+   "gain": -0.00016445069117670963,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 195,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w5",
+   "gain": -0.00016484588942394796,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 5,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w62",
+   "gain": -0.00016804969923572832,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 62,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w113",
+   "gain": -0.00017127059980165393,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 113,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h3)|w6",
+   "gain": -0.00018213995836013908,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 6,
+    "hl": 3.0
+   }
+  },
+  {
+   "name": "user|org|nuniq|w2",
+   "gain": -0.000194916269222134,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w150",
+   "gain": -0.00022214207744564174,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 150,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|org|dec(h2.4)|all",
+   "gain": -0.00022230830857028483,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "dec",
+    "hl": 2.4
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w89",
+   "gain": -0.00022238652138617532,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 89,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|cnt|w1",
+   "gain": -0.00022243941676880485,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "R[user|unlike|cnt|w13 / user|unlike|cnt|w70]",
+   "gain": -0.00023566335366792535,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 13
+    },
+    "den": {
+     "key": "user",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 70
+    }
+   }
+  },
+  {
+   "name": "user|skip|mean(played)|all",
+   "gain": -0.00023608421130277835,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "skip",
+    "agg": "mean",
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[user|org|cnt|w66 / user|listen|cnt|w66]",
+   "gain": -0.00026549362021927037,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 66
+    },
+    "den": {
+     "key": "user",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 66
+    }
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w45",
+   "gain": -0.0002679671147211016,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 45,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[user|org|cnt|w2 / user|org|cnt|w5]",
+   "gain": -0.0002684192496126281,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "org",
+     "agg": "cnt",
+     "window": 5
+    }
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w23",
+   "gain": -0.00026961430649941054,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 23,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|cnt|w1",
+   "gain": -0.0002788858712421405,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 1
+   }
+  },
+  {
+   "name": "user|listen|cnt|w110",
+   "gain": -0.00029109346214495346,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "listen",
+    "agg": "cnt",
+    "window": 110
+   }
+  },
+  {
+   "name": "user|like|first|w6",
+   "gain": -0.00031794007392088597,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "like",
+    "agg": "first",
+    "window": 6
+   }
+  },
+  {
+   "name": "R[user|unlike|cnt|w12 / user|like|cnt|w12]",
+   "gain": -0.00032024955091974894,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "unlike",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "user",
+     "event": "like",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "user|recskip|cnt|w6",
+   "gain": -0.000339999298712812,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "cnt",
+    "window": 6
+   }
+  },
+  {
+   "name": "user|lplus|last|w110",
+   "gain": -0.00035510627038976006,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "last",
+    "window": 110
+   }
+  },
+  {
+   "name": "user|recskip|first|all",
+   "gain": -0.00038422147304095766,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "first"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w163",
+   "gain": -0.0003956572699773675,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 163,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|mean(played)|w126",
+   "gain": -0.0003960899176222443,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "mean",
+    "window": 126,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|dec(h10.1)|w2",
+   "gain": -0.00042200638902384346,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "dec",
+    "window": 2,
+    "hl": 10.1
+   }
+  },
+  {
+   "name": "R[user|recplus|cnt|w14 / user|recplus|cnt|w82]",
+   "gain": -0.0004222390473627713,
+   "gen": 5,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 14
+    },
+    "den": {
+     "key": "user",
+     "event": "recplus",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
+   "name": "user|lplus|cnt|w9",
+   "gain": -0.0004245556672846651,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "cnt",
+    "window": 9
+   }
+  },
+  {
+   "name": "user|org|cnt|w2",
+   "gain": -0.0004469918735923173,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w39",
+   "gain": -0.0004500388978434522,
+   "gen": 6,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 39,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|skip|mean(played)|w110",
+   "gain": -0.00046712741235516164,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "skip",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|lplus|dec(h112.7)|w178",
+   "gain": -0.0005032566022478147,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "dec",
+    "window": 178,
+    "hl": 112.7
+   }
+  },
+  {
+   "name": "user|listen|sum(played)|w64",
+   "gain": -0.0005229276371632174,
+   "gen": 5,
+   "feature": {
+    "key": "user",
+    "event": "listen",
+    "agg": "sum",
+    "window": 64,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w17",
+   "gain": -0.0005319995912286823,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 17,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|recskip|mean(played)|w4",
+   "gain": -0.0005488668850192613,
+   "gen": 1,
+   "feature": {
+    "key": "user",
+    "event": "recskip",
+    "agg": "mean",
+    "window": 4,
+    "value": "played"
+   }
+  },
+  {
+   "name": "user|listen|nuniq|w74",
+   "gain": -0.0005805376815856134,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "listen",
+    "agg": "nuniq",
+    "window": 74
+   }
+  },
+  {
+   "name": "user|lplus|nuniq|w110",
+   "gain": -0.0006344012807467658,
+   "gen": 2,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "nuniq",
+    "window": 110
+   }
+  },
+  {
+   "name": "user|lplus|cnt|all",
+   "gain": -0.0007329038471401983,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "lplus",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "user|org|mean(played)|w110",
+   "gain": -0.0008414263509162745,
+   "gen": 4,
+   "feature": {
+    "key": "user",
+    "event": "org",
+    "agg": "mean",
+    "window": 110,
+    "value": "played"
+   }
+  },
+  {
+   "name": "R[user|dislike|cnt|w6 / user|rec|cnt|w6]",
+   "gain": -0.0015129270247364879,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 6
+    },
+    "den": {
+     "key": "user",
+     "event": "rec",
+     "agg": "cnt",
+     "window": 6
+    }
+   }
+  },
+  {
+   "name": "user|rec|first|all",
+   "gain": -0.0030852346342977732,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "rec",
+    "agg": "first"
+   }
+  },
+  {
+   "name": "R[user|dislike|cnt|w2 / user|listen|cnt|w2]",
+   "gain": -0.0047383009382112595,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "dislike",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "user",
+     "event": "listen",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  }
+ ],
+ "interrupted_after_gen": 6
+}

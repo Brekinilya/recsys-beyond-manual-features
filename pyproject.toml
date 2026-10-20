@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recfe"
+version = "0.1.0"
+description = "Hand-crafted vs automatically searched features vs graph models for recommendation ranking (KION, Yambda)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "polars",
+    "scipy",
+    "scikit-learn",
+    "lightgbm",
+    "implicit",
+    "matplotlib",
+    "torch",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
