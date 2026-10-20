@@ -4,18 +4,22 @@ param([string]$Py = "python")
 $ErrorActionPreference = "Stop"
 New-Item -ItemType Directory -Force reports\logs | Out-Null
 
-function Step($mod, $log) {
-    Write-Host ">> $mod"
-    & $Py -u -I -X utf8 -m $mod.Split(" ")[0] $mod.Split(" ")[1..9] *> "reports\logs\$log.log"
-    if ($LASTEXITCODE -ne 0) { throw "failed: $mod (see reports\logs\$log.log)" }
+# Each step runs through cmd so that warnings on stderr go to the log instead of becoming
+# PowerShell errors; success is decided by the exit code only.
+function Run([string]$cmdline, [string]$log) {
+    Write-Host ">> $cmdline"
+    cmd /c "`"$Py`" -u -I -X utf8 $cmdline > reports\logs\$log.log 2>&1"
+    if ($LASTEXITCODE -ne 0) { throw "failed: $cmdline (see reports\logs\$log.log)" }
 }
+
+function Step([string]$module, [string]$log) { Run "-m $module" $log }
 
 Step "recfe.data.download" "download"
 Step "recfe.data.prepare_yambda" "prepare_yambda"
 Step "recfe.data.prepare_kion" "prepare_kion"
 Step "recfe.tasks.yambda" "rows_yambda"
 Step "recfe.tasks.kion" "rows_kion"
-& $Py -I -X utf8 tests\test_engine.py
+Run "tests\test_engine.py" "tests"
 
 foreach ($ds in "yambda", "kion") {
     Step "recfe.experiments.baseline $ds" "baseline_$ds"
