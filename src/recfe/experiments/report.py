@@ -132,10 +132,10 @@ def ablation_table(ds):
 
 def feature_cost(ds, names):
     """Amortised point-in-time computation time of a feature set over train+val+test (from the cache log)."""
-    p = PROCESSED / ds / "fc" / "cost.json"
-    if not p.exists():
+    found = sorted((PROCESSED / ds / "fc").glob("*/cost.json"), key=lambda p: p.stat().st_mtime)
+    if not found:
         return None
-    c = json.loads(p.read_text())
+    c = json.loads(found[-1].read_text())
     return sum(c.get(f"{s}::{n}", 0.0) for n in names for s in ("train", "val", "test"))
 
 
@@ -147,7 +147,8 @@ def cost_table():
             m = load(f"{ds}__{tag}.json")
             if m:
                 fc = feature_cost(ds, m["features"])
-                lines.append(f"| {ds} | {label} ({m['n_features']} призн.) | {fc / 60:.1f} мин | {m['train_sec']:.0f} с | "
+                fc = "–" if fc is None else f"{fc / 60:.1f} мин"
+                lines.append(f"| {ds} | {label} ({m['n_features']} призн.) | {fc} | {m['train_sec']:.0f} с | "
                              f"{m.get('test_predict_sec', 0):.1f} с | CPU, 16 потоков |")
         for tag, label in (("autofe", "поиск AutoFE с нуля"), ("manual_autofe", "поиск добавок к ручным")):
             a = load(f"{ds}__{tag}_search.json")

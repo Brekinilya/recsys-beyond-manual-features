@@ -1,6 +1,8 @@
 # Full pipeline. Run from the project root after creating the environment (see README).
 # On Windows keep the venv on a short path (e.g. C:\venvs\recfe): torch and pip exceed 260 chars otherwise.
-param([string]$Py = "python")
+#   .\run_all.ps1 -Py C:\venvs\recfe\Scripts\python.exe                    # both datasets
+#   .\run_all.ps1 -Py C:\venvs\recfe\Scripts\python.exe -Datasets kion     # one dataset
+param([string]$Py = "python", [string[]]$Datasets = @("yambda", "kion"))
 $ErrorActionPreference = "Stop"
 New-Item -ItemType Directory -Force reports\logs | Out-Null
 
@@ -15,13 +17,13 @@ function Run([string]$cmdline, [string]$log) {
 function Step([string]$module, [string]$log) { Run "-m $module" $log }
 
 Step "recfe.data.download" "download"
-Step "recfe.data.prepare_yambda" "prepare_yambda"
-Step "recfe.data.prepare_kion" "prepare_kion"
-Step "recfe.tasks.yambda" "rows_yambda"
-Step "recfe.tasks.kion" "rows_kion"
-Run "tests\test_engine.py" "tests"
+foreach ($ds in $Datasets) {
+    Step "recfe.data.prepare_$ds" "prepare_$ds"
+    Step "recfe.tasks.$ds" "rows_$ds"
+}
+Run "tests\test_engine.py $($Datasets -join ' ')" "tests"
 
-foreach ($ds in "yambda", "kion") {
+foreach ($ds in $Datasets) {
     Step "recfe.experiments.baseline $ds" "baseline_$ds"
     Step "recfe.experiments.autofe_run $ds autofe" "autofe_$ds"
     Step "recfe.experiments.autofe_run $ds manual_autofe" "manual_autofe_$ds"

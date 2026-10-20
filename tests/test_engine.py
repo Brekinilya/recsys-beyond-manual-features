@@ -1,8 +1,9 @@
 """Engine vs brute force on random rows, plus a leakage check.
 
-Run from the project root: python tests/test_engine.py
+Run from the project root: python tests/test_engine.py [yambda] [kion]
 """
 import math
+import sys
 import time
 
 import numpy as np
@@ -101,12 +102,17 @@ def check(name, specs, n=25):
     print(f"{name}: OK ({n} rows, {len(specs)} specs, leakage check passed)")
 
 
+SPECS = {
+    "yambda": [S("ui", "listen", "cnt", 30), S("user", "rec", "cnt", 7), S("item", "lplus", "cnt", 1),
+               S("ua:artist", "listen", "last"), S("a:album", "like", "cnt", 30),
+               S("user", "listen", "mean", 30, "played"), S("ui", "listen", "dec", None, hl=7.0),
+               S("item", "listen", "first")],
+    "kion": [S("user", "watch", "cnt", 30), S("item", "full", "cnt", 7), S("ua:genre", "watch", "cnt", None, red="sum"),
+             S("ua:actor", "watch", "cnt", None, red="max"), S("a:genre", "watch", "cnt", 30, red="mean"),
+             S("s:age", "watch", "cnt", 30), S("ua:genre", "watch", "last", red="min"),
+             S("item", "watch", "mean", 30, "pct")],
+}
+
 if __name__ == "__main__":
-    check("yambda", [S("ui", "listen", "cnt", 30), S("user", "rec", "cnt", 7), S("item", "lplus", "cnt", 1),
-                     S("ua:artist", "listen", "last"), S("a:album", "like", "cnt", 30),
-                     S("user", "listen", "mean", 30, "played"), S("ui", "listen", "dec", None, hl=7.0),
-                     S("item", "listen", "first")])
-    check("kion", [S("user", "watch", "cnt", 30), S("item", "full", "cnt", 7), S("ua:genre", "watch", "cnt", None, red="sum"),
-                   S("ua:actor", "watch", "cnt", None, red="max"), S("a:genre", "watch", "cnt", 30, red="mean"),
-                   S("s:age", "watch", "cnt", 30), S("ua:genre", "watch", "last", red="min"),
-                   S("item", "watch", "mean", 30, "pct")])
+    for name in sys.argv[1:] or list(SPECS):
+        check(name, SPECS[name])

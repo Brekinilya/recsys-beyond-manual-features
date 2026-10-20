@@ -1,4 +1,8 @@
-"""On-disk cache of computed features: one float32 .npy per (split, feature)."""
+"""On-disk cache of computed features: one float32 .npy per (split, feature).
+
+The cache lives under a fingerprint of the rows table, so rebuilding the rows (another user
+sample, other candidates) never silently reuses values computed for the old rows.
+"""
 from __future__ import annotations
 
 import hashlib
@@ -14,12 +18,17 @@ from recfe.features.spec import Feature
 from recfe.paths import processed
 
 
+def rows_fingerprint(rows: pl.DataFrame) -> str:
+    key = rows.select("row_id", "user_id", "item_id", "cutoff").to_numpy().astype(np.int64)
+    return hashlib.md5(key.tobytes()).hexdigest()[:10]
+
+
 class FeatureStore:
     def __init__(self, ds: Dataset, rows: pl.DataFrame):
         self.ds = ds
         self.rows = rows
         self.engine = Engine(ds)
-        self.dir = processed(ds.name) / "fc"
+        self.dir = processed(ds.name) / "fc" / rows_fingerprint(rows)
         self.cost_path = self.dir / "cost.json"
         self.dir.mkdir(parents=True, exist_ok=True)
         self.cost = json.loads(self.cost_path.read_text()) if self.cost_path.exists() else {}

@@ -45,7 +45,8 @@ def fold_candidates(ds, T: int, n_users_sample: int, rng) -> tuple[pl.DataFrame,
     hist = ds.history(T * DAY)
     target = ev.filter((pl.col("ts") >= T * DAY) & (pl.col("ts") < (T + HORIZON) * DAY)).select("user_id", "item_id")
     warm = hist.select("user_id").unique()
-    tusers = target.select("user_id").unique().join(warm, on="user_id", how="semi")["user_id"].to_numpy()
+    # unique() has no fixed order; without sorting the same seed would sample different users
+    tusers = np.sort(target.select("user_id").unique().join(warm, on="user_id", how="semi")["user_id"].to_numpy())
     users = np.sort(rng.choice(tusers, size=min(n_users_sample, len(tusers)), replace=False)).astype(np.int32)
 
     n_users = int(ev["user_id"].max()) + 1
@@ -61,7 +62,8 @@ def fold_candidates(ds, T: int, n_users_sample: int, rng) -> tuple[pl.DataFrame,
     }).filter(pl.col("item_id") >= 0)
 
     recent = hist.filter(pl.col("ts") >= (T - 7) * DAY)
-    pop = (recent.group_by("item_id").agg(pl.len().alias("n")).sort("n", descending=True)
+    pop = (recent.group_by("item_id").agg(pl.len().alias("n"))
+                 .sort(["n", "item_id"], descending=[True, False])
                  .head(K_POP + 300).with_row_index("pop_rank", offset=1)
                  .select("item_id", pl.col("pop_rank").cast(pl.Int32)))
     seen = hist.join(pl.DataFrame({"user_id": users}), on="user_id", how="semi").select("user_id", "item_id")

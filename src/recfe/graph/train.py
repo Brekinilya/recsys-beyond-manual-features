@@ -23,6 +23,7 @@ from recfe import metrics
 from recfe.datasets import DAY
 from recfe.experiments.common import Context
 from recfe.features.manual import base_features
+from recfe.features.store import rows_fingerprint
 from recfe.graph.build import GRAPH_CFG, build, layout
 from recfe.graph.model import GPUGraph, GraphRanker, to_csr
 from recfe.paths import processed, results
@@ -45,8 +46,9 @@ class GraphExperiment:
         self.name, self.tag = name, tag
         self.cfg = VARIANTS[tag]
         self.lay = layout(self.ctx.ds)
-        self.dir = processed(name) / "graphs"
-        self.dir.mkdir(exist_ok=True)
+        # graphs also store per-row edge features, so they are tied to the rows table like the feature cache
+        self.dir = processed(name) / "graphs" / rows_fingerprint(self.ctx.rows)
+        self.dir.mkdir(parents=True, exist_ok=True)
         self.n_ui_rel = len(GRAPH_CFG[name]["types"]) * len(GRAPH_CFG[name]["scales"])
         self.attr_slots = ["artist", "album"] if name == "yambda" else ["ctype"]
         self.epochs, self.patience, self.lr = epochs, patience, lr
