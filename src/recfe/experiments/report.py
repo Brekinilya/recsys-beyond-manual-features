@@ -162,7 +162,7 @@ def cost_table():
         g1 = load(f"{ds}__gnn_v1.json") if ds == "yambda" else g
         if g:
             build = (g1 or g)["timing"]["graph_build"]
-            lines.append(f"| {ds} | GNN ({g['n_params'] / 1e6:.0f}M параметров) | {build / 60:.0f} мин (все отсечки) | "
+            lines.append(f"| {ds} | GNN ({g['n_params'] / 1e6:.0f}M параметров) | {build / 60:.1f} мин (все отсечки) | "
                          f"{g['timing']['train'] / 60:.1f} мин | {g['timing']['eval'] / 60:.1f} мин (val+test) | "
                          f"RTX 3070 Laptop, пик {g['peak_gpu_gb']:.1f} ГБ |")
     return "\n".join(lines)

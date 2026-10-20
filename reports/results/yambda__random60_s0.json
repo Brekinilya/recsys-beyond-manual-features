@@ -2,11 +2,11 @@
  "dataset": "yambda",
  "tag": "random60_s0",
  "n_features": 61,
- "feature_sec": 27.655722100003914,
- "train_sec": 10.004250400001183,
+ "feature_sec": 63.823261500001536,
+ "train_sec": 10.063842399998975,
  "best_iter": 233,
  "val_logloss": 0.4569213683214467,
- "val_predict_sec": 0.4858502999995835,
+ "val_predict_sec": 0.47962009999901056,
  "val": {
   "logloss": 0.4569213683214464,
   "auc": 0.8127784641804572,
@@ -16,7 +16,7 @@
   "map@10": 0.6747513550617334,
   "groups": 3858
  },
- "test_predict_sec": 1.1860833999962779,
+ "test_predict_sec": 1.159238699998241,
  "test": {
   "logloss": 0.45340232500289906,
   "auc": 0.8222941380964626,

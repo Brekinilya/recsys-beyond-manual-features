@@ -284,55 +284,9 @@
   },
   {
    "key": "a:genre",
-   "event": "drop",
+   "event": "watch",
    "agg": "cnt",
-   "window": 5,
    "red": "max"
-  },
-  {
-   "key": "ua:actor",
-   "event": "long",
-   "agg": "cnt",
-   "window": 20,
-   "red": "mean"
-  },
-  {
-   "key": "a:genre",
-   "event": "long",
-   "agg": "cnt",
-   "window": 5,
-   "red": "max"
-  },
-  {
-   "num": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 7,
-    "red": "max"
-   },
-   "den": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 7,
-    "red": "max"
-   }
-  },
-  {
-   "key": "a:genre",
-   "event": "long",
-   "agg": "mean",
-   "window": 60,
-   "value": "hours",
-   "red": "min"
-  },
-  {
-   "key": "ua:actor",
-   "event": "long",
-   "agg": "cnt",
-   "window": 61,
-   "red": "mean"
   }
  ],
  "selected_names": [
@@ -375,423 +329,278 @@
   "ua:country|watch|cnt|all|max",
   "ua:studio|watch|cnt|all|max",
   "R[ua:ctype|watch|cnt|all / user|watch|cnt|all]",
-  "a:genre|drop|cnt|w5|max",
-  "ua:actor|long|cnt|w20|mean",
-  "a:genre|long|cnt|w5|max",
-  "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
-  "a:genre|long|mean(hours)|w60|min",
-  "ua:actor|long|cnt|w61|mean"
+  "a:genre|watch|cnt|all|max"
  ],
  "log": [
   {
    "gen": 0,
    "candidates": 120,
    "rescreened": 0,
-   "best_gain": 0.0001180056451483627,
+   "best_gain": 4.681734804118376e-05,
    "accepted": [
-    "a:genre|drop|cnt|w5|max",
-    "ua:actor|long|cnt|w20|mean"
+    "a:genre|watch|cnt|all|max"
    ],
-   "n_selected": 41,
-   "val_logloss": 0.050633704993179623,
-   "feature_sec": 0.1645745000023453,
-   "elapsed_sec": 360.8703889999997
+   "n_selected": 40,
+   "val_logloss": 0.05065607354696165,
+   "feature_sec": 0.03355250000458909,
+   "elapsed_sec": 156.78576849999808
   },
   {
    "gen": 1,
    "candidates": 60,
    "rescreened": 40,
-   "best_gain": 0.0001269574421664671,
-   "accepted": [
-    "a:genre|long|cnt|w5|max",
-    "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
-    "a:genre|long|mean(hours)|w60|min"
-   ],
-   "n_selected": 44,
-   "val_logloss": 0.05059228584972949,
-   "feature_sec": 37.54539120000118,
-   "elapsed_sec": 648.9399383999989
+   "best_gain": 7.828811933068697e-05,
+   "accepted": [],
+   "n_selected": 40,
+   "val_logloss": 0.05065607354696165,
+   "feature_sec": 28.111992300000566,
+   "elapsed_sec": 242.38799840000138
   },
   {
    "gen": 2,
    "candidates": 60,
    "rescreened": 40,
-   "best_gain": 0.00010936035007638734,
-   "accepted": [
-    "ua:actor|long|cnt|w61|mean"
-   ],
-   "n_selected": 45,
-   "val_logloss": 0.050588039505127955,
-   "feature_sec": 68.55095570000049,
-   "elapsed_sec": 1009.8558604999998
+   "best_gain": 7.828811933068697e-05,
+   "accepted": [],
+   "n_selected": 40,
+   "val_logloss": 0.05065607354696165,
+   "feature_sec": 26.64881400000013,
+   "elapsed_sec": 335.0132732999991
   },
   {
    "gen": 3,
    "candidates": 60,
    "rescreened": 40,
-   "best_gain": 0.00011046968602633489,
+   "best_gain": 7.828811933068697e-05,
    "accepted": [],
-   "n_selected": 45,
-   "val_logloss": 0.050588039505127955,
-   "feature_sec": 67.69093019999855,
-   "elapsed_sec": 1250.629764199999
-  },
-  {
-   "gen": 4,
-   "candidates": 60,
-   "rescreened": 40,
-   "best_gain": 0.00011347885313819223,
-   "accepted": [],
-   "n_selected": 45,
-   "val_logloss": 0.050588039505127955,
-   "feature_sec": 20.967787900000985,
-   "elapsed_sec": 1353.8150625000017
-  },
-  {
-   "gen": 5,
-   "candidates": 60,
-   "rescreened": 40,
-   "best_gain": 0.00011791608033837053,
-   "accepted": [],
-   "n_selected": 45,
-   "val_logloss": 0.050588039505127955,
-   "feature_sec": 28.839187000001402,
-   "elapsed_sec": 1482.5896103000014
+   "n_selected": 40,
+   "val_logloss": 0.05065607354696165,
+   "feature_sec": 32.740290300003835,
+   "elapsed_sec": 481.7421897000022
   }
  ],
  "timing": {
-  "features": 223.75882650000494,
-  "screen": 832.9076323000008,
-  "train": 414.6847011000027,
-  "total": 1482.6063974999997,
-  "final_train_sec": 40.9761628999986
+  "features": 87.53464910000912,
+  "screen": 270.40554350000457,
+  "train": 121.16605049998907,
+  "total": 481.7517663000035,
+  "final_train_sec": 27.094313099994906
  },
- "n_evaluated": 420,
+ "n_evaluated": 300,
  "archive": [
   {
-   "name": "a:genre|drop|cnt|w5|max",
-   "gain": 0.0001180056451483627,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w35|max",
-   "gain": 0.00011791608033837053,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 35,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h38.5)|w96|max",
-   "gain": 0.00011492800414775184,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 38.5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h48)|w96|max",
-   "gain": 0.00011347885313819223,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 48.0,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h71.5)|w96|max",
-   "gain": 0.00011347885313819223,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 71.5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|nuniq|w5|max",
-   "gain": 0.00011123768368571929,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "nuniq",
-    "window": 5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w96|max",
-   "gain": 0.00011046968602633489,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 96,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w101|max",
-   "gain": 0.00011012435884766303,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 101,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w4|max",
-   "gain": 0.00010862833368543989,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 4,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h2)|w4|max",
-   "gain": 0.00010862833368543989,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 4,
-    "hl": 2.0,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h2.5)|w4|max",
-   "gain": 0.00010862833368543989,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 4,
-    "hl": 2.5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h2.1)|w4|max",
-   "gain": 0.00010862833368543989,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 4,
-    "hl": 2.1,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w101|max",
-   "gain": 0.00010756619610722412,
+   "name": "a:genre|watch|cnt|w12|max",
+   "gain": 7.828811933068697e-05,
    "gen": 1,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 101,
+    "window": 12,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|long|cnt|w114|max",
-   "gain": 0.0001067369847677635,
-   "gen": 3,
+   "name": "a:genre|watch|cnt|w14|max",
+   "gain": 7.762831955324123e-05,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "long",
+    "event": "watch",
     "agg": "cnt",
-    "window": 114,
+    "window": 14,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w2|max",
-   "gain": 0.00010652250295518223,
+   "name": "R[a:genre|watch|cnt|w3|max / a:genre|watch|cnt|w107|max]",
+   "gain": 6.375306344762882e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 107,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h10.7)|w23|max",
+   "gain": 5.583564419125303e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 10.7,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w23|max",
+   "gain": 5.51813993201547e-05,
    "gen": 1,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 2,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h2)|w2|max",
-   "gain": 0.00010652250295518223,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
+    "event": "watch",
     "agg": "dec",
-    "window": 2,
-    "hl": 2.0,
+    "window": 23,
+    "hl": 22.9,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w3|max",
-   "gain": 0.00010629595110842743,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w6|max",
-   "gain": 0.00010456629062523953,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 6,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w101|max",
-   "gain": 0.0001042605210376038,
+   "name": "a:genre|watch|dec(h30.8)|w23|max",
+   "gain": 5.51813993201547e-05,
    "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 101,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|dec(h50.5)|w101|max",
-   "gain": 0.0001042605210376038,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "dec",
-    "window": 101,
-    "hl": 50.5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|dec(h43)|w101|max",
-   "gain": 0.0001042605210376038,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "dec",
-    "window": 101,
-    "hl": 43.0,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h34.4)|all|max",
-   "gain": 0.00010286731974478575,
-   "gen": 3,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "dec",
-    "hl": 34.4,
+    "window": 23,
+    "hl": 30.8,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w61|max",
-   "gain": 0.00010209534442621321,
-   "gen": 4,
+   "name": "a:genre|watch|dec(h24)|w23|max",
+   "gain": 5.51813993201547e-05,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 61,
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 24.0,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|watch|cnt|w107|max",
-   "gain": 0.00010184862153803792,
+   "name": "a:genre|watch|cnt|w21|max",
+   "gain": 5.51813993201547e-05,
    "gen": 2,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 107,
+    "window": 21,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w83|max",
-   "gain": 0.0001007526906671441,
-   "gen": 5,
+   "name": "a:genre|watch|dec(h26.2)|w23|max",
+   "gain": 5.51813993201547e-05,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 83,
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 26.2,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w66|max",
-   "gain": 0.00010061828321356048,
+   "name": "a:genre|watch|dec(h11.5)|w23|max",
+   "gain": 5.51813993201547e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 11.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h34.6)|w23|max",
+   "gain": 5.51813993201547e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 34.6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h50.4)|w23|max",
+   "gain": 5.51813993201547e-05,
    "gen": 3,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 50.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h43.8)|w23|max",
+   "gain": 5.51813993201547e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 43.8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w18|max",
+   "gain": 5.430021872410845e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
     "agg": "cnt",
-    "window": 66,
+    "window": 18,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w19|max",
+   "gain": 5.430021872410845e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 19,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w17|max",
+   "gain": 5.415428033007236e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 17,
     "red": "max"
    }
   },
   {
    "name": "a:genre|watch|cnt|w140|max",
-   "gain": 9.799293353194433e-05,
+   "gain": 5.01954607366184e-05,
    "gen": 3,
    "feature": {
     "key": "a:genre",
@@ -803,7 +612,7 @@
   },
   {
    "name": "a:genre|watch|cnt|all|max",
-   "gain": 9.718779593385213e-05,
+   "gain": 4.681734804118376e-05,
    "gen": 0,
    "feature": {
     "key": "a:genre",
@@ -813,221 +622,193 @@
    }
   },
   {
-   "name": "a:genre|drop|cnt|w26|max",
-   "gain": 9.573600888265754e-05,
-   "gen": 5,
+   "name": "a:genre|watch|cnt|w38|max",
+   "gain": 4.679955454418849e-05,
+   "gen": 3,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
+    "event": "watch",
     "agg": "cnt",
-    "window": 26,
+    "window": 38,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w1|max",
-   "gain": 8.832864472350238e-05,
+   "name": "a:genre|watch|cnt|w101|max",
+   "gain": 4.1286205794938136e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w107|max",
+   "gain": 4.0567979241075414e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 107,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h76.1)|w23|max",
+   "gain": 4.0278110032800074e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 76.1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w37|max",
+   "gain": 3.899601773625638e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 37,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w38|max",
+   "gain": 3.899601773625638e-05,
    "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
+    "event": "watch",
+    "agg": "dec",
+    "window": 38,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w24|max",
+   "gain": 3.491740210753713e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 24,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w23|max",
+   "gain": 3.453795148255362e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 23,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w99|max",
+   "gain": 3.1597060430064994e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 99,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w115|max",
+   "gain": 3.05801512183318e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 115,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w1|max",
+   "gain": 2.9340657958808192e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
     "agg": "cnt",
     "window": 1,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w140|max",
-   "gain": 6.102885020291271e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 140,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w2|max",
-   "gain": 6.050997628778004e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 2,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w5|max",
-   "gain": 6.028696379715981e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h8.2)|all|max",
-   "gain": 5.895833827660596e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 8.2,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h7.8)|all|max",
-   "gain": 5.895833827660596e-05,
+   "name": "a:genre|watch|dec(h24)|w50|max",
+   "gain": 2.738708614769686e-05,
    "gen": 3,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "dec",
-    "hl": 7.8,
+    "window": 50,
+    "hl": 24.0,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|watch|dec(h5.3)|all|max",
-   "gain": 5.895833827660596e-05,
-   "gen": 4,
+   "name": "a:genre|watch|dec(h5.3)|w23|max",
+   "gain": 2.6362353909611946e-05,
+   "gen": 3,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "dec",
+    "window": 23,
     "hl": 5.3,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|long|nuniq|w2|mean",
-   "gain": 5.8615696189430466e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "nuniq",
-    "window": 2,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w90|max",
-   "gain": 5.808912927222909e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 90,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w7|max / a:genre|watch|cnt|w7|max]",
-   "gain": 5.794123807516954e-05,
+   "name": "a:genre|long|cnt|w12|max",
+   "gain": 2.4155410133126776e-05,
    "gen": 1,
    "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 7,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 7,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w36|max",
-   "gain": 5.7422779289974246e-05,
-   "gen": 4,
-   "feature": {
     "key": "a:genre",
     "event": "long",
     "agg": "cnt",
-    "window": 36,
+    "window": 12,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|watch|dec(h8.8)|all|max",
-   "gain": 5.638717051521802e-05,
+   "name": "a:genre|long|cnt|w22|max",
+   "gain": 2.3550031056480958e-05,
    "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 8.8,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w2|max",
-   "gain": 5.618732296986534e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
     "event": "long",
     "agg": "cnt",
-    "window": 2,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|all|max",
-   "gain": 5.514439361796464e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|dec(h32.1)|w101|max",
-   "gain": 5.430956964783129e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "dec",
-    "window": 101,
-    "hl": 32.1,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w21|max",
-   "gain": 5.422747277862572e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 21,
+    "window": 22,
     "red": "max"
    }
   },
   {
    "name": "a:genre|long|cnt|w3|max",
-   "gain": 5.3715476898634484e-05,
+   "gain": 2.2883052724395614e-05,
    "gen": 2,
    "feature": {
     "key": "a:genre",
@@ -1038,92 +819,32 @@
    }
   },
   {
-   "name": "a:genre|watch|dec(h12.3)|all|max",
-   "gain": 5.264861533343934e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 12.3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h11.8)|all|max",
-   "gain": 5.264861533343934e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 11.8,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w32|max",
-   "gain": 5.109161029295817e-05,
+   "name": "a:genre|long|cnt|w55|max",
+   "gain": 2.1696546814733986e-05,
    "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 55,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w57|max",
+   "gain": 2.0595242207710474e-05,
+   "gen": 1,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 32,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h22.9)|all|max",
-   "gain": 5.053307401022e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 22.9,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h29.9)|all|max",
-   "gain": 5.053307401022e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 29.9,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h23.5)|all|max",
-   "gain": 5.053307401022e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 23.5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h25.9)|all|max",
-   "gain": 5.053307401022e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 25.9,
+    "window": 57,
     "red": "max"
    }
   },
   {
    "name": "a:genre|long|cnt|all|max",
-   "gain": 4.965078038179915e-05,
+   "gain": 1.864669055082202e-05,
    "gen": 0,
    "feature": {
     "key": "a:genre",
@@ -1134,8 +855,8 @@
   },
   {
    "name": "a:genre|long|cnt|w140|max",
-   "gain": 4.965078038179915e-05,
-   "gen": 5,
+   "gain": 1.864669055082202e-05,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
     "event": "long",
@@ -1145,130 +866,177 @@
    }
   },
   {
-   "name": "a:genre|drop|cnt|w84|max",
-   "gain": 4.871782127010421e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 84,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w50|max",
-   "gain": 4.865689056492151e-05,
-   "gen": 4,
+   "name": "a:genre|watch|cnt|w7|max",
+   "gain": 1.850149854919908e-05,
+   "gen": 1,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 50,
+    "window": 7,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w6|mean",
-   "gain": 4.784094459625576e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 6,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w11|max",
-   "gain": 4.706056319485341e-05,
-   "gen": 3,
+   "name": "a:genre|long|cnt|w6|max",
+   "gain": 1.5782668809756484e-05,
+   "gen": 1,
    "feature": {
     "key": "a:genre",
     "event": "long",
     "agg": "cnt",
-    "window": 11,
+    "window": 6,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|cnt|w13|max",
-   "gain": 4.585412828413127e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 13,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w5|mean",
-   "gain": 4.575989704565242e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w2|max",
-   "gain": 4.523013727873726e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 2,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h29.9)|w2|max",
-   "gain": 4.523013727873726e-05,
-   "gen": 2,
+   "name": "a:genre|watch|dec(h22.9)|all|max",
+   "gain": 1.5241878492444627e-05,
+   "gen": 0,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "dec",
-    "window": 2,
-    "hl": 29.9,
+    "hl": 22.9,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|watch|cnt|w18|max",
-   "gain": 4.511009221070533e-05,
+   "name": "a:genre|watch|dec(h22.9)|w83|max",
+   "gain": 1.5241878492444627e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 83,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:actor|full|cnt|w1|sum / ua:actor|watch|cnt|w1|sum]",
+   "gain": 1.4358457031515837e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:actor",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:actor",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w7|max",
+   "gain": 1.3931181235639356e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 7,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w42|max",
+   "gain": 1.3723207970411933e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 42,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|w45|max",
+   "gain": 1.320787853526656e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 45,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|full|cnt|w101|max",
+   "gain": 1.2184759172126358e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w8|max",
+   "gain": 1.1385653746039115e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 8,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w1|max",
+   "gain": 1.1218341977606294e-05,
    "gen": 2,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 18,
+    "window": 1,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|watch|cnt|w17|max",
-   "gain": 4.498885591674995e-05,
+   "name": "a:genre|long|dec(h22.9)|w23|max",
+   "gain": 1.0383978815024786e-05,
    "gen": 3,
    "feature": {
     "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 17,
+    "event": "long",
+    "agg": "dec",
+    "window": 23,
+    "hl": 22.9,
     "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w3|min",
+   "gain": 1.034168613266162e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "min"
    }
   },
   {
    "name": "a:genre|watch|cnt|w4|max",
-   "gain": 4.483697836083628e-05,
-   "gen": 3,
+   "gain": 1.0002685845673931e-05,
+   "gen": 1,
    "feature": {
     "key": "a:genre",
     "event": "watch",
@@ -1278,8 +1046,55 @@
    }
   },
   {
+   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|watch|cnt|w4|sum]",
+   "gain": 9.8242817815411e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "a:genre|long|dec(h6)|w12|max",
+   "gain": 9.74154602262356e-06,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "dec",
+    "window": 12,
+    "hl": 6.0,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:director|long|dec(h67.2)|w5|max",
+   "gain": 9.340573085492299e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:director",
+    "event": "long",
+    "agg": "dec",
+    "window": 5,
+    "hl": 67.2,
+    "red": "max"
+   }
+  },
+  {
    "name": "a:genre|watch|cnt|w3|max",
-   "gain": 4.447122549373905e-05,
+   "gain": 8.579676494618882e-06,
    "gen": 1,
    "feature": {
     "key": "a:genre",
@@ -1290,81 +1105,397 @@
    }
   },
   {
-   "name": "a:genre|long|nuniq|w3|max",
-   "gain": 4.433736159117907e-05,
-   "gen": 3,
+   "name": "ua:director|full|mean(pct)|w8|max",
+   "gain": 8.313250940049366e-06,
+   "gen": 0,
    "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "nuniq",
-    "window": 3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|full|dec(h43)|w101|max",
-   "gain": 4.364735548974957e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
+    "key": "ua:director",
     "event": "full",
-    "agg": "dec",
-    "window": 101,
-    "hl": 43.0,
+    "agg": "mean",
+    "window": 8,
+    "value": "pct",
     "red": "max"
    }
   },
   {
-   "name": "a:genre|long|cnt|w18|max",
-   "gain": 4.2475075237455306e-05,
-   "gen": 3,
+   "name": "ua:director|full|mean(pct)|w8|mean",
+   "gain": 8.107303001457511e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "mean",
+    "window": 8,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w101|max",
+   "gain": 8.032895738530055e-06,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "long",
+    "event": "drop",
     "agg": "cnt",
+    "window": 101,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w8|sum / ua:director|watch|cnt|w8|sum]",
+   "gain": 7.882287866856075e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 8,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 8,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w1|min / ua:director|full|cnt|w4|min]",
+   "gain": 7.730996680228863e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 1,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w3|sum / ua:director|watch|cnt|w3|sum]",
+   "gain": 7.66567599863599e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "sum"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|min / ua:director|full|cnt|w7|min]",
+   "gain": 7.574644556071486e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 7,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "a:actor|drop|first|w18|max",
+   "gain": 7.2660702881838235e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "first",
     "window": 18,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|long|cnt|w17|max",
-   "gain": 4.2356607653427913e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 17,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w7|max",
-   "gain": 4.012920849791324e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 7,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w10|max",
-   "gain": 3.741786766740113e-05,
+   "name": "R[ua:director|full|cnt|w5|min / ua:director|full|cnt|w18|min]",
+   "gain": 7.233398062592156e-06,
    "gen": 1,
    "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 10,
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 5,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 18,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w3|min / ua:director|full|cnt|w10|min]",
+   "gain": 6.842990557046069e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 3,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 10,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|min / ua:director|watch|cnt|w2|min]",
+   "gain": 6.828734565575423e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "a:actor|watch|first|w91|max",
+   "gain": 6.671339984873348e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "first",
+    "window": 91,
     "red": "max"
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w3|max / ua:director|watch|cnt|w3|max]",
+   "gain": 6.571043758243911e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[item|full|cnt|w2 / item|full|cnt|w4]",
+   "gain": 5.936494930476599e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "full",
+     "agg": "cnt",
+     "window": 4
+    }
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|max / ua:director|watch|cnt|w2|max]",
+   "gain": 5.621733731156486e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "ua:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "ua:director|full|cnt|w2|min",
+   "gain": 5.523404333913906e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:director|full|mean(pct)|w9|max",
+   "gain": 4.562476971434193e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "mean",
+    "window": 9,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w84|min",
+   "gain": 4.315360478922281e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 84,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|long|cnt|w86|min",
+   "gain": 4.1830531131575865e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 86,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w3|mean",
+   "gain": 4.1267390092220024e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 3,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1)|w3|mean",
+   "gain": 3.7931229089627205e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 3,
+    "hl": 1.0,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w2|max / user|full|cnt|w2]",
+   "gain": 3.485758747263923e-06,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "full",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:director|watch|dec(h22.9)|w7|max",
+   "gain": 3.132219501399136e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "dec",
+    "window": 7,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|full|cnt|w1|min",
+   "gain": 2.9979358176016047e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 1,
+    "red": "min"
    }
   },
   {
    "name": "ua:actor|long|cnt|w20|mean",
-   "gain": 3.395982131974146e-05,
+   "gain": 2.255863983523232e-06,
    "gen": 0,
    "feature": {
     "key": "ua:actor",
@@ -1375,1221 +1506,29 @@
    }
   },
   {
-   "name": "a:genre|watch|cnt|w6|max",
-   "gain": 3.3094906047581585e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 6,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h48)|w96|mean",
-   "gain": 3.2439640399908876e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 48.0,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h22.9)|w1|max",
-   "gain": 3.221833388991624e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "window": 1,
-    "hl": 22.9,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h28.4)|w1|max",
-   "gain": 3.221833388991624e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "window": 1,
-    "hl": 28.4,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h13.8)|w1|max",
-   "gain": 3.221833388991624e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "window": 1,
-    "hl": 13.8,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w9|max",
-   "gain": 3.200680794637062e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 9,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h7.8)|all|mean",
-   "gain": 3.097600071223783e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 7.8,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w10|max",
-   "gain": 2.9846425717176828e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 10,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w5|max",
-   "gain": 2.6102766267334376e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|mean(hours)|w60|min",
-   "gain": 2.2580786492545912e-05,
+   "name": "ua:director|watch|mean(hours)|w3|max",
+   "gain": 5.24092013079458e-07,
    "gen": 0,
    "feature": {
-    "key": "a:genre",
-    "event": "long",
+    "key": "ua:director",
+    "event": "watch",
     "agg": "mean",
-    "window": 60,
-    "value": "hours",
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w61|mean",
-   "gain": 2.107756565816049e-05,
-   "gen": 2,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 61,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|long|nuniq|w3|mean",
-   "gain": 2.0732950562998842e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "nuniq",
     "window": 3,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|long|nuniq|w1|mean",
-   "gain": 2.037222854597842e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "nuniq",
-    "window": 1,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|long|mean(hours)|all|min",
-   "gain": 1.722857927400484e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "mean",
     "value": "hours",
-    "red": "min"
+    "red": "max"
    }
   },
   {
-   "name": "a:genre|long|mean(hours)|w140|min",
-   "gain": 1.555960533104056e-05,
-   "gen": 4,
+   "name": "ua:studio|full|mean(hours)|w18|sum",
+   "gain": 3.957560055431464e-07,
+   "gen": 2,
    "feature": {
-    "key": "a:genre",
-    "event": "long",
+    "key": "ua:studio",
+    "event": "full",
     "agg": "mean",
-    "window": 140,
+    "window": 18,
     "value": "hours",
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:genre|long|mean(hours)|w103|min",
-   "gain": 1.418362757799052e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "mean",
-    "window": 103,
-    "value": "hours",
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w28|max",
-   "gain": 1.2068564108028146e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 28,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[ua:actor|full|cnt|w1|sum / ua:actor|watch|cnt|w1|sum]",
-   "gain": 1.1598625654613004e-05,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "ua:actor",
-     "event": "full",
-     "agg": "cnt",
-     "window": 1,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:actor",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 1,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "R[ua:actor|drop|cnt|w3|sum / ua:actor|watch|cnt|w3|sum]",
-   "gain": 9.849662993256791e-06,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "ua:actor",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 3,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:actor",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w6|max",
-   "gain": 9.214116148112406e-06,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 6,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[a:genre|watch|cnt|w2|max / a:genre|watch|cnt|w99|max]",
-   "gain": 8.630361104509932e-06,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 99,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[ua:director|long|cnt|w5|max / ua:director|watch|cnt|w5|max]",
-   "gain": 8.448962875585997e-06,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "long",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "ua:country|full|cnt|w3|min",
-   "gain": 8.410564077569738e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:country",
-    "event": "full",
-    "agg": "cnt",
-    "window": 3,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:director|long|cnt|w6|max",
-   "gain": 8.294263142701042e-06,
-   "gen": 2,
-   "feature": {
-    "key": "ua:director",
-    "event": "long",
-    "agg": "cnt",
-    "window": 6,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|watch|cnt|w4|sum]",
-   "gain": 6.921922522995505e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 4,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "a:actor|drop|dec(h65)|w112|max",
-   "gain": 6.443629752710123e-06,
-   "gen": 4,
-   "feature": {
-    "key": "a:actor",
-    "event": "drop",
-    "agg": "dec",
-    "window": 112,
-    "hl": 65.0,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[ua:director|full|cnt|w3|max / ua:director|watch|cnt|w3|max]",
-   "gain": 5.773853430812714e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "full",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "ua:director|watch|cnt|w23|max",
-   "gain": 5.101474497039293e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 23,
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:ctype|long|nuniq|w2",
-   "gain": 5.05189568759945e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "nuniq",
-    "window": 2
-   }
-  },
-  {
-   "name": "ua:ctype|long|cnt|w2",
-   "gain": 5.05189568759945e-06,
-   "gen": 2,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "cnt",
-    "window": 2
-   }
-  },
-  {
-   "name": "R[ua:director|full|cnt|w2|min / ua:director|full|cnt|w7|min]",
-   "gain": 4.574270591181651e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2,
-     "red": "min"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "full",
-     "agg": "cnt",
-     "window": 7,
-     "red": "min"
-    }
-   }
-  },
-  {
-   "name": "R[ua:director|full|cnt|w2|max / ua:director|watch|cnt|w2|max]",
-   "gain": 4.295517354077627e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[ua:director|full|cnt|w2|max / user|full|cnt|w2]",
-   "gain": 4.288498860360868e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    },
-    "den": {
-     "key": "user",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "R[ua:country|full|cnt|w3|min / ua:country|watch|cnt|w3|min]",
-   "gain": 4.17529014957313e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:country",
-     "event": "full",
-     "agg": "cnt",
-     "window": 3,
-     "red": "min"
-    },
-    "den": {
-     "key": "ua:country",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "min"
-    }
-   }
-  },
-  {
-   "name": "ua:director|full|cnt|w2|min",
-   "gain": 3.8623504652474105e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:director",
-    "event": "full",
-    "agg": "cnt",
-    "window": 2,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w2|mean",
-   "gain": 3.7795980964358544e-06,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 2,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w119|min",
-   "gain": 3.5477110183132488e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 119,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:actor|watch|cnt|w101|mean",
-   "gain": 3.2133333298309252e-06,
-   "gen": 2,
-   "feature": {
-    "key": "ua:actor",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 101,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w84|max",
-   "gain": 3.200315939574927e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 84,
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:country|full|cnt|w2|min",
-   "gain": 3.1407591288001857e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:country",
-    "event": "full",
-    "agg": "cnt",
-    "window": 2,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:director|full|days|w47|sum",
-   "gain": 3.131548452689481e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:director",
-    "event": "full",
-    "agg": "days",
-    "window": 47,
     "red": "sum"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w84|min",
-   "gain": 2.6365321758106686e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 84,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:country|watch|cnt|w3|sum",
-   "gain": 2.5810619448535244e-06,
-   "gen": 3,
-   "feature": {
-    "key": "ua:country",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 3,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "ua:director|watch|cnt|w140|sum",
-   "gain": 2.5599164092254822e-06,
-   "gen": 4,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 140,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "user|long|days|w4",
-   "gain": 2.3914124238147427e-06,
-   "gen": 5,
-   "feature": {
-    "key": "user",
-    "event": "long",
-    "agg": "days",
-    "window": 4
-   }
-  },
-  {
-   "name": "a:studio|full|cnt|w40|sum",
-   "gain": 2.3602359977628606e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:studio",
-    "event": "full",
-    "agg": "cnt",
-    "window": 40,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:studio|full|cnt|w34|sum",
-   "gain": 2.3602359977628606e-06,
-   "gen": 1,
-   "feature": {
-    "key": "a:studio",
-    "event": "full",
-    "agg": "cnt",
-    "window": 34,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:studio|watch|cnt|w23|max",
-   "gain": 2.336882283626718e-06,
-   "gen": 1,
-   "feature": {
-    "key": "a:studio",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 23,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:studio|watch|dec(h67.6)|all|max",
-   "gain": 2.2674728882288164e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:studio",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 67.6,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:studio|drop|cnt|w6|mean",
-   "gain": 2.2674728882288164e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:studio",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 6,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:director|watch|cnt|all|mean",
-   "gain": 2.2131897951804813e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "cnt",
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:director|full|days|w47|min",
-   "gain": 2.0089449681848226e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:director",
-    "event": "full",
-    "agg": "days",
-    "window": 47,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w26|min",
-   "gain": 1.9564797674939682e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 26,
-    "red": "min"
-   }
-  },
-  {
-   "name": "s:sex|drop|last|w3",
-   "gain": 1.8997652139821075e-06,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "drop",
-    "agg": "last",
-    "window": 3
-   }
-  },
-  {
-   "name": "ua:director|watch|cnt|w37|mean",
-   "gain": 1.8868549790107547e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 37,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "s:sex|watch|last|w3",
-   "gain": 1.7218229924759187e-06,
-   "gen": 1,
-   "feature": {
-    "key": "s:sex",
-    "event": "watch",
-    "agg": "last",
-    "window": 3
-   }
-  },
-  {
-   "name": "R[ua:director|drop|cnt|w23|max / ua:director|watch|cnt|w23|max]",
-   "gain": 1.6565712899624385e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 23,
-     "red": "max"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 23,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "s:age|full|last|w4",
-   "gain": 1.513052313828478e-06,
-   "gen": 4,
-   "feature": {
-    "key": "s:age",
-    "event": "full",
-    "agg": "last",
-    "window": 4
-   }
-  },
-  {
-   "name": "a:studio|drop|dec(h0.9)|w116|sum",
-   "gain": 1.5110522168515494e-06,
-   "gen": 5,
-   "feature": {
-    "key": "a:studio",
-    "event": "drop",
-    "agg": "dec",
-    "window": 116,
-    "hl": 0.9,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "s:sex|long|last|w3",
-   "gain": 1.4199809567141952e-06,
-   "gen": 1,
-   "feature": {
-    "key": "s:sex",
-    "event": "long",
-    "agg": "last",
-    "window": 3
-   }
-  },
-  {
-   "name": "user|long|days|w9",
-   "gain": 1.4031504459444122e-06,
-   "gen": 0,
-   "feature": {
-    "key": "user",
-    "event": "long",
-    "agg": "days",
-    "window": 9
-   }
-  },
-  {
-   "name": "s:income|watch|days|w4",
-   "gain": 1.3533553552338984e-06,
-   "gen": 0,
-   "feature": {
-    "key": "s:income",
-    "event": "watch",
-    "agg": "days",
-    "window": 4
-   }
-  },
-  {
-   "name": "ua:director|drop|cnt|w4|sum",
-   "gain": 1.301637057193883e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:director",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 4,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[ua:director|drop|cnt|w1|sum / ua:director|drop|cnt|w4|sum]",
-   "gain": 1.2768892590081515e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 1,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "R[ua:studio|watch|cnt|w3|max / user|watch|cnt|w3]",
-   "gain": 1.2296444241027826e-06,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:studio",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    },
-    "den": {
-     "key": "user",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3
-    }
-   }
-  },
-  {
-   "name": "a:actor|watch|last|all|mean",
-   "gain": 1.1870860941523564e-06,
-   "gen": 4,
-   "feature": {
-    "key": "a:actor",
-    "event": "watch",
-    "agg": "last",
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:genre|full|cnt|w54|min",
-   "gain": 1.155684504622334e-06,
-   "gen": 3,
-   "feature": {
-    "key": "ua:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 54,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:country|long|last|w8|min",
-   "gain": 1.1441245988050297e-06,
-   "gen": 2,
-   "feature": {
-    "key": "ua:country",
-    "event": "long",
-    "agg": "last",
-    "window": 8,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:studio|watch|sum(pct)|all|sum",
-   "gain": 1.046643712546147e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:studio",
-    "event": "watch",
-    "agg": "sum",
-    "value": "pct",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:ctype|long|dec(h2.9)|all",
-   "gain": 1.0299736480645638e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:ctype",
-    "event": "long",
-    "agg": "dec",
-    "hl": 2.9
-   }
-  },
-  {
-   "name": "a:ctype|long|cnt|w2",
-   "gain": 1.0299736480645638e-06,
-   "gen": 0,
-   "feature": {
-    "key": "a:ctype",
-    "event": "long",
-    "agg": "cnt",
-    "window": 2
-   }
-  },
-  {
-   "name": "R[a:ctype|long|cnt|w1 / a:ctype|long|cnt|w3]",
-   "gain": 1.0299736480645638e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "a:ctype",
-     "event": "long",
-     "agg": "cnt",
-     "window": 1
-    },
-    "den": {
-     "key": "a:ctype",
-     "event": "long",
-     "agg": "cnt",
-     "window": 3
-    }
-   }
-  },
-  {
-   "name": "R[ua:studio|watch|cnt|w6|max / user|watch|cnt|w6]",
-   "gain": 1.0255466870931484e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:studio",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 6,
-     "red": "max"
-    },
-    "den": {
-     "key": "user",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 6
-    }
-   }
-  },
-  {
-   "name": "a:studio|watch|nuniq|all|max",
-   "gain": 9.816738331044905e-07,
-   "gen": 0,
-   "feature": {
-    "key": "a:studio",
-    "event": "watch",
-    "agg": "nuniq",
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:director|watch|last|all|max",
-   "gain": 8.639937463944536e-07,
-   "gen": 0,
-   "feature": {
-    "key": "a:director",
-    "event": "watch",
-    "agg": "last",
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w60|min",
-   "gain": 7.33528323047794e-07,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 60,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:studio|drop|cnt|w4|mean",
-   "gain": 6.632621041974263e-07,
-   "gen": 1,
-   "feature": {
-    "key": "a:studio",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 4,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[a:studio|full|cnt|w6|min / a:studio|full|cnt|w56|min]",
-   "gain": 6.585339758086173e-07,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "a:studio",
-     "event": "full",
-     "agg": "cnt",
-     "window": 6,
-     "red": "min"
-    },
-    "den": {
-     "key": "a:studio",
-     "event": "full",
-     "agg": "cnt",
-     "window": 56,
-     "red": "min"
-    }
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w8|mean",
-   "gain": 3.9085499929647494e-07,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 8,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:studio|drop|cnt|w101|max",
-   "gain": 3.4687484172513106e-07,
-   "gen": 4,
-   "feature": {
-    "key": "a:studio",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 101,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[a:ctype|long|cnt|w20 / a:ctype|watch|cnt|w20]",
-   "gain": 1.7028672801011613e-07,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "a:ctype",
-     "event": "long",
-     "agg": "cnt",
-     "window": 20
-    },
-    "den": {
-     "key": "a:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 20
-    }
-   }
-  },
-  {
-   "name": "a:ctype|long|dec(h3.8)|all",
-   "gain": 1.7028672801011613e-07,
-   "gen": 4,
-   "feature": {
-    "key": "a:ctype",
-    "event": "long",
-    "agg": "dec",
-    "hl": 3.8
-   }
-  },
-  {
-   "name": "a:ctype|watch|cnt|w86",
-   "gain": 1.7028672801011613e-07,
-   "gen": 4,
-   "feature": {
-    "key": "a:ctype",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 86
-   }
-  },
-  {
-   "name": "R[a:ctype|watch|cnt|w1 / a:ctype|watch|cnt|w2]",
-   "gain": 1.7028672801011613e-07,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 1
-    },
-    "den": {
-     "key": "a:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "a:ctype|drop|cnt|w5",
-   "gain": 1.7028672801011613e-07,
-   "gen": 5,
-   "feature": {
-    "key": "a:ctype",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5
-   }
-  },
-  {
-   "name": "R[ua:director|drop|cnt|w4|sum / ua:director|drop|cnt|w7|sum]",
-   "gain": 1.5429785896886594e-07,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 7,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "R[ua:director|long|cnt|w90|mean / ua:director|watch|cnt|w90|mean]",
-   "gain": 4.692135324724234e-08,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "long",
-     "agg": "cnt",
-     "window": 90,
-     "red": "mean"
-    },
-    "den": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 90,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "ua:genre|drop|cnt|w4|min",
-   "gain": 8.695287191662349e-09,
-   "gen": 4,
-   "feature": {
-    "key": "ua:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 4,
-    "red": "min"
    }
   },
   {
@@ -2722,25 +1661,96 @@
    }
   },
   {
-   "name": "a:ctype|long|last|w91",
+   "name": "s:income|long|last|w1",
    "gain": 0.0,
-   "gen": 2,
+   "gen": 1,
    "feature": {
-    "key": "a:ctype",
+    "key": "s:income",
     "event": "long",
     "agg": "last",
-    "window": 91
+    "window": 1
    }
   },
   {
-   "name": "a:genre|watch|days|w21|max",
+   "name": "ua:genre|drop|first|w1|max",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "drop",
+    "agg": "first",
+    "window": 1,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|days|all|max",
+   "gain": 0.0,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "days",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:director|long|last|w1|min",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:director",
+    "event": "long",
+    "agg": "last",
+    "window": 1,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:actor|full|days|w2|min",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "ua:actor",
+    "event": "full",
+    "agg": "days",
+    "window": 2,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|watch|last|w37|max",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "last",
+    "window": 37,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|days|w23|max",
    "gain": 0.0,
    "gen": 2,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "days",
-    "window": 21,
+    "window": 23,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|first|w107|max",
+   "gain": 0.0,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "first",
+    "window": 107,
     "red": "max"
    }
   },
@@ -2757,287 +1767,623 @@
    }
   },
   {
-   "name": "a:country|long|days|w3|max",
+   "name": "a:genre|watch|first|w17|max",
    "gain": 0.0,
    "gen": 3,
    "feature": {
-    "key": "a:country",
-    "event": "long",
-    "agg": "days",
-    "window": 3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|drop|last|w66|max",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
     "key": "a:genre",
-    "event": "drop",
-    "agg": "last",
-    "window": 66,
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:director|drop|cnt|w1|mean",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "ua:director",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 1,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|drop|last|w96|max",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "last",
-    "window": 96,
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:studio|long|last|w13|mean",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "ua:studio",
-    "event": "long",
-    "agg": "last",
-    "window": 13,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:country|watch|last|w6|min",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "a:country",
     "event": "watch",
-    "agg": "last",
-    "window": 6,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:studio|drop|cnt|w2|min",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "ua:studio",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 2,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:genre|drop|last|w5|max",
-   "gain": 0.0,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "last",
-    "window": 5,
+    "agg": "first",
+    "window": 17,
     "red": "max"
    }
   },
   {
-   "name": "ua:director|drop|cnt|w1|min",
+   "name": "R[ua:studio|watch|cnt|w5|mean / ua:studio|watch|cnt|w87|mean]",
    "gain": 0.0,
-   "gen": 5,
-   "feature": {
-    "key": "ua:director",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 1,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:studio|long|last|w34|mean",
-   "gain": 0.0,
-   "gen": 5,
-   "feature": {
-    "key": "ua:studio",
-    "event": "long",
-    "agg": "last",
-    "window": 34,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[ua:studio|long|cnt|w13|mean / ua:studio|watch|cnt|w13|mean]",
-   "gain": 0.0,
-   "gen": 5,
+   "gen": 3,
    "feature": {
     "num": {
      "key": "ua:studio",
-     "event": "long",
+     "event": "watch",
      "agg": "cnt",
-     "window": 13,
+     "window": 5,
      "red": "mean"
     },
     "den": {
      "key": "ua:studio",
      "event": "watch",
      "agg": "cnt",
-     "window": 13,
+     "window": 87,
      "red": "mean"
     }
    }
   },
   {
-   "name": "a:genre|drop|days|w4|max",
-   "gain": 0.0,
-   "gen": 5,
+   "name": "ua:director|watch|cnt|w23|max",
+   "gain": -2.90972540596679e-07,
+   "gen": 0,
    "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "days",
-    "window": 4,
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 23,
     "red": "max"
    }
   },
   {
-   "name": "a:genre|drop|last|w4|max",
-   "gain": 0.0,
-   "gen": 5,
+   "name": "user|long|days|w9",
+   "gain": -3.426081377280732e-07,
+   "gen": 0,
    "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "last",
-    "window": 4,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|days|w114|max",
-   "gain": 0.0,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
+    "key": "user",
     "event": "long",
     "agg": "days",
-    "window": 114,
-    "red": "max"
+    "window": 9
    }
   },
   {
-   "name": "a:genre|watch|last|all|max",
-   "gain": 0.0,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "last",
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[ua:country|full|cnt|w4|max / ua:country|watch|cnt|w4|max]",
-   "gain": -3.1986224005575714e-07,
-   "gen": 5,
+   "name": "R[ua:country|full|cnt|w3|min / user|full|cnt|w3]",
+   "gain": -6.55346291462966e-07,
+   "gen": 1,
    "feature": {
     "num": {
      "key": "ua:country",
      "event": "full",
      "agg": "cnt",
-     "window": 4,
-     "red": "max"
+     "window": 3,
+     "red": "min"
     },
     "den": {
-     "key": "ua:country",
-     "event": "watch",
+     "key": "user",
+     "event": "full",
      "agg": "cnt",
-     "window": 4,
-     "red": "max"
+     "window": 3
     }
    }
   },
   {
-   "name": "ua:actor|long|cnt|w20|sum",
-   "gain": -1.0296858099292927e-06,
-   "gen": 5,
+   "name": "R[ua:studio|watch|cnt|w6|max / user|watch|cnt|w6]",
+   "gain": -9.204941012821988e-07,
+   "gen": 0,
    "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 20,
-    "red": "sum"
+    "num": {
+     "key": "ua:studio",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6
+    }
    }
   },
   {
-   "name": "a:genre|watch|cnt|w21|min",
-   "gain": -1.0526449136655236e-06,
-   "gen": 2,
+   "name": "a:studio|drop|cnt|w6|mean",
+   "gain": -1.081467175367834e-06,
+   "gen": 0,
    "feature": {
-    "key": "a:genre",
-    "event": "watch",
+    "key": "a:studio",
+    "event": "drop",
     "agg": "cnt",
-    "window": 21,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:actor|long|cnt|w9|mean",
-   "gain": -1.0768570826227841e-06,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 9,
+    "window": 6,
     "red": "mean"
    }
   },
   {
-   "name": "R[ua:director|watch|cnt|w2|mean / ua:director|watch|cnt|w69|mean]",
-   "gain": -1.2320019589298625e-06,
-   "gen": 5,
+   "name": "a:studio|watch|dec(h67.6)|all|max",
+   "gain": -1.2007793312104886e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 67.6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|full|cnt|w40|sum",
+   "gain": -1.3281232550885202e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "full",
+    "agg": "cnt",
+    "window": 40,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|drop|sum(pct)|w1|sum",
+   "gain": -1.3911187293422222e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "sum",
+    "window": 1,
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:studio|long|cnt|all|max",
+   "gain": -1.5474182049959873e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:studio",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "user|long|days|w3",
+   "gain": -1.8295140229995788e-06,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "long",
+    "agg": "days",
+    "window": 3
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h11.5)|w23|max",
+   "gain": -1.8973098461147475e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "window": 23,
+    "hl": 11.5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|watch|sum(pct)|all|sum",
+   "gain": -1.9242686312495594e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "sum",
+    "value": "pct",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:director|full|days|w47|min",
+   "gain": -1.938023963400648e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "full",
+    "agg": "days",
+    "window": 47,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|drop|cnt|w4|max",
+   "gain": -1.994483628649235e-06,
+   "gen": 3,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:studio|drop|nuniq|all|min",
+   "gain": -2.2475324373827377e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:studio",
+    "event": "drop",
+    "agg": "nuniq",
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:director|watch|last|all|max",
+   "gain": -2.41784818058588e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "last",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:ctype|long|mean(hours)|w4",
+   "gain": -2.5635323594383475e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "mean",
+    "window": 4,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "R[ua:director|drop|cnt|w8|sum / user|drop|cnt|w8]",
+   "gain": -2.9222828946684487e-06,
+   "gen": 2,
    "feature": {
     "num": {
      "key": "ua:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 8,
+     "red": "sum"
+    },
+    "den": {
+     "key": "user",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 8
+    }
+   }
+  },
+  {
+   "name": "a:ctype|long|dec(h2.9)|all",
+   "gain": -3.020426729560821e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "dec",
+    "hl": 2.9
+   }
+  },
+  {
+   "name": "a:ctype|long|cnt|w2",
+   "gain": -3.020426729560821e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w1 / a:ctype|long|cnt|w3]",
+   "gain": -3.020426729560821e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 3
+    }
+   }
+  },
+  {
+   "name": "a:ctype|long|cnt|all",
+   "gain": -3.020426729560821e-06,
+   "gen": 1,
+   "feature": {
+    "key": "a:ctype",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "R[a:ctype|long|cnt|w20 / a:ctype|watch|cnt|w20]",
+   "gain": -3.020426729560821e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:ctype",
+     "event": "long",
+     "agg": "cnt",
+     "window": 20
+    },
+    "den": {
+     "key": "a:ctype",
      "event": "watch",
      "agg": "cnt",
-     "window": 2,
-     "red": "mean"
+     "window": 20
+    }
+   }
+  },
+  {
+   "name": "a:studio|watch|nuniq|all|max",
+   "gain": -3.0301465525905957e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:studio",
+    "event": "watch",
+    "agg": "nuniq",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|drop|cnt|w3|min",
+   "gain": -3.9063698493504995e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[ua:director|full|cnt|w58|max / ua:director|watch|cnt|w58|max]",
+   "gain": -4.194276730332125e-06,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:director",
+     "event": "full",
+     "agg": "cnt",
+     "window": 58,
+     "red": "max"
     },
     "den": {
      "key": "ua:director",
      "event": "watch",
      "agg": "cnt",
-     "window": 69,
-     "red": "mean"
+     "window": 58,
+     "red": "max"
     }
    }
   },
   {
-   "name": "ua:director|full|mean(pct)|w8|max",
-   "gain": -1.232051053151606e-06,
+   "name": "s:sex|drop|last|w3",
+   "gain": -4.867964557057902e-06,
    "gen": 0,
    "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "ua:director|drop|cnt|all|max",
+   "gain": -5.1511482818469845e-06,
+   "gen": 1,
+   "feature": {
     "key": "ua:director",
-    "event": "full",
-    "agg": "mean",
-    "window": 8,
-    "value": "pct",
+    "event": "drop",
+    "agg": "cnt",
     "red": "max"
    }
   },
   {
+   "name": "ua:director|watch|dec(h1.6)|all|max",
+   "gain": -5.435007564058569e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "dec",
+    "hl": 1.6,
+    "red": "max"
+   }
+  },
+  {
+   "name": "item|drop|cnt|w11",
+   "gain": -5.76710820109072e-06,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 11
+   }
+  },
+  {
+   "name": "s:age|long|last|w3",
+   "gain": -5.987230319727532e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "last",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:income|watch|days|w4",
+   "gain": -6.114224619664654e-06,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "days",
+    "window": 4
+   }
+  },
+  {
+   "name": "ua:director|watch|cnt|all|mean",
+   "gain": -6.210280471492802e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:actor|long|days|w3|sum",
+   "gain": -6.288630098508219e-06,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "days",
+    "window": 3,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "ua:director|watch|first|w20|min",
+   "gain": -6.4917249810447775e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:director",
+    "event": "watch",
+    "agg": "first",
+    "window": 20,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:income|long|cnt|w2 / item|long|cnt|w2]",
+   "gain": -6.8392541571621335e-06,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "ua:ctype|long|mean(hours)|w18",
+   "gain": -7.580251754533973e-06,
+   "gen": 1,
+   "feature": {
+    "key": "ua:ctype",
+    "event": "long",
+    "agg": "mean",
+    "window": 18,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:genre|long|cnt|w99|min",
+   "gain": -7.774820489310497e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 99,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w64|min",
+   "gain": -7.921204321956199e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 64,
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:country|long|nuniq|w51|mean",
+   "gain": -8.20857524531926e-06,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "nuniq",
+    "window": 51,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "ua:country|drop|last|w11|mean",
+   "gain": -8.539119498884862e-06,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "last",
+    "window": 11,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w62 / s:sex|watch|cnt|w62]",
+   "gain": -9.467444268801417e-06,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 62
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 62
+    }
+   }
+  },
+  {
+   "name": "a:actor|long|days|w86|max",
+   "gain": -9.595826121359952e-06,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "days",
+    "window": 86,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[item|drop|cnt|w65 / item|watch|cnt|w65]",
+   "gain": -1.0021132225458695e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 65
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 65
+    }
+   }
+  },
+  {
    "name": "R[ua:genre|full|cnt|w2|max / user|full|cnt|w2]",
-   "gain": -1.235921451132882e-06,
+   "gain": -1.0249392953763647e-05,
    "gen": 0,
    "feature": {
     "num": {
@@ -3056,107 +2402,132 @@
    }
   },
   {
-   "name": "s:sex|long|last|w32",
-   "gain": -1.2709123353368823e-06,
+   "name": "a:actor|watch|dec(h1.4)|w5|max",
+   "gain": -1.064130113290207e-05,
    "gen": 0,
    "feature": {
-    "key": "s:sex",
-    "event": "long",
+    "key": "a:actor",
+    "event": "watch",
+    "agg": "dec",
+    "window": 5,
+    "hl": 1.4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "item|full|last|w32",
+   "gain": -1.0663152253093111e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
     "agg": "last",
     "window": 32
    }
   },
   {
-   "name": "a:director|long|last|w33|min",
-   "gain": -1.4918649865400258e-06,
-   "gen": 2,
+   "name": "ua:country|full|cnt|w11|min",
+   "gain": -1.0918730808988364e-05,
+   "gen": 1,
    "feature": {
-    "key": "a:director",
-    "event": "long",
-    "agg": "last",
-    "window": 33,
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "window": 11,
     "red": "min"
    }
   },
   {
-   "name": "s:age|long|last|w3",
-   "gain": -1.5508580997469767e-06,
-   "gen": 0,
+   "name": "s:kids|long|nuniq|w8",
+   "gain": -1.1106218229549325e-05,
+   "gen": 3,
    "feature": {
-    "key": "s:age",
+    "key": "s:kids",
     "event": "long",
-    "agg": "last",
-    "window": 3
+    "agg": "nuniq",
+    "window": 8
    }
   },
   {
-   "name": "R[item|drop|cnt|w65 / item|watch|cnt|w65]",
-   "gain": -1.6382401858139328e-06,
+   "name": "R[ua:ctype|full|cnt|w1 / ua:ctype|watch|cnt|w1]",
+   "gain": -1.1107882366571953e-05,
    "gen": 0,
    "feature": {
     "num": {
-     "key": "item",
-     "event": "drop",
+     "key": "ua:ctype",
+     "event": "full",
      "agg": "cnt",
-     "window": 65
+     "window": 1
     },
     "den": {
-     "key": "item",
+     "key": "ua:ctype",
      "event": "watch",
      "agg": "cnt",
-     "window": 65
+     "window": 1
     }
    }
   },
   {
-   "name": "ua:director|long|dec(h67.2)|w5|max",
-   "gain": -1.73330554163742e-06,
-   "gen": 3,
+   "name": "user|long|dec(h1)|w3",
+   "gain": -1.1875844341889541e-05,
+   "gen": 1,
    "feature": {
-    "key": "ua:director",
+    "key": "user",
     "event": "long",
     "agg": "dec",
-    "window": 5,
-    "hl": 67.2,
+    "window": 3,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "R[a:genre|full|cnt|w107|max / a:genre|watch|cnt|w107|max]",
+   "gain": -1.2083852821836993e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 107,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 107,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:income|watch|mean(hours)|w59",
+   "gain": -1.3371657772716372e-05,
+   "gen": 1,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "mean",
+    "window": 59,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "ua:genre|long|mean(hours)|w7|max",
+   "gain": -1.4007902435671238e-05,
+   "gen": 1,
+   "feature": {
+    "key": "ua:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 7,
+    "value": "hours",
     "red": "max"
    }
   },
   {
-   "name": "R[ua:actor|long|cnt|w16|mean / ua:actor|long|cnt|w20|mean]",
-   "gain": -1.8208039331141235e-06,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "ua:actor",
-     "event": "long",
-     "agg": "cnt",
-     "window": 16,
-     "red": "mean"
-    },
-    "den": {
-     "key": "ua:actor",
-     "event": "long",
-     "agg": "cnt",
-     "window": 20,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w2|min",
-   "gain": -1.8751068743549926e-06,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 2,
-    "red": "min"
-   }
-  },
-  {
    "name": "ua:director|drop|mean(pct)|w19|sum",
-   "gain": -2.2010310179593207e-06,
+   "gain": -1.422688427502733e-05,
    "gen": 3,
    "feature": {
     "key": "ua:director",
@@ -3168,312 +2539,27 @@
    }
   },
   {
-   "name": "R[ua:ctype|drop|cnt|w2 / user|drop|cnt|w2]",
-   "gain": -2.313122535922696e-06,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "ua:ctype",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "s:sex|drop|days|w3",
-   "gain": -2.466283772456501e-06,
+   "name": "R[s:sex|drop|cnt|w33 / item|drop|cnt|w33]",
+   "gain": -1.4313164266525902e-05,
    "gen": 1,
    "feature": {
-    "key": "s:sex",
-    "event": "drop",
-    "agg": "days",
-    "window": 3
-   }
-  },
-  {
-   "name": "ua:actor|drop|cnt|w1|mean",
-   "gain": -2.548055125083104e-06,
-   "gen": 3,
-   "feature": {
-    "key": "ua:actor",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 1,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:ctype|full|cnt|w6",
-   "gain": -2.5832208882803354e-06,
-   "gen": 5,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "full",
-    "agg": "cnt",
-    "window": 6
-   }
-  },
-  {
-   "name": "ua:country|full|cnt|w3|mean",
-   "gain": -2.622507528846074e-06,
-   "gen": 2,
-   "feature": {
-    "key": "ua:country",
-    "event": "full",
-    "agg": "cnt",
-    "window": 3,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:genre|drop|cnt|w5|min",
-   "gain": -2.624687426816541e-06,
-   "gen": 4,
-   "feature": {
-    "key": "ua:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[user|drop|cnt|w2 / user|drop|cnt|w3]",
-   "gain": -2.717890402244294e-06,
-   "gen": 4,
-   "feature": {
     "num": {
-     "key": "user",
+     "key": "s:sex",
      "event": "drop",
      "agg": "cnt",
-     "window": 2
+     "window": 33
     },
     "den": {
-     "key": "user",
+     "key": "item",
      "event": "drop",
      "agg": "cnt",
-     "window": 3
-    }
-   }
-  },
-  {
-   "name": "ua:country|full|cnt|all|sum",
-   "gain": -3.1332320950747117e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:country",
-    "event": "full",
-    "agg": "cnt",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[ua:director|drop|cnt|w96|sum / user|drop|cnt|w96]",
-   "gain": -3.2460714776486044e-06,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 96,
-     "red": "sum"
-    },
-    "den": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 96
-    }
-   }
-  },
-  {
-   "name": "ua:country|long|dec(h1)|w3|mean",
-   "gain": -3.911922438933069e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:country",
-    "event": "long",
-    "agg": "dec",
-    "window": 3,
-    "hl": 1.0,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "item|full|last|w32",
-   "gain": -4.589041007960204e-06,
-   "gen": 0,
-   "feature": {
-    "key": "item",
-    "event": "full",
-    "agg": "last",
-    "window": 32
-   }
-  },
-  {
-   "name": "ua:genre|full|cnt|all|mean",
-   "gain": -4.838127452173879e-06,
-   "gen": 5,
-   "feature": {
-    "key": "ua:genre",
-    "event": "full",
-    "agg": "cnt",
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:director|watch|first|w20|min",
-   "gain": -4.914869792815857e-06,
-   "gen": 0,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "first",
-    "window": 20,
-    "red": "min"
-   }
-  },
-  {
-   "name": "s:income|full|mean(pct)|all",
-   "gain": -5.206866673927724e-06,
-   "gen": 0,
-   "feature": {
-    "key": "s:income",
-    "event": "full",
-    "agg": "mean",
-    "value": "pct"
-   }
-  },
-  {
-   "name": "s:sex|full|days|w22",
-   "gain": -5.560081609443102e-06,
-   "gen": 5,
-   "feature": {
-    "key": "s:sex",
-    "event": "full",
-    "agg": "days",
-    "window": 22
-   }
-  },
-  {
-   "name": "R[user|long|cnt|w9 / user|watch|cnt|w9]",
-   "gain": -5.609261886502237e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "user",
-     "event": "long",
-     "agg": "cnt",
-     "window": 9
-    },
-    "den": {
-     "key": "user",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 9
-    }
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h47.6)|w2|min",
-   "gain": -5.637213162719423e-06,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "window": 2,
-    "hl": 47.6,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:director|full|first|w20|mean",
-   "gain": -6.372841629478931e-06,
-   "gen": 5,
-   "feature": {
-    "key": "a:director",
-    "event": "full",
-    "agg": "first",
-    "window": 20,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[ua:genre|long|cnt|w2|sum / ua:genre|watch|cnt|w2|sum]",
-   "gain": -6.7085139388786685e-06,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "ua:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 2,
-     "red": "sum"
-    },
-    "den": {
-     "key": "ua:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "a:genre|drop|nuniq|w2|mean",
-   "gain": -6.889333899307015e-06,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "nuniq",
-    "window": 2,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "ua:ctype|full|mean(pct)|w70",
-   "gain": -7.048731676430331e-06,
-   "gen": 3,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "full",
-    "agg": "mean",
-    "window": 70,
-    "value": "pct"
-   }
-  },
-  {
-   "name": "R[ua:ctype|full|cnt|w1 / ua:ctype|watch|cnt|w1]",
-   "gain": -7.143580439163133e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:ctype",
-     "event": "full",
-     "agg": "cnt",
-     "window": 1
-    },
-    "den": {
-     "key": "ua:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 1
+     "window": 33
     }
    }
   },
   {
    "name": "R[ua:country|drop|cnt|w2|min / user|drop|cnt|w2]",
-   "gain": -7.531026546034325e-06,
+   "gain": -1.4426976261361357e-05,
    "gen": 0,
    "feature": {
     "num": {
@@ -3492,192 +2578,32 @@
    }
   },
   {
-   "name": "item|drop|cnt|w6",
-   "gain": -7.65360467160775e-06,
-   "gen": 5,
+   "name": "ua:ctype|watch|cnt|w7",
+   "gain": -1.5065198084175668e-05,
+   "gen": 0,
    "feature": {
-    "key": "item",
-    "event": "drop",
+    "key": "ua:ctype",
+    "event": "watch",
     "agg": "cnt",
-    "window": 6
+    "window": 7
    }
   },
   {
-   "name": "a:genre|long|mean(hours)|w60|sum",
-   "gain": -7.976214333411946e-06,
+   "name": "ua:country|drop|dec(h1)|w3|mean",
+   "gain": -1.5522334187959008e-05,
    "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "mean",
-    "window": 60,
-    "value": "hours",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[s:age|drop|cnt|w9 / s:age|drop|cnt|w49]",
-   "gain": -8.351742229920078e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:age",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 9
-    },
-    "den": {
-     "key": "s:age",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 49
-    }
-   }
-  },
-  {
-   "name": "ua:country|drop|last|w11|mean",
-   "gain": -8.409596565964184e-06,
-   "gen": 0,
    "feature": {
     "key": "ua:country",
     "event": "drop",
-    "agg": "last",
-    "window": 11,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w96|max / a:genre|watch|cnt|w96|max]",
-   "gain": -8.806034559563636e-06,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 96,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 96,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
-   "gain": -8.834278452482525e-06,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:age",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 120
-    },
-    "den": {
-     "key": "s:age",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 120
-    }
-   }
-  },
-  {
-   "name": "a:genre|watch|mean(hours)|w60|min",
-   "gain": -9.303233014387735e-06,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "mean",
-    "window": 60,
-    "value": "hours",
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[ua:ctype|drop|cnt|w4 / user|drop|cnt|w4]",
-   "gain": -9.952586442159295e-06,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "ua:ctype",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4
-    },
-    "den": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4
-    }
-   }
-  },
-  {
-   "name": "R[ua:director|watch|cnt|w101|min / user|watch|cnt|w101]",
-   "gain": -1.054918995758991e-05,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "ua:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 101,
-     "red": "min"
-    },
-    "den": {
-     "key": "user",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 101
-    }
-   }
-  },
-  {
-   "name": "ua:director|watch|mean(hours)|w3|max",
-   "gain": -1.1431187600552395e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:director",
-    "event": "watch",
-    "agg": "mean",
+    "agg": "dec",
     "window": 3,
-    "value": "hours",
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:genre|long|last|w4|mean",
-   "gain": -1.1440280966931726e-05,
-   "gen": 2,
-   "feature": {
-    "key": "ua:genre",
-    "event": "long",
-    "agg": "last",
-    "window": 4,
+    "hl": 1.0,
     "red": "mean"
-   }
-  },
-  {
-   "name": "s:age|watch|mean(hours)|w1",
-   "gain": -1.1757710687877732e-05,
-   "gen": 2,
-   "feature": {
-    "key": "s:age",
-    "event": "watch",
-    "agg": "mean",
-    "window": 1,
-    "value": "hours"
    }
   },
   {
    "name": "ua:actor|full|dec(h8.9)|all|mean",
-   "gain": -1.2015191908069933e-05,
+   "gain": -1.6035139199524484e-05,
    "gen": 0,
    "feature": {
     "key": "ua:actor",
@@ -3688,345 +2614,29 @@
    }
   },
   {
-   "name": "ua:country|watch|dec(h3.4)|all|min",
-   "gain": -1.208709299087285e-05,
-   "gen": 5,
+   "name": "ua:country|long|dec(h2.5)|w3|mean",
+   "gain": -1.6397261973721822e-05,
+   "gen": 1,
    "feature": {
     "key": "ua:country",
-    "event": "watch",
+    "event": "long",
     "agg": "dec",
-    "hl": 3.4,
-    "red": "min"
-   }
-  },
-  {
-   "name": "ua:genre|long|cnt|w21|mean",
-   "gain": -1.223071447065821e-05,
-   "gen": 3,
-   "feature": {
-    "key": "ua:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 21,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|full|nuniq|w64|min",
-   "gain": -1.2947238706741138e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "nuniq",
-    "window": 64,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[ua:actor|long|cnt|w20|mean / ua:actor|watch|cnt|w20|mean]",
-   "gain": -1.3042869331639229e-05,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "ua:actor",
-     "event": "long",
-     "agg": "cnt",
-     "window": 20,
-     "red": "mean"
-    },
-    "den": {
-     "key": "ua:actor",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 20,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "ua:ctype|long|mean(hours)|w4",
-   "gain": -1.3062068316686826e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "mean",
-    "window": 4,
-    "value": "hours"
-   }
-  },
-  {
-   "name": "R[s:kids|long|cnt|w8 / item|long|cnt|w8]",
-   "gain": -1.3115624814312443e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "s:kids",
-     "event": "long",
-     "agg": "cnt",
-     "window": 8
-    },
-    "den": {
-     "key": "item",
-     "event": "long",
-     "agg": "cnt",
-     "window": 8
-    }
-   }
-  },
-  {
-   "name": "s:income|drop|cnt|w61",
-   "gain": -1.3336162617408331e-05,
-   "gen": 3,
-   "feature": {
-    "key": "s:income",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 61
-   }
-  },
-  {
-   "name": "a:country|drop|dec(h1.3)|w28|max",
-   "gain": -1.358518534268216e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:country",
-    "event": "drop",
-    "agg": "dec",
-    "window": 28,
-    "hl": 1.3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|nuniq|w2|min",
-   "gain": -1.4314074226917661e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "nuniq",
-    "window": 2,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w8|max / a:genre|watch|cnt|w8|max]",
-   "gain": -1.4456070642591967e-05,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 8,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 8,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "a:genre|watch|nuniq|all|max",
-   "gain": -1.4777124206333259e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "nuniq",
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w4|max",
-   "gain": -1.4884400699972933e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 4,
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[ua:genre|long|cnt|w29|mean / ua:genre|watch|cnt|w29|mean]",
-   "gain": -1.4894778373644724e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "ua:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 29,
-     "red": "mean"
-    },
-    "den": {
-     "key": "ua:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 29,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "item|long|cnt|w109",
-   "gain": -1.4992072254964295e-05,
-   "gen": 1,
-   "feature": {
-    "key": "item",
-    "event": "long",
-    "agg": "cnt",
-    "window": 109
-   }
-  },
-  {
-   "name": "item|drop|cnt|w140",
-   "gain": -1.5378655129467955e-05,
-   "gen": 5,
-   "feature": {
-    "key": "item",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 140
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w2|mean",
-   "gain": -1.5417328861386248e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 2,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "s:sex|watch|mean(hours)|w3",
-   "gain": -1.5743157903064242e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "watch",
-    "agg": "mean",
     "window": 3,
-    "value": "hours"
+    "hl": 2.5,
+    "red": "mean"
    }
   },
   {
-   "name": "R[s:income|long|cnt|w2 / item|long|cnt|w2]",
-   "gain": -1.5995659246016702e-05,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "s:income",
-     "event": "long",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "item",
-     "event": "long",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "a:genre|full|cnt|w5|max",
-   "gain": -1.6194270134661792e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "cnt",
-    "window": 5,
-    "red": "max"
-   }
-  },
-  {
-   "name": "user|full|days|all",
-   "gain": -1.633711920105696e-05,
-   "gen": 4,
-   "feature": {
-    "key": "user",
-    "event": "full",
-    "agg": "days"
-   }
-  },
-  {
-   "name": "a:actor|drop|sum(pct)|w41|sum",
-   "gain": -1.6501038012817215e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:actor",
-    "event": "drop",
-    "agg": "sum",
-    "window": 41,
-    "value": "pct",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[s:income|drop|cnt|w22 / s:income|watch|cnt|w22]",
-   "gain": -1.6946156476654872e-05,
+   "name": "R[ua:genre|watch|cnt|w4|mean / user|watch|cnt|w4]",
+   "gain": -1.6469623952491963e-05,
    "gen": 2,
    "feature": {
     "num": {
-     "key": "s:income",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 22
-    },
-    "den": {
-     "key": "s:income",
+     "key": "ua:genre",
      "event": "watch",
      "agg": "cnt",
-     "window": 22
-    }
-   }
-  },
-  {
-   "name": "ua:country|long|cnt|all|max",
-   "gain": -1.710999754960668e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:country",
-    "event": "long",
-    "agg": "cnt",
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:ctype|watch|cnt|w7",
-   "gain": -1.717092814359361e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 7
-   }
-  },
-  {
-   "name": "R[user|drop|cnt|w4 / user|watch|cnt|w4]",
-   "gain": -1.7180135938814345e-05,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4
+     "window": 4,
+     "red": "mean"
     },
     "den": {
      "key": "user",
@@ -4037,87 +2647,41 @@
    }
   },
   {
-   "name": "R[ua:ctype|watch|cnt|w38 / ua:ctype|watch|cnt|w83]",
-   "gain": -1.7926371847415412e-05,
+   "name": "ua:ctype|full|last|w126",
+   "gain": -1.6542091990638663e-05,
    "gen": 0,
    "feature": {
-    "num": {
-     "key": "ua:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 38
-    },
-    "den": {
-     "key": "ua:ctype",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 83
-    }
+    "key": "ua:ctype",
+    "event": "full",
+    "agg": "last",
+    "window": 126
    }
   },
   {
-   "name": "ua:genre|watch|cnt|w140|min",
-   "gain": -1.7987048612916334e-05,
-   "gen": 4,
-   "feature": {
-    "key": "ua:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 140,
-    "red": "min"
-   }
-  },
-  {
-   "name": "item|drop|cnt|w5",
-   "gain": -1.847709770652628e-05,
-   "gen": 4,
-   "feature": {
-    "key": "item",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5
-   }
-  },
-  {
-   "name": "a:genre|watch|dec(h34.4)|all|min",
-   "gain": -1.882686205290779e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "dec",
-    "hl": 34.4,
-    "red": "min"
-   }
-  },
-  {
-   "name": "a:actor|long|days|w3|sum",
-   "gain": -1.955510421396134e-05,
-   "gen": 3,
+   "name": "a:actor|long|nuniq|all|max",
+   "gain": -1.6592204313811698e-05,
+   "gen": 1,
    "feature": {
     "key": "a:actor",
     "event": "long",
-    "agg": "days",
-    "window": 3,
-    "red": "sum"
+    "agg": "nuniq",
+    "red": "max"
    }
   },
   {
-   "name": "a:country|full|mean(hours)|w10|sum",
-   "gain": -2.005946222415067e-05,
-   "gen": 5,
+   "name": "item|watch|cnt|w12",
+   "gain": -1.6764439070754422e-05,
+   "gen": 2,
    "feature": {
-    "key": "a:country",
-    "event": "full",
-    "agg": "mean",
-    "window": 10,
-    "value": "hours",
-    "red": "sum"
+    "key": "item",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 12
    }
   },
   {
    "name": "R[user|long|cnt|w5 / user|long|cnt|w37]",
-   "gain": -2.0140210682410842e-05,
+   "gain": -1.6862898919153824e-05,
    "gen": 0,
    "feature": {
     "num": {
@@ -4135,195 +2699,252 @@
    }
   },
   {
-   "name": "R[s:age|drop|cnt|w4 / s:age|watch|cnt|w4]",
-   "gain": -2.0568536032425366e-05,
-   "gen": 5,
+   "name": "a:genre|full|dec(h22.9)|w7|max",
+   "gain": -1.7051581786990677e-05,
+   "gen": 2,
    "feature": {
-    "num": {
-     "key": "s:age",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4
-    },
-    "den": {
-     "key": "s:age",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 4
-    }
-   }
-  },
-  {
-   "name": "user|full|cnt|w50",
-   "gain": -2.061216827184409e-05,
-   "gen": 0,
-   "feature": {
-    "key": "user",
-    "event": "full",
-    "agg": "cnt",
-    "window": 50
-   }
-  },
-  {
-   "name": "ua:ctype|full|last|w126",
-   "gain": -2.0710389288060294e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "full",
-    "agg": "last",
-    "window": 126
-   }
-  },
-  {
-   "name": "ua:actor|full|dec(h8.9)|all|max",
-   "gain": -2.0965521602328563e-05,
-   "gen": 1,
-   "feature": {
-    "key": "ua:actor",
+    "key": "a:genre",
     "event": "full",
     "agg": "dec",
-    "hl": 8.9,
+    "window": 7,
+    "hl": 22.9,
     "red": "max"
    }
   },
   {
-   "name": "a:actor|long|sum(pct)|w75|mean",
-   "gain": -2.127141556888812e-05,
+   "name": "item|long|cnt|all",
+   "gain": -1.7851888543266026e-05,
+   "gen": 1,
+   "feature": {
+    "key": "item",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "ua:country|long|dec(h1.1)|all|mean",
+   "gain": -1.8366434663123765e-05,
    "gen": 0,
    "feature": {
-    "key": "a:actor",
+    "key": "ua:country",
     "event": "long",
-    "agg": "sum",
-    "window": 75,
-    "value": "pct",
+    "agg": "dec",
+    "hl": 1.1,
     "red": "mean"
    }
   },
   {
-   "name": "R[ua:ctype|watch|cnt|w2 / ua:ctype|watch|cnt|w3]",
-   "gain": -2.12984543783018e-05,
-   "gen": 2,
+   "name": "R[s:kids|long|cnt|w2 / item|long|cnt|w2]",
+   "gain": -1.8412631342612507e-05,
+   "gen": 0,
    "feature": {
     "num": {
-     "key": "ua:ctype",
-     "event": "watch",
+     "key": "s:kids",
+     "event": "long",
      "agg": "cnt",
      "window": 2
     },
     "den": {
-     "key": "ua:ctype",
-     "event": "watch",
+     "key": "item",
+     "event": "long",
      "agg": "cnt",
-     "window": 3
+     "window": 2
     }
    }
   },
   {
-   "name": "ua:genre|long|dec(h43)|w101|min",
-   "gain": -2.1588968406656417e-05,
-   "gen": 5,
-   "feature": {
-    "key": "ua:genre",
-    "event": "long",
-    "agg": "dec",
-    "window": 101,
-    "hl": 43.0,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[ua:genre|drop|cnt|w15|mean / user|drop|cnt|w15]",
-   "gain": -2.180898455022423e-05,
+   "name": "ua:country|watch|dec(h24)|w23|sum",
+   "gain": -1.9038544200183916e-05,
    "gen": 3,
    "feature": {
-    "num": {
-     "key": "ua:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 15,
-     "red": "mean"
-    },
-    "den": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 15
-    }
-   }
-  },
-  {
-   "name": "s:sex|drop|cnt|w92",
-   "gain": -2.1987016003151283e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 92
-   }
-  },
-  {
-   "name": "a:country|long|dec(h1.9)|all|max",
-   "gain": -2.2182936056776292e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:country",
-    "event": "long",
-    "agg": "dec",
-    "hl": 1.9,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w72|max",
-   "gain": -2.2291723416174858e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "cnt",
-    "window": 72,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|all|sum",
-   "gain": -2.2491799246140975e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
+    "key": "ua:country",
     "event": "watch",
-    "agg": "cnt",
+    "agg": "dec",
+    "window": 23,
+    "hl": 24.0,
     "red": "sum"
    }
   },
   {
-   "name": "s:kids|drop|dec(h3.3)|all",
-   "gain": -2.2696907455738158e-05,
-   "gen": 0,
+   "name": "s:income|full|cnt|all",
+   "gain": -1.927321727293596e-05,
+   "gen": 1,
    "feature": {
-    "key": "s:kids",
-    "event": "drop",
-    "agg": "dec",
-    "hl": 3.3
+    "key": "s:income",
+    "event": "full",
+    "agg": "cnt"
    }
   },
   {
-   "name": "a:director|drop|cnt|w2|mean",
-   "gain": -2.2739288736722818e-05,
-   "gen": 3,
+   "name": "item|watch|cnt|w18",
+   "gain": -2.0379534613208794e-05,
+   "gen": 0,
    "feature": {
-    "key": "a:director",
-    "event": "drop",
+    "key": "item",
+    "event": "watch",
     "agg": "cnt",
-    "window": 2,
+    "window": 18
+   }
+  },
+  {
+   "name": "a:genre|full|dec(h22.9)|w23|max",
+   "gain": -2.1630004625197707e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "dec",
+    "window": 23,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h59.8)|all|mean",
+   "gain": -2.20747698915294e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 59.8,
     "red": "mean"
    }
   },
   {
+   "name": "a:genre|long|mean(hours)|w60|min",
+   "gain": -2.3413073618305802e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "mean",
+    "window": 60,
+    "value": "hours",
+    "red": "min"
+   }
+  },
+  {
+   "name": "ua:genre|full|mean(pct)|w51|max",
+   "gain": -2.3545201077536382e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:genre",
+    "event": "full",
+    "agg": "mean",
+    "window": 51,
+    "value": "pct",
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|drop|mean(hours)|w92|sum",
+   "gain": -2.362843082540783e-05,
+   "gen": 2,
+   "feature": {
+    "key": "ua:country",
+    "event": "drop",
+    "agg": "mean",
+    "window": 92,
+    "value": "hours",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:actor|full|cnt|all|min",
+   "gain": -2.3681123330336618e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "full",
+    "agg": "cnt",
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w90 / s:sex|watch|cnt|w90]",
+   "gain": -2.4433711417630455e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 90
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 90
+    }
+   }
+  },
+  {
+   "name": "user|drop|cnt|w19",
+   "gain": -2.488542749739392e-05,
+   "gen": 3,
+   "feature": {
+    "key": "user",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 19
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w38 / ua:ctype|watch|cnt|w83]",
+   "gain": -2.498564608476722e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 38
+    },
+    "den": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 83
+    }
+   }
+  },
+  {
+   "name": "a:country|long|dec(h2.7)|w124|min",
+   "gain": -2.539785981021947e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "window": 124,
+    "hl": 2.7,
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[s:sex|drop|cnt|w2 / s:sex|drop|cnt|w82]",
+   "gain": -2.5978978143860465e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 82
+    }
+   }
+  },
+  {
    "name": "ua:genre|full|cnt|w85|sum",
-   "gain": -2.2975145322519375e-05,
+   "gain": -2.618490937973672e-05,
    "gen": 0,
    "feature": {
     "key": "ua:genre",
@@ -4334,332 +2955,32 @@
    }
   },
   {
-   "name": "R[a:actor|full|cnt|w2|sum / a:actor|watch|cnt|w2|sum]",
-   "gain": -2.3193875910189343e-05,
-   "gen": 5,
+   "name": "ua:ctype|drop|dec(h46.4)|w137",
+   "gain": -2.6375578543839928e-05,
+   "gen": 0,
    "feature": {
-    "num": {
-     "key": "a:actor",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2,
-     "red": "sum"
-    },
-    "den": {
-     "key": "a:actor",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2,
-     "red": "sum"
-    }
+    "key": "ua:ctype",
+    "event": "drop",
+    "agg": "dec",
+    "window": 137,
+    "hl": 46.4
    }
   },
   {
-   "name": "ua:genre|watch|mean(pct)|all|sum",
-   "gain": -2.357523309597792e-05,
-   "gen": 2,
-   "feature": {
-    "key": "ua:genre",
-    "event": "watch",
-    "agg": "mean",
-    "value": "pct",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:genre|long|mean(hours)|w60|max",
-   "gain": -2.367928708562478e-05,
+   "name": "ua:country|watch|dec(h22.9)|all|mean",
+   "gain": -2.663180667823728e-05,
    "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
-    "agg": "mean",
-    "window": 60,
-    "value": "hours",
-    "red": "max"
-   }
-  },
-  {
-   "name": "ua:country|long|dec(h1.3)|w39|max",
-   "gain": -2.3742179616800807e-05,
-   "gen": 5,
    "feature": {
     "key": "ua:country",
-    "event": "long",
-    "agg": "dec",
-    "window": 39,
-    "hl": 1.3,
-    "red": "max"
-   }
-  },
-  {
-   "name": "s:income|full|last|all",
-   "gain": -2.4779476238731557e-05,
-   "gen": 3,
-   "feature": {
-    "key": "s:income",
-    "event": "full",
-    "agg": "last"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w101|max / a:genre|watch|cnt|w101|max]",
-   "gain": -2.5400698389674292e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 101,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 101,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "s:income|drop|mean(pct)|all",
-   "gain": -2.5857206683986556e-05,
-   "gen": 1,
-   "feature": {
-    "key": "s:income",
-    "event": "drop",
-    "agg": "mean",
-    "value": "pct"
-   }
-  },
-  {
-   "name": "s:sex|drop|dec(h1)|w9",
-   "gain": -2.622272823260552e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "drop",
-    "agg": "dec",
-    "window": 9,
-    "hl": 1.0
-   }
-  },
-  {
-   "name": "s:sex|long|mean(hours)|w61",
-   "gain": -2.6634515648944757e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "long",
-    "agg": "mean",
-    "window": 61,
-    "value": "hours"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w16|max / a:genre|watch|cnt|w16|max]",
-   "gain": -2.6796606192487638e-05,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 16,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 16,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[s:sex|drop|cnt|w62 / s:sex|watch|cnt|w62]",
-   "gain": -2.693718859537314e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:sex",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 62
-    },
-    "den": {
-     "key": "s:sex",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 62
-    }
-   }
-  },
-  {
-   "name": "a:genre|drop|dec(h48)|w96|sum",
-   "gain": -2.708971186499154e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 48.0,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[s:kids|drop|cnt|w5 / item|drop|cnt|w5]",
-   "gain": -2.7370937500069414e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "s:kids",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 5
-    },
-    "den": {
-     "key": "item",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 5
-    }
-   }
-  },
-  {
-   "name": "item|drop|cnt|w11",
-   "gain": -2.76920751334786e-05,
-   "gen": 0,
-   "feature": {
-    "key": "item",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 11
-   }
-  },
-  {
-   "name": "s:sex|watch|nuniq|w108",
-   "gain": -2.8162055493316518e-05,
-   "gen": 2,
-   "feature": {
-    "key": "s:sex",
     "event": "watch",
-    "agg": "nuniq",
-    "window": 108
-   }
-  },
-  {
-   "name": "R[user|drop|cnt|w3 / user|watch|cnt|w3]",
-   "gain": -2.8229879608779318e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "user",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 3
-    },
-    "den": {
-     "key": "user",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3
-    }
-   }
-  },
-  {
-   "name": "a:actor|long|days|w86|max",
-   "gain": -2.8373830336228534e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:actor",
-    "event": "long",
-    "agg": "days",
-    "window": 86,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:country|drop|cnt|w5|min",
-   "gain": -2.8565685761025583e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:country",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[s:income|full|cnt|w12 / s:income|watch|cnt|w12]",
-   "gain": -2.8567026946167695e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "s:income",
-     "event": "full",
-     "agg": "cnt",
-     "window": 12
-    },
-    "den": {
-     "key": "s:income",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 12
-    }
-   }
-  },
-  {
-   "name": "R[ua:genre|long|cnt|w53|sum / user|long|cnt|w53]",
-   "gain": -2.858254278696737e-05,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "ua:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 53,
-     "red": "sum"
-    },
-    "den": {
-     "key": "user",
-     "event": "long",
-     "agg": "cnt",
-     "window": 53
-    }
-   }
-  },
-  {
-   "name": "a:actor|drop|dec(h3.9)|all|min",
-   "gain": -2.880018738188328e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:actor",
-    "event": "drop",
     "agg": "dec",
-    "hl": 3.9,
-    "red": "min"
-   }
-  },
-  {
-   "name": "s:income|long|last|w72",
-   "gain": -2.8807542997701108e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:income",
-    "event": "long",
-    "agg": "last",
-    "window": 72
+    "hl": 22.9,
+    "red": "mean"
    }
   },
   {
    "name": "R[ua:country|drop|cnt|w82|mean / user|drop|cnt|w82]",
-   "gain": -2.8821057348880907e-05,
+   "gain": -2.720114122177486e-05,
    "gen": 0,
    "feature": {
     "num": {
@@ -4678,31 +2999,64 @@
    }
   },
   {
-   "name": "ua:country|long|dec(h1.1)|all|mean",
-   "gain": -2.8941057277062643e-05,
-   "gen": 0,
+   "name": "s:kids|full|cnt|w2",
+   "gain": -2.7350835744004154e-05,
+   "gen": 2,
    "feature": {
-    "key": "ua:country",
-    "event": "long",
-    "agg": "dec",
-    "hl": 1.1,
-    "red": "mean"
+    "key": "s:kids",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2
    }
   },
   {
-   "name": "a:actor|watch|first|all|mean",
-   "gain": -2.9054205057721383e-05,
+   "name": "s:sex|long|last|w32",
+   "gain": -2.8415598207390258e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "last",
+    "window": 32
+   }
+  },
+  {
+   "name": "s:income|watch|nuniq|w5",
+   "gain": -2.8511897844744893e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 5
+   }
+  },
+  {
+   "name": "item|watch|dec(h22.9)|w7",
+   "gain": -2.8902504952160735e-05,
    "gen": 2,
    "feature": {
-    "key": "a:actor",
+    "key": "item",
     "event": "watch",
-    "agg": "first",
-    "red": "mean"
+    "agg": "dec",
+    "window": 7,
+    "hl": 22.9
+   }
+  },
+  {
+   "name": "s:kids|drop|dec(h3.3)|all",
+   "gain": -2.9664133246953828e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.3
    }
   },
   {
    "name": "ua:ctype|long|cnt|w116",
-   "gain": -2.9625763792472115e-05,
+   "gain": -3.0085341854849124e-05,
    "gen": 0,
    "feature": {
     "key": "ua:ctype",
@@ -4712,210 +3066,115 @@
    }
   },
   {
-   "name": "R[s:sex|full|cnt|w2 / item|full|cnt|w2]",
-   "gain": -2.9642945961382006e-05,
+   "name": "a:director|watch|cnt|w14|mean",
+   "gain": -3.024541735301839e-05,
    "gen": 3,
    "feature": {
-    "num": {
-     "key": "s:sex",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "item",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "R[s:sex|drop|cnt|w90 / s:sex|watch|cnt|w90]",
-   "gain": -2.9673015707616657e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:sex",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 90
-    },
-    "den": {
-     "key": "s:sex",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 90
-    }
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w5|min",
-   "gain": -3.0066741780597483e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
+    "key": "a:director",
+    "event": "watch",
     "agg": "cnt",
-    "window": 5,
-    "red": "min"
+    "window": 14,
+    "red": "mean"
    }
   },
   {
-   "name": "s:sex|drop|cnt|all",
-   "gain": -3.0218301988738094e-05,
-   "gen": 4,
+   "name": "s:sex|drop|cnt|w92",
+   "gain": -3.0381386968682256e-05,
+   "gen": 0,
    "feature": {
     "key": "s:sex",
     "event": "drop",
-    "agg": "cnt"
-   }
-  },
-  {
-   "name": "ua:ctype|long|cnt|all",
-   "gain": -3.0267732944476433e-05,
-   "gen": 1,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "cnt"
-   }
-  },
-  {
-   "name": "s:kids|drop|cnt|w3",
-   "gain": -3.0610575967329745e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:kids",
-    "event": "drop",
     "agg": "cnt",
-    "window": 3
+    "window": 92
    }
   },
   {
-   "name": "ua:ctype|long|dec(h0.7)|all",
-   "gain": -3.159116922148153e-05,
-   "gen": 5,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "dec",
-    "hl": 0.7
-   }
-  },
-  {
-   "name": "a:country|long|dec(h2.7)|w124|min",
-   "gain": -3.212623672235043e-05,
+   "name": "a:genre|long|nuniq|w2|mean",
+   "gain": -3.059700661754705e-05,
    "gen": 0,
    "feature": {
-    "key": "a:country",
+    "key": "a:genre",
     "event": "long",
-    "agg": "dec",
-    "window": 124,
-    "hl": 2.7,
-    "red": "min"
+    "agg": "nuniq",
+    "window": 2,
+    "red": "mean"
    }
   },
   {
-   "name": "user|long|days|all",
-   "gain": -3.215839581193619e-05,
-   "gen": 1,
+   "name": "ua:country|full|cnt|all|sum",
+   "gain": -3.090266096099359e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "full",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "s:income|full|last|all",
+   "gain": -3.116305460271196e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "last"
+   }
+  },
+  {
+   "name": "R[s:kids|watch|cnt|w2 / item|watch|cnt|w2]",
+   "gain": -3.139308248077677e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:kids",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 2
+    }
+   }
+  },
+  {
+   "name": "user|watch|cnt|w17",
+   "gain": -3.1849000973957486e-05,
+   "gen": 2,
    "feature": {
     "key": "user",
-    "event": "long",
-    "agg": "days"
-   }
-  },
-  {
-   "name": "a:genre|long|cnt|w81|max",
-   "gain": -3.2544512895041344e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:genre",
-    "event": "long",
+    "event": "watch",
     "agg": "cnt",
-    "window": 81,
-    "red": "max"
+    "window": 17
    }
   },
   {
-   "name": "R[a:genre|drop|cnt|w5|max / a:genre|watch|cnt|w5|max]",
-   "gain": -3.291748229037467e-05,
+   "name": "R[a:genre|long|cnt|w18|max / a:genre|watch|cnt|w18|max]",
+   "gain": -3.218703333512235e-05,
    "gen": 1,
    "feature": {
     "num": {
      "key": "a:genre",
-     "event": "drop",
+     "event": "long",
      "agg": "cnt",
-     "window": 5,
+     "window": 18,
      "red": "max"
     },
     "den": {
      "key": "a:genre",
      "event": "watch",
      "agg": "cnt",
-     "window": 5,
+     "window": 18,
      "red": "max"
     }
-   }
-  },
-  {
-   "name": "item|long|cnt|w5",
-   "gain": -3.312670484207497e-05,
-   "gen": 3,
-   "feature": {
-    "key": "item",
-    "event": "long",
-    "agg": "cnt",
-    "window": 5
-   }
-  },
-  {
-   "name": "R[item|long|cnt|w1 / item|watch|cnt|w1]",
-   "gain": -3.3307217228335795e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "item",
-     "event": "long",
-     "agg": "cnt",
-     "window": 1
-    },
-    "den": {
-     "key": "item",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 1
-    }
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w64|max",
-   "gain": -3.405561692196302e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 64,
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w66|max",
-   "gain": -3.405561692196302e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 66,
-    "red": "max"
    }
   },
   {
    "name": "a:actor|drop|dec(h0.6)|w7|min",
-   "gain": -3.4260087404085204e-05,
+   "gain": -3.2464492084396945e-05,
    "gen": 0,
    "feature": {
     "key": "a:actor",
@@ -4927,8 +3186,542 @@
    }
   },
   {
+   "name": "a:actor|long|sum(pct)|w75|mean",
+   "gain": -3.2482309844622526e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "sum",
+    "window": 75,
+    "value": "pct",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:country|long|dec(h1.9)|all|max",
+   "gain": -3.253598069345026e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:country",
+    "event": "long",
+    "agg": "dec",
+    "hl": 1.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "ua:country|long|cnt|all|max",
+   "gain": -3.280051321603167e-05,
+   "gen": 0,
+   "feature": {
+    "key": "ua:country",
+    "event": "long",
+    "agg": "cnt",
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:actor|full|dec(h5.5)|all|mean",
+   "gain": -3.304701675831134e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:actor",
+    "event": "full",
+    "agg": "dec",
+    "hl": 5.5,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "item|watch|dec(h22.9)|w37",
+   "gain": -3.389776788130516e-05,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "dec",
+    "window": 37,
+    "hl": 22.9
+   }
+  },
+  {
+   "name": "R[ua:genre|long|cnt|w29|mean / ua:genre|watch|cnt|w29|mean]",
+   "gain": -3.428567901719165e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    },
+    "den": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 29,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "a:actor|long|cnt|all|min",
+   "gain": -3.4293450043701434e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "cnt",
+    "red": "min"
+   }
+  },
+  {
+   "name": "R[user|long|cnt|w9 / user|watch|cnt|w9]",
+   "gain": -3.436810775037796e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "user",
+     "event": "long",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9
+    }
+   }
+  },
+  {
+   "name": "s:income|full|dec(h3.9)|all",
+   "gain": -3.464391274114742e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "dec",
+    "hl": 3.9
+   }
+  },
+  {
+   "name": "s:income|full|mean(pct)|all",
+   "gain": -3.488790742436215e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "full",
+    "agg": "mean",
+    "value": "pct"
+   }
+  },
+  {
+   "name": "s:income|long|last|w72",
+   "gain": -3.5615714225382955e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:income",
+    "event": "long",
+    "agg": "last",
+    "window": 72
+   }
+  },
+  {
+   "name": "item|watch|dec(h30.8)|w23",
+   "gain": -3.601252058928889e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 30.8
+   }
+  },
+  {
+   "name": "a:actor|long|cnt|w84|sum",
+   "gain": -3.6262868555528294e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "cnt",
+    "window": 84,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[ua:ctype|watch|cnt|w12 / user|watch|cnt|w12]",
+   "gain": -3.697911750777383e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "ua:ctype",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "R[item|long|cnt|w1 / item|watch|cnt|w1]",
+   "gain": -3.7460471886990865e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "item",
+     "event": "long",
+     "agg": "cnt",
+     "window": 1
+    },
+    "den": {
+     "key": "item",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 1
+    }
+   }
+  },
+  {
+   "name": "s:sex|long|mean(hours)|w61",
+   "gain": -3.882929955952019e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "long",
+    "agg": "mean",
+    "window": 61,
+    "value": "hours"
+   }
+  },
+  {
+   "name": "user|full|cnt|w50",
+   "gain": -3.895904506762832e-05,
+   "gen": 0,
+   "feature": {
+    "key": "user",
+    "event": "full",
+    "agg": "cnt",
+    "window": 50
+   }
+  },
+  {
+   "name": "a:director|watch|dec(h22.9)|w23|mean",
+   "gain": -3.949470550731332e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:director",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 22.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w9 / s:age|drop|cnt|w49]",
+   "gain": -4.0264731396788545e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 9
+    },
+    "den": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 49
+    }
+   }
+  },
+  {
+   "name": "s:income|drop|cnt|w61",
+   "gain": -4.079076232933049e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:income",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 61
+   }
+  },
+  {
+   "name": "R[ua:genre|watch|cnt|w12|max / user|watch|cnt|w12]",
+   "gain": -4.104574474958489e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "ua:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12,
+     "red": "max"
+    },
+    "den": {
+     "key": "user",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 12
+    }
+   }
+  },
+  {
+   "name": "s:age|drop|cnt|w9",
+   "gain": -4.106611555282358e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:age",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 9
+   }
+  },
+  {
+   "name": "R[s:income|drop|cnt|w53 / item|drop|cnt|w53]",
+   "gain": -4.2385289933978554e-05,
+   "gen": 3,
+   "feature": {
+    "num": {
+     "key": "s:income",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 53
+    },
+    "den": {
+     "key": "item",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 53
+    }
+   }
+  },
+  {
+   "name": "item|watch|dec(h22.9)|w23",
+   "gain": -4.256690956393194e-05,
+   "gen": 3,
+   "feature": {
+    "key": "item",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 22.9
+   }
+  },
+  {
+   "name": "s:sex|watch|mean(pct)|w3",
+   "gain": -4.38683139421317e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "mean",
+    "window": 3,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h47.6)|w2|min",
+   "gain": -4.3955173710308326e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 2,
+    "hl": 47.6,
+    "red": "min"
+   }
+  },
+  {
+   "name": "a:actor|drop|dec(h3.9)|all|min",
+   "gain": -4.4347860877196055e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "drop",
+    "agg": "dec",
+    "hl": 3.9,
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:age|full|first|w33",
+   "gain": -4.513608355916077e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "full",
+    "agg": "first",
+    "window": 33
+   }
+  },
+  {
+   "name": "a:country|watch|cnt|w100|mean",
+   "gain": -4.624810038228455e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 100,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
+   "gain": -4.630592730089922e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "s:age",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 120
+    },
+    "den": {
+     "key": "s:age",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 120
+    }
+   }
+  },
+  {
+   "name": "a:country|drop|dec(h1.3)|w28|max",
+   "gain": -4.650685609512012e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:country",
+    "event": "drop",
+    "agg": "dec",
+    "window": 28,
+    "hl": 1.3,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:age|full|cnt|w2",
+   "gain": -4.6780891992170837e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "full",
+    "agg": "cnt",
+    "window": 2
+   }
+  },
+  {
+   "name": "a:actor|long|nuniq|all|min",
+   "gain": -4.743184390890859e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:actor",
+    "event": "long",
+    "agg": "nuniq",
+    "red": "min"
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w47",
+   "gain": -4.745008561526237e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 47
+   }
+  },
+  {
+   "name": "item|full|nuniq|w2",
+   "gain": -4.776122325258342e-05,
+   "gen": 0,
+   "feature": {
+    "key": "item",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "R[a:director|drop|cnt|w4|max / a:director|watch|cnt|w4|max]",
+   "gain": -4.853455290603631e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:director",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:director",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:age|long|cnt|all",
+   "gain": -4.878323696992648e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "long",
+    "agg": "cnt"
+   }
+  },
+  {
+   "name": "s:age|watch|cnt|w12",
+   "gain": -5.019506149643582e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 12
+   }
+  },
+  {
+   "name": "s:kids|drop|cnt|w3",
+   "gain": -5.024009994526041e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:kids",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
+   "name": "s:sex|watch|cnt|w3",
+   "gain": -5.028186806203122e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 3
+   }
+  },
+  {
    "name": "s:income|full|mean(hours)|w92",
-   "gain": -3.488580953409787e-05,
+   "gain": -5.118478051829162e-05,
    "gen": 3,
    "feature": {
     "key": "s:income",
@@ -4939,20 +3732,82 @@
    }
   },
   {
-   "name": "a:genre|long|cnt|w3|sum",
-   "gain": -3.5196938595348504e-05,
+   "name": "R[a:genre|long|cnt|w21|max / a:genre|watch|cnt|w21|max]",
+   "gain": -5.1811792568676185e-05,
    "gen": 3,
    "feature": {
-    "key": "a:genre",
-    "event": "long",
+    "num": {
+     "key": "a:genre",
+     "event": "long",
+     "agg": "cnt",
+     "window": 21,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 21,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "s:age|watch|nuniq|w2",
+   "gain": -5.324474877693025e-05,
+   "gen": 2,
+   "feature": {
+    "key": "s:age",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 2
+   }
+  },
+  {
+   "name": "item|watch|cnt|w101",
+   "gain": -5.389996978458905e-05,
+   "gen": 2,
+   "feature": {
+    "key": "item",
+    "event": "watch",
     "agg": "cnt",
+    "window": 101
+   }
+  },
+  {
+   "name": "R[s:sex|full|cnt|w24 / s:sex|watch|cnt|w24]",
+   "gain": -5.396670996229286e-05,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "s:sex",
+     "event": "full",
+     "agg": "cnt",
+     "window": 24
+    },
+    "den": {
+     "key": "s:sex",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 24
+    }
+   }
+  },
+  {
+   "name": "s:sex|watch|mean(hours)|w3",
+   "gain": -5.504421945005944e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "watch",
+    "agg": "mean",
     "window": 3,
-    "red": "sum"
+    "value": "hours"
    }
   },
   {
    "name": "s:kids|full|cnt|w3",
-   "gain": -3.5328933766835824e-05,
+   "gain": -5.737426533164447e-05,
    "gen": 0,
    "feature": {
     "key": "s:kids",
@@ -4962,92 +3817,79 @@
    }
   },
   {
-   "name": "ua:ctype|drop|dec(h46.4)|w137",
-   "gain": -3.546810468844919e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "drop",
-    "agg": "dec",
-    "window": 137,
-    "hl": 46.4
-   }
-  },
-  {
-   "name": "s:age|watch|cnt|w12",
-   "gain": -3.6740205495995604e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:age",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 12
-   }
-  },
-  {
-   "name": "a:genre|drop|mean(hours)|w4|max",
-   "gain": -3.6858075793726186e-05,
-   "gen": 4,
+   "name": "a:genre|watch|nuniq|w23|max",
+   "gain": -5.790782198056288e-05,
+   "gen": 3,
    "feature": {
     "key": "a:genre",
-    "event": "drop",
-    "agg": "mean",
-    "window": 4,
-    "value": "hours",
-    "red": "max"
-   }
-  },
-  {
-   "name": "s:income|watch|nuniq|w5",
-   "gain": -3.694695704307277e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:income",
     "event": "watch",
     "agg": "nuniq",
-    "window": 5
-   }
-  },
-  {
-   "name": "s:kids|long|mean(hours)|all",
-   "gain": -3.712597731522077e-05,
-   "gen": 2,
-   "feature": {
-    "key": "s:kids",
-    "event": "long",
-    "agg": "mean",
-    "value": "hours"
-   }
-  },
-  {
-   "name": "ua:genre|full|mean(pct)|w51|max",
-   "gain": -3.740794716472484e-05,
-   "gen": 0,
-   "feature": {
-    "key": "ua:genre",
-    "event": "full",
-    "agg": "mean",
-    "window": 51,
-    "value": "pct",
+    "window": 23,
     "red": "max"
    }
   },
   {
-   "name": "a:actor|watch|dec(h22.9)|w1|min",
-   "gain": -3.786338528180555e-05,
+   "name": "s:sex|drop|sum(pct)|w8",
+   "gain": -5.948666879659198e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "sum",
+    "window": 8,
+    "value": "pct"
+   }
+  },
+  {
+   "name": "a:genre|full|nuniq|w53|mean",
+   "gain": -5.981971865590824e-05,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "nuniq",
+    "window": 53,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "s:sex|drop|dec(h1)|w9",
+   "gain": -6.059805002521512e-05,
+   "gen": 0,
+   "feature": {
+    "key": "s:sex",
+    "event": "drop",
+    "agg": "dec",
+    "window": 9,
+    "hl": 1.0
+   }
+  },
+  {
+   "name": "a:director|watch|cnt|w4|max",
+   "gain": -6.278526961150249e-05,
    "gen": 2,
    "feature": {
-    "key": "a:actor",
+    "key": "a:director",
     "event": "watch",
-    "agg": "dec",
-    "window": 1,
-    "hl": 22.9,
-    "red": "min"
+    "agg": "cnt",
+    "window": 4,
+    "red": "max"
+   }
+  },
+  {
+   "name": "s:kids|watch|cnt|w2",
+   "gain": -6.423404103441527e-05,
+   "gen": 3,
+   "feature": {
+    "key": "s:kids",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 2
    }
   },
   {
    "name": "a:director|watch|dec(h0.6)|w22|min",
-   "gain": -3.795265814995896e-05,
+   "gain": -6.425623140476899e-05,
    "gen": 0,
    "feature": {
     "key": "a:director",
@@ -5059,42 +3901,8 @@
    }
   },
   {
-   "name": "R[a:genre|full|cnt|w9|mean / a:genre|watch|cnt|w9|mean]",
-   "gain": -3.896319103485757e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "full",
-     "agg": "cnt",
-     "window": 9,
-     "red": "mean"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 9,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "ua:actor|drop|dec(h48)|w96|mean",
-   "gain": -3.9342659271662805e-05,
-   "gen": 5,
-   "feature": {
-    "key": "ua:actor",
-    "event": "drop",
-    "agg": "dec",
-    "window": 96,
-    "hl": 48.0,
-    "red": "mean"
-   }
-  },
-  {
    "name": "s:age|long|dec(h1.4)|all",
-   "gain": -3.999947410298493e-05,
+   "gain": -6.566241146727797e-05,
    "gen": 0,
    "feature": {
     "key": "s:age",
@@ -5104,445 +3912,19 @@
    }
   },
   {
-   "name": "a:actor|long|nuniq|all|min",
-   "gain": -4.024212203074945e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:actor",
-    "event": "long",
-    "agg": "nuniq",
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[s:age|long|cnt|w8 / s:age|watch|cnt|w8]",
-   "gain": -4.028493610803985e-05,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "s:age",
-     "event": "long",
-     "agg": "cnt",
-     "window": 8
-    },
-    "den": {
-     "key": "s:age",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 8
-    }
-   }
-  },
-  {
-   "name": "s:income|full|dec(h3.9)|all",
-   "gain": -4.03435612059827e-05,
-   "gen": 3,
-   "feature": {
-    "key": "s:income",
-    "event": "full",
-    "agg": "dec",
-    "hl": 3.9
-   }
-  },
-  {
-   "name": "a:actor|watch|dec(h0.6)|w11|mean",
-   "gain": -4.072508266216718e-05,
-   "gen": 4,
-   "feature": {
-    "key": "a:actor",
-    "event": "watch",
-    "agg": "dec",
-    "window": 11,
-    "hl": 0.6,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[a:genre|long|cnt|w1|max / a:genre|long|cnt|w101|max]",
-   "gain": -4.088493094431267e-05,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 1,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 101,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "ua:ctype|long|dec(h4.9)|all",
-   "gain": -4.200225265432039e-05,
-   "gen": 2,
-   "feature": {
-    "key": "ua:ctype",
-    "event": "long",
-    "agg": "dec",
-    "hl": 4.9
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w101|sum",
-   "gain": -4.2615466004772284e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 101,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w107|mean",
-   "gain": -4.265598858188557e-05,
+   "name": "a:genre|watch|cnt|all|sum",
+   "gain": -6.570546713331044e-05,
    "gen": 3,
    "feature": {
     "key": "a:genre",
     "event": "watch",
     "agg": "cnt",
-    "window": 107,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "R[s:sex|drop|cnt|w2 / s:sex|drop|cnt|w82]",
-   "gain": -4.332240369615131e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:sex",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "s:sex",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 82
-    }
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|w140|sum",
-   "gain": -4.367982071777632e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 140,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:actor|full|cnt|all|min",
-   "gain": -4.371398638194218e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:actor",
-    "event": "full",
-    "agg": "cnt",
-    "red": "min"
-   }
-  },
-  {
-   "name": "item|watch|cnt|w18",
-   "gain": -4.3841369832174626e-05,
-   "gen": 0,
-   "feature": {
-    "key": "item",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 18
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w5|sum",
-   "gain": -4.4645799833223365e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[a:director|drop|cnt|w4|max / a:director|watch|cnt|w4|max]",
-   "gain": -4.538663762463507e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "a:director",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 4,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:director",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 4,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|watch|cnt|w3|max / a:genre|watch|cnt|w7|max]",
-   "gain": -4.5553478818211035e-05,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 7,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:country|drop|cnt|w63|sum / a:country|watch|cnt|w63|sum]",
-   "gain": -4.558582041926107e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:country",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 63,
-     "red": "sum"
-    },
-    "den": {
-     "key": "a:country",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 63,
-     "red": "sum"
-    }
-   }
-  },
-  {
-   "name": "a:genre|drop|mean(pct)|w5|max",
-   "gain": -4.565782192633011e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "mean",
-    "window": 5,
-    "value": "pct",
-    "red": "max"
-   }
-  },
-  {
-   "name": "a:genre|watch|cnt|all|mean",
-   "gain": -4.628780621439288e-05,
-   "gen": 2,
-   "feature": {
-    "key": "a:genre",
-    "event": "watch",
-    "agg": "cnt",
-    "red": "mean"
-   }
-  },
-  {
-   "name": "s:age|drop|nuniq|all",
-   "gain": -4.6998010780008315e-05,
-   "gen": 2,
-   "feature": {
-    "key": "s:age",
-    "event": "drop",
-    "agg": "nuniq"
-   }
-  },
-  {
-   "name": "R[s:sex|full|cnt|w13 / s:sex|watch|cnt|w13]",
-   "gain": -4.704307495929233e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "s:sex",
-     "event": "full",
-     "agg": "cnt",
-     "window": 13
-    },
-    "den": {
-     "key": "s:sex",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 13
-    }
-   }
-  },
-  {
-   "name": "item|full|nuniq|w2",
-   "gain": -4.737270770202584e-05,
-   "gen": 0,
-   "feature": {
-    "key": "item",
-    "event": "full",
-    "agg": "nuniq",
-    "window": 2
-   }
-  },
-  {
-   "name": "R[s:kids|watch|cnt|w2 / item|watch|cnt|w2]",
-   "gain": -4.748310770995995e-05,
-   "gen": 0,
-   "feature": {
-    "num": {
-     "key": "s:kids",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "item",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 2
-    }
-   }
-  },
-  {
-   "name": "a:country|watch|cnt|w100|mean",
-   "gain": -4.748786431586077e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:country",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 100,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "s:sex|watch|cnt|w3",
-   "gain": -4.792216480051931e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:sex",
-    "event": "watch",
-    "agg": "cnt",
-    "window": 3
-   }
-  },
-  {
-   "name": "s:sex|watch|mean(pct)|w3",
-   "gain": -4.9115213629956356e-05,
-   "gen": 2,
-   "feature": {
-    "key": "s:sex",
-    "event": "watch",
-    "agg": "mean",
-    "window": 3,
-    "value": "pct"
-   }
-  },
-  {
-   "name": "s:kids|drop|cnt|w47",
-   "gain": -5.0959563346400505e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:kids",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 47
-   }
-  },
-  {
-   "name": "a:director|drop|cnt|all|sum",
-   "gain": -5.1290657610357504e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:director",
-    "event": "drop",
-    "agg": "cnt",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "a:genre|full|nuniq|w53|mean",
-   "gain": -5.1308890724285905e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "full",
-    "agg": "nuniq",
-    "window": 53,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:actor|watch|dec(h1.4)|w5|max",
-   "gain": -5.138478582100009e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:actor",
-    "event": "watch",
-    "agg": "dec",
-    "window": 5,
-    "hl": 1.4,
-    "red": "max"
-   }
-  },
-  {
-   "name": "s:age|long|cnt|all",
-   "gain": -5.248205310633136e-05,
-   "gen": 0,
-   "feature": {
-    "key": "s:age",
-    "event": "long",
-    "agg": "cnt"
-   }
-  },
-  {
-   "name": "a:director|long|cnt|w114|mean",
-   "gain": -5.27976154562626e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:director",
-    "event": "long",
-    "agg": "cnt",
-    "window": 114,
-    "red": "mean"
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w1|sum",
-   "gain": -5.315398795698034e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 1,
     "red": "sum"
    }
   },
   {
    "name": "R[a:director|long|cnt|w4|max / a:director|watch|cnt|w4|max]",
-   "gain": -5.359052931549341e-05,
+   "gain": -6.640336181273215e-05,
    "gen": 0,
    "feature": {
     "num": {
@@ -5562,80 +3944,39 @@
    }
   },
   {
-   "name": "R[item|full|cnt|w2 / item|full|cnt|w4]",
-   "gain": -5.4737998772841356e-05,
-   "gen": 0,
+   "name": "a:genre|watch|nuniq|w107|max",
+   "gain": -6.64105715587407e-05,
+   "gen": 2,
    "feature": {
-    "num": {
-     "key": "item",
-     "event": "full",
-     "agg": "cnt",
-     "window": 2
-    },
-    "den": {
-     "key": "item",
-     "event": "full",
-     "agg": "cnt",
-     "window": 4
-    }
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "nuniq",
+    "window": 107,
+    "red": "max"
    }
   },
   {
-   "name": "s:income|long|cnt|w16",
-   "gain": -5.568634411216855e-05,
+   "name": "R[s:kids|full|cnt|w8 / s:kids|watch|cnt|w8]",
+   "gain": -6.835921194261324e-05,
    "gen": 1,
-   "feature": {
-    "key": "s:income",
-    "event": "long",
-    "agg": "cnt",
-    "window": 16
-   }
-  },
-  {
-   "name": "a:country|drop|cnt|all|sum",
-   "gain": -5.680326651256312e-05,
-   "gen": 0,
-   "feature": {
-    "key": "a:country",
-    "event": "drop",
-    "agg": "cnt",
-    "red": "sum"
-   }
-  },
-  {
-   "name": "R[s:kids|long|cnt|w2 / item|long|cnt|w2]",
-   "gain": -5.69986998024824e-05,
-   "gen": 0,
    "feature": {
     "num": {
      "key": "s:kids",
-     "event": "long",
+     "event": "full",
      "agg": "cnt",
-     "window": 2
+     "window": 8
     },
     "den": {
-     "key": "item",
-     "event": "long",
+     "key": "s:kids",
+     "event": "watch",
      "agg": "cnt",
-     "window": 2
+     "window": 8
     }
-   }
-  },
-  {
-   "name": "a:genre|drop|cnt|w66|mean",
-   "gain": -5.74709971829096e-05,
-   "gen": 5,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 66,
-    "red": "mean"
    }
   },
   {
    "name": "a:country|drop|dec(h59.4)|w91|min",
-   "gain": -6.0466970073454196e-05,
+   "gain": -7.033234258589649e-05,
    "gen": 0,
    "feature": {
     "key": "a:country",
@@ -5647,198 +3988,88 @@
    }
   },
   {
-   "name": "s:sex|full|mean(hours)|w26",
-   "gain": -6.060780587519021e-05,
-   "gen": 5,
-   "feature": {
-    "key": "s:sex",
-    "event": "full",
-    "agg": "mean",
-    "window": 26,
-    "value": "hours"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w140|max / a:genre|watch|cnt|w140|max]",
-   "gain": -6.445053652776034e-05,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 140,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 140,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "a:actor|drop|cnt|w5|sum",
-   "gain": -6.448168057555936e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:actor",
-    "event": "drop",
-    "agg": "cnt",
-    "window": 5,
-    "red": "sum"
-   }
-  },
-  {
-   "name": "item|watch|sum(pct)|all",
-   "gain": -6.674449790929765e-05,
-   "gen": 1,
-   "feature": {
-    "key": "item",
-    "event": "watch",
-    "agg": "sum",
-    "value": "pct"
-   }
-  },
-  {
-   "name": "a:actor|long|cnt|w20|min",
-   "gain": -6.685509996656736e-05,
-   "gen": 3,
-   "feature": {
-    "key": "a:actor",
-    "event": "long",
-    "agg": "cnt",
-    "window": 20,
-    "red": "min"
-   }
-  },
-  {
-   "name": "s:sex|drop|sum(pct)|w8",
-   "gain": -6.744082264942275e-05,
+   "name": "a:director|long|cnt|w114|mean",
+   "gain": -7.09813707895357e-05,
    "gen": 0,
    "feature": {
-    "key": "s:sex",
-    "event": "drop",
-    "agg": "sum",
-    "window": 8,
-    "value": "pct"
-   }
-  },
-  {
-   "name": "a:director|full|cnt|w3|min",
-   "gain": -7.154994181066826e-05,
-   "gen": 2,
-   "feature": {
     "key": "a:director",
-    "event": "full",
-    "agg": "cnt",
-    "window": 3,
-    "red": "min"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w11|max / a:genre|watch|cnt|w11|max]",
-   "gain": -7.957160443202577e-05,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 11,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 11,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w5|mean / a:genre|watch|cnt|w5|mean]",
-   "gain": -8.000232658170181e-05,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 5,
-     "red": "mean"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 5,
-     "red": "mean"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|long|cnt|w5|max / a:genre|long|cnt|w54|max]",
-   "gain": -8.244485528322715e-05,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 54,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "a:genre|long|nuniq|all|mean",
-   "gain": -8.308710474296682e-05,
-   "gen": 1,
-   "feature": {
-    "key": "a:genre",
     "event": "long",
-    "agg": "nuniq",
+    "agg": "cnt",
+    "window": 114,
     "red": "mean"
    }
   },
   {
-   "name": "a:country|long|cnt|w114|min",
-   "gain": -8.865613001306921e-05,
-   "gen": 5,
+   "name": "a:genre|long|cnt|w22|sum",
+   "gain": -7.210422954322115e-05,
+   "gen": 3,
    "feature": {
-    "key": "a:country",
+    "key": "a:genre",
     "event": "long",
     "agg": "cnt",
-    "window": 114,
+    "window": 22,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|all|mean",
+   "gain": -7.286550672947617e-05,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|long|cnt|all|sum",
+   "gain": -7.91799276716118e-05,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "red": "sum"
+   }
+  },
+  {
+   "name": "R[a:genre|full|cnt|w9|mean / a:genre|watch|cnt|w9|mean]",
+   "gain": -8.006506821676279e-05,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "full",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 9,
+     "red": "mean"
+    }
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h30.8)|w23|min",
+   "gain": -8.518497237296196e-05,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 30.8,
     "red": "min"
    }
   },
   {
-   "name": "item|long|mean(hours)|w60",
-   "gain": -8.871934294787248e-05,
-   "gen": 2,
-   "feature": {
-    "key": "item",
-    "event": "long",
-    "agg": "mean",
-    "window": 60,
-    "value": "hours"
-   }
-  },
-  {
    "name": "a:country|long|mean(hours)|all|sum",
-   "gain": -9.052271432646863e-05,
+   "gain": -8.839931239358612e-05,
    "gen": 0,
    "feature": {
     "key": "a:country",
@@ -5849,74 +4080,187 @@
    }
   },
   {
-   "name": "item|watch|first|w56",
-   "gain": -9.378355672713667e-05,
-   "gen": 2,
+   "name": "a:genre|long|cnt|w115|min",
+   "gain": -9.134636746467584e-05,
+   "gen": 3,
    "feature": {
-    "key": "item",
-    "event": "watch",
-    "agg": "first",
-    "window": 56
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 115,
+    "red": "min"
    }
   },
   {
-   "name": "R[a:genre|full|cnt|w12|max / a:genre|watch|cnt|w12|max]",
-   "gain": -9.621857526437294e-05,
-   "gen": 1,
+   "name": "a:country|drop|cnt|all|sum",
+   "gain": -0.00010399717732757774,
+   "gen": 0,
    "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "full",
-     "agg": "cnt",
-     "window": 12,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 12,
-     "red": "max"
-    }
+    "key": "a:country",
+    "event": "drop",
+    "agg": "cnt",
+    "red": "sum"
    }
   },
   {
-   "name": "R[a:genre|drop|cnt|w61|max / a:genre|watch|cnt|w61|max]",
-   "gain": -0.00010485276414795575,
-   "gen": 5,
+   "name": "R[a:genre|drop|cnt|w24|max / a:genre|watch|cnt|w24|max]",
+   "gain": -0.00010728234716934903,
+   "gen": 3,
    "feature": {
     "num": {
      "key": "a:genre",
      "event": "drop",
      "agg": "cnt",
-     "window": 61,
+     "window": 24,
      "red": "max"
     },
     "den": {
      "key": "a:genre",
      "event": "watch",
      "agg": "cnt",
-     "window": 61,
+     "window": 24,
      "red": "max"
     }
    }
   },
   {
-   "name": "a:genre|long|mean(pct)|w101|max",
-   "gain": -0.00011378680739025648,
-   "gen": 4,
+   "name": "R[a:country|long|cnt|w4|min / a:country|watch|cnt|w4|min]",
+   "gain": -0.00011117312091240422,
+   "gen": 0,
+   "feature": {
+    "num": {
+     "key": "a:country",
+     "event": "long",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    },
+    "den": {
+     "key": "a:country",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 4,
+     "red": "min"
+    }
+   }
+  },
+  {
+   "name": "a:genre|drop|dec(h22.9)|w7|max",
+   "gain": -0.00012392111093101343,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
-    "event": "long",
-    "agg": "mean",
-    "window": 101,
-    "value": "pct",
+    "event": "drop",
+    "agg": "dec",
+    "window": 7,
+    "hl": 22.9,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w5|max",
+   "gain": -0.00012726902329602413,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 5,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h30.8)|w23|sum",
+   "gain": -0.0001360582516546638,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 30.8,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|drop|cnt|w1|sum",
+   "gain": -0.00014679659964628167,
+   "gen": 0,
+   "feature": {
+    "key": "a:genre",
+    "event": "drop",
+    "agg": "cnt",
+    "window": 1,
+    "red": "sum"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h22.9)|w23|mean",
+   "gain": -0.0001788823155820518,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 22.9,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h26.2)|w23|mean",
+   "gain": -0.00018179101496686167,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 26.2,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|dec(h10.7)|w23|mean",
+   "gain": -0.00019199428148836822,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "dec",
+    "window": 23,
+    "hl": 10.7,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w21|mean",
+   "gain": -0.00019355013336572885,
+   "gen": 3,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 21,
+    "red": "mean"
+   }
+  },
+  {
+   "name": "a:genre|watch|sum(hours)|w107|max",
+   "gain": -0.0002749928146025954,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "sum",
+    "window": 107,
+    "value": "hours",
     "red": "max"
    }
   },
   {
    "name": "a:country|drop|cnt|w25|sum",
-   "gain": -0.00011419040071633524,
+   "gain": -0.0002899444779080884,
    "gen": 0,
    "feature": {
     "key": "a:country",
@@ -5927,75 +4271,183 @@
    }
   },
   {
-   "name": "a:genre|long|mean(hours)|w5|max",
-   "gain": -0.0001450096755474528,
-   "gen": 5,
+   "name": "a:genre|long|cnt|w69|max",
+   "gain": -0.00034455724358351675,
+   "gen": 2,
    "feature": {
     "key": "a:genre",
     "event": "long",
-    "agg": "mean",
-    "window": 5,
-    "value": "hours",
+    "agg": "cnt",
+    "window": 69,
     "red": "max"
    }
   },
   {
-   "name": "R[a:genre|drop|cnt|w4|max / a:genre|drop|cnt|w87|max]",
-   "gain": -0.00016336984888850464,
-   "gen": 4,
+   "name": "a:genre|long|cnt|w75|max",
+   "gain": -0.00035133624347957054,
+   "gen": 2,
+   "feature": {
+    "key": "a:genre",
+    "event": "long",
+    "agg": "cnt",
+    "window": 75,
+    "red": "max"
+   }
+  },
+  {
+   "name": "a:genre|watch|cnt|w71|max",
+   "gain": -0.0003666727392334368,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "watch",
+    "agg": "cnt",
+    "window": 71,
+    "red": "max"
+   }
+  },
+  {
+   "name": "R[a:genre|long|cnt|w12|max / a:genre|watch|cnt|w12|max]",
+   "gain": -0.0004112360363260764,
+   "gen": 2,
    "feature": {
     "num": {
      "key": "a:genre",
-     "event": "drop",
+     "event": "long",
      "agg": "cnt",
-     "window": 4,
+     "window": 12,
      "red": "max"
     },
     "den": {
      "key": "a:genre",
-     "event": "drop",
+     "event": "watch",
      "agg": "cnt",
-     "window": 87,
+     "window": 12,
      "red": "max"
     }
    }
   },
   {
-   "name": "a:actor|watch|first|w91|max",
-   "gain": -0.00018839591274501938,
+   "name": "R[a:genre|drop|cnt|w11|max / a:genre|watch|cnt|w11|max]",
+   "gain": -0.00043250911528475156,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "drop",
+     "agg": "cnt",
+     "window": 11,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 11,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w3|max / a:genre|watch|cnt|w57|max]",
+   "gain": -0.0005721119702062835,
    "gen": 3,
    "feature": {
-    "key": "a:actor",
-    "event": "watch",
-    "agg": "first",
-    "window": 91,
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 3,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 57,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "a:genre|full|mean(pct)|w8|max",
+   "gain": -0.0006061508908817431,
+   "gen": 1,
+   "feature": {
+    "key": "a:genre",
+    "event": "full",
+    "agg": "mean",
+    "window": 8,
+    "value": "pct",
     "red": "max"
    }
   },
   {
-   "name": "R[a:country|long|cnt|w4|min / a:country|watch|cnt|w4|min]",
-   "gain": -0.00021308138715338265,
-   "gen": 0,
+   "name": "R[a:genre|long|cnt|w6|max / a:genre|watch|cnt|w6|max]",
+   "gain": -0.0006319102875686766,
+   "gen": 2,
    "feature": {
     "num": {
-     "key": "a:country",
+     "key": "a:genre",
      "event": "long",
      "agg": "cnt",
-     "window": 4,
-     "red": "min"
+     "window": 6,
+     "red": "max"
     },
     "den": {
-     "key": "a:country",
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 6,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w57|max / a:genre|watch|cnt|w130|max]",
+   "gain": -0.0008543871782362225,
+   "gen": 2,
+   "feature": {
+    "num": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 57,
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 130,
+     "red": "max"
+    }
+   }
+  },
+  {
+   "name": "R[a:genre|watch|cnt|w4|max / a:genre|watch|cnt|w60|max]",
+   "gain": -0.0010050742718488506,
+   "gen": 1,
+   "feature": {
+    "num": {
+     "key": "a:genre",
      "event": "watch",
      "agg": "cnt",
      "window": 4,
-     "red": "min"
+     "red": "max"
+    },
+    "den": {
+     "key": "a:genre",
+     "event": "watch",
+     "agg": "cnt",
+     "window": 60,
+     "red": "max"
     }
    }
   },
   {
    "name": "a:country|long|mean(hours)|all|mean",
-   "gain": -0.00023072551149564552,
+   "gain": -0.002320108925982514,
    "gen": 0,
    "feature": {
     "key": "a:country",
@@ -6003,250 +4455,6 @@
     "agg": "mean",
     "value": "hours",
     "red": "mean"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w5|max / a:genre|drop|cnt|w7|max]",
-   "gain": -0.0002872166901904463,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 7,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w2|max / a:genre|drop|cnt|w15|max]",
-   "gain": -0.0003716497595945001,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 15,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w2|max / a:genre|drop|cnt|w5|max]",
-   "gain": -0.00044068121084187006,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 2,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w10|max / a:genre|drop|cnt|w101|max]",
-   "gain": -0.0009266640987721786,
-   "gen": 5,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 10,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 101,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|long|cnt|w98|max / a:genre|watch|cnt|w98|max]",
-   "gain": -0.0009411579682384597,
-   "gen": 1,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 98,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 98,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|watch|cnt|w8|max / a:genre|watch|cnt|w101|max]",
-   "gain": -0.001022950820168303,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 8,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 101,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "a:genre|drop|mean(pct)|w3|max",
-   "gain": -0.0011088500891996214,
-   "gen": 4,
-   "feature": {
-    "key": "a:genre",
-    "event": "drop",
-    "agg": "mean",
-    "window": 3,
-    "value": "pct",
-    "red": "max"
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w3|max / a:genre|watch|cnt|w3|max]",
-   "gain": -0.002211818350835372,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 3,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|long|cnt|w140|max / a:genre|watch|cnt|w140|max]",
-   "gain": -0.002625778165335921,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 140,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 140,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|long|cnt|w5|max / a:genre|watch|cnt|w5|max]",
-   "gain": -0.0033434912211650902,
-   "gen": 2,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "long",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 5,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|drop|cnt|w1|max / a:genre|drop|cnt|w31|max]",
-   "gain": -0.003792263398440743,
-   "gen": 4,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 1,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "drop",
-     "agg": "cnt",
-     "window": 31,
-     "red": "max"
-    }
-   }
-  },
-  {
-   "name": "R[a:genre|watch|cnt|w107|max / a:genre|watch|cnt|w114|max]",
-   "gain": -0.005430215024861226,
-   "gen": 3,
-   "feature": {
-    "num": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 107,
-     "red": "max"
-    },
-    "den": {
-     "key": "a:genre",
-     "event": "watch",
-     "agg": "cnt",
-     "window": 114,
-     "red": "max"
-    }
    }
   }
  ]

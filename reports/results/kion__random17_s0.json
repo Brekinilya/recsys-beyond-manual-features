@@ -2,147 +2,147 @@
  "dataset": "kion",
  "tag": "random17_s0",
  "n_features": 30,
- "feature_sec": 11.04194490000009,
- "train_sec": 33.74567500000194,
- "best_iter": 195,
- "val_logloss": 0.05168804109100516,
- "val_predict_sec": 5.101733600000443,
+ "feature_sec": 9.922527100003208,
+ "train_sec": 23.92639909999707,
+ "best_iter": 264,
+ "val_logloss": 0.05160769195548236,
+ "val_predict_sec": 4.022481200001494,
  "val": {
-  "logloss": 0.051688041091005166,
-  "auc": 0.7743339780086065,
-  "ndcg@10": 0.14648718931241547,
-  "recall@10": 0.2191732708918517,
-  "map@10": 0.10053109686528933,
+  "logloss": 0.05160769195548223,
+  "auc": 0.7742596852983712,
+  "ndcg@10": 0.1488683441756425,
+  "recall@10": 0.2192133574283089,
+  "map@10": 0.1030925339926094,
   "groups": 15000
  },
- "test_predict_sec": 9.981747800000448,
+ "test_predict_sec": 8.094779299994116,
  "test": {
-  "logloss": 0.051583815676375565,
-  "auc": 0.7733165339600524,
-  "ndcg@10": 0.13955894933294694,
-  "recall@10": 0.21292238148953876,
-  "map@10": 0.09419656287267993,
+  "logloss": 0.05152854067198478,
+  "auc": 0.7759477867915463,
+  "ndcg@10": 0.14481469668947017,
+  "recall@10": 0.21622159526333454,
+  "map@10": 0.09898514588057444,
   "groups": 30000
  },
  "importance": [
   [
    "pop_rank",
-   0.3688047180124538
+   0.3635461367975293
   ],
   [
    "als_score",
-   0.11855370336829069
+   0.10411054374973171
   ],
   [
    "als_rank",
-   0.07557545269974651
+   0.08312521395221635
   ],
   [
-   "s:kids|drop|dec(h3.3)|all",
-   0.06749840643755484
+   "ua:ctype|watch|cnt|w7",
+   0.054773829555897394
   ],
   [
-   "a:actor|long|nuniq|all|min",
-   0.05889115875205797
+   "a:actor|full|cnt|all|min",
+   0.051239131186499406
   ],
   [
-   "ua:genre|full|cnt|w4|mean",
-   0.046825360754740995
+   "item|drop|cnt|w11",
+   0.048785197421902037
   ],
   [
-   "s:sex|watch|mean(hours)|w3",
-   0.03905128050368396
+   "s:kids|full|mean(hours)|w111",
+   0.032410535879304654
   ],
   [
-   "R[item|full|cnt|w2 / item|full|cnt|w4]",
-   0.03305132634843083
+   "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
+   0.03229348669311131
   ],
   [
-   "a:director|watch|dec(h0.6)|w22|min",
-   0.02548621339114993
+   "a:actor|watch|mean(hours)|all|sum",
+   0.03150940719139622
   ],
   [
-   "a:actor|long|sum(pct)|w75|mean",
-   0.024872375035374775
+   "ua:country|long|cnt|all|max",
+   0.028320631967308343
   ],
   [
-   "ua:country|full|cnt|all|sum",
-   0.02195098715300054
+   "ua:ctype|long|cnt|w14",
+   0.02405791544635269
   ],
   [
-   "ua:ctype|watch|last|w2",
-   0.01750832670394822
+   "s:kids|watch|mean(pct)|all",
+   0.02377781105945028
+  ],
+  [
+   "a:genre|full|nuniq|w53|mean",
+   0.019238119961493275
   ],
   [
    "year",
-   0.017369441610632207
+   0.01817280096316653
   ],
   [
-   "ua:country|drop|last|w11|mean",
-   0.016529731027880808
+   "user|long|days|w9",
+   0.011350324210970682
   ],
   [
-   "R[ua:genre|full|cnt|w2|max / user|full|cnt|w2]",
-   0.011489276700034095
-  ],
-  [
-   "age_rating",
-   0.010071844997423446
-  ],
-  [
-   "a:country|long|mean(hours)|all|sum",
-   0.00901946461666173
+   "a:country|drop|cnt|all|sum",
+   0.009429243744710557
   ],
   [
    "age",
-   0.006273458320457439
+   0.007980591065390787
   ],
   [
-   "in_pop",
-   0.004746338588423944
+   "R[ua:country|drop|cnt|w2|min / user|drop|cnt|w2]",
+   0.007710906805076007
+  ],
+  [
+   "age_rating",
+   0.007125213884393263
   ],
   [
    "sex",
-   0.004628004996149653
+   0.007052422896326741
   ],
   [
-   "s:age|watch|last|all",
-   0.004439125411253271
+   "item|full|last|w32",
+   0.006729209275740033
   ],
   [
-   "kids",
-   0.003922524731592598
+   "in_pop",
+   0.006700416138107274
   ],
   [
    "in_als",
-   0.003052269685240055
+   0.005774384196943418
   ],
   [
-   "a:actor|long|days|w86|max",
-   0.0026260739846378097
-  ],
-  [
-   "ctype",
-   0.002497694244446859
+   "a:genre|watch|dec(h22.9)|all|max",
+   0.0056518653641369435
   ],
   [
    "income",
-   0.0024728223594726235
+   0.003953204010259758
+  ],
+  [
+   "kids",
+   0.003043603056160317
   ],
   [
    "for_kids",
-   0.002170344135894264
+   0.0014128106349010187
   ],
   [
-   "a:director|watch|last|all|max",
-   0.0006222754293661429
+   "ctype",
+   0.0006138066842898644
   ],
   [
-   "a:genre|full|last|w23|min",
-   0.0
+   "a:ctype|long|dec(h2.9)|all",
+   0.00011123620723383371
   ],
   [
-   "a:ctype|drop|last|w2",
+   "ua:studio|watch|days|w3|sum",
    0.0
   ]
  ],
@@ -160,22 +160,22 @@
   "year",
   "for_kids",
   "age_rating",
-  "s:kids|drop|dec(h3.3)|all",
-  "R[ua:genre|full|cnt|w2|max / user|full|cnt|w2]",
-  "s:age|watch|last|all",
-  "ua:ctype|watch|last|w2",
-  "a:actor|long|sum(pct)|w75|mean",
-  "a:director|watch|dec(h0.6)|w22|min",
-  "ua:country|drop|last|w11|mean",
-  "a:genre|full|last|w23|min",
-  "ua:genre|full|cnt|w4|mean",
-  "ua:country|full|cnt|all|sum",
-  "a:actor|long|days|w86|max",
-  "s:sex|watch|mean(hours)|w3",
-  "a:actor|long|nuniq|all|min",
-  "a:ctype|drop|last|w2",
-  "R[item|full|cnt|w2 / item|full|cnt|w4]",
-  "a:director|watch|last|all|max",
-  "a:country|long|mean(hours)|all|sum"
+  "R[ua:country|drop|cnt|w2|min / user|drop|cnt|w2]",
+  "a:genre|watch|dec(h22.9)|all|max",
+  "item|drop|cnt|w11",
+  "ua:ctype|long|cnt|w14",
+  "a:genre|full|nuniq|w53|mean",
+  "s:kids|watch|mean(pct)|all",
+  "item|full|last|w32",
+  "a:ctype|long|dec(h2.9)|all",
+  "ua:ctype|watch|cnt|w7",
+  "s:kids|full|mean(hours)|w111",
+  "a:actor|full|cnt|all|min",
+  "a:actor|watch|mean(hours)|all|sum",
+  "R[s:age|drop|cnt|w120 / s:age|watch|cnt|w120]",
+  "ua:studio|watch|days|w3|sum",
+  "a:country|drop|cnt|all|sum",
+  "user|long|days|w9",
+  "ua:country|long|cnt|all|max"
  ]
 }

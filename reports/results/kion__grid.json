@@ -2,188 +2,188 @@
  "dataset": "kion",
  "tag": "grid",
  "n_features": 229,
- "feature_sec": 157.46646979999787,
- "train_sec": 138.80332989999806,
- "best_iter": 241,
- "val_logloss": 0.05070058425185641,
- "val_predict_sec": 5.177294699999038,
+ "feature_sec": 83.24335979999887,
+ "train_sec": 78.761642999998,
+ "best_iter": 243,
+ "val_logloss": 0.050633585573358314,
+ "val_predict_sec": 4.28805409999768,
  "val": {
-  "logloss": 0.05070058425185646,
-  "auc": 0.7937027553709827,
-  "ndcg@10": 0.15761928974682052,
-  "recall@10": 0.23270781957749695,
-  "map@10": 0.10919569700596288,
+  "logloss": 0.050633585573358376,
+  "auc": 0.7946419134507939,
+  "ndcg@10": 0.15900824980165276,
+  "recall@10": 0.23228013280097226,
+  "map@10": 0.11082215481439489,
   "groups": 15000
  },
- "test_predict_sec": 11.06384810000236,
+ "test_predict_sec": 7.9384560999969835,
  "test": {
-  "logloss": 0.05083094802611957,
-  "auc": 0.7889101342723066,
-  "ndcg@10": 0.14936405331874206,
-  "recall@10": 0.2264389720650331,
-  "map@10": 0.10124255238515158,
+  "logloss": 0.051027902791812386,
+  "auc": 0.788543833854719,
+  "ndcg@10": 0.1498648370472136,
+  "recall@10": 0.22521387697978332,
+  "map@10": 0.10228766722831108,
   "groups": 30000
  },
  "importance": [
   [
    "item|watch|cnt|w1",
-   0.23812371339699065
+   0.2239399160835902
   ],
   [
    "s:sex|watch|cnt|w1",
-   0.0671320330219105
+   0.07840081238933333
   ],
   [
    "als_score",
-   0.06573762785132156
+   0.06477806170588199
   ],
   [
    "als_rank",
-   0.05566719849496012
-  ],
-  [
-   "s:sex|watch|cnt|w7",
-   0.026175803575155455
+   0.053213124099786506
   ],
   [
    "pop_rank",
-   0.023908687973083785
+   0.039039466987274424
   ],
   [
    "ua:actor|watch|last|all|min",
-   0.02225698025065323
+   0.02767118891204215
   ],
   [
    "ua:genre|watch|cnt|w7|max",
-   0.02186352483092114
+   0.02143146254779514
   ],
   [
    "s:age|watch|cnt|w1",
-   0.014407064914349912
-  ],
-  [
-   "user|watch|cnt|all",
-   0.013954542551436645
-  ],
-  [
-   "ua:actor|full|last|all|min",
-   0.010279415259058875
-  ],
-  [
-   "ua:country|watch|last|all|min",
-   0.010122838896520244
+   0.019847314274968397
   ],
   [
    "ua:genre|watch|last|all|min",
-   0.00999355388016169
+   0.013442879244650176
+  ],
+  [
+   "user|watch|cnt|all",
+   0.012542424761462674
+  ],
+  [
+   "ua:country|watch|last|all|min",
+   0.01103334434950263
   ],
   [
    "ua:ctype|watch|mean(pct)|all",
-   0.009855328936714213
-  ],
-  [
-   "ua:country|watch|mean(pct)|all|mean",
-   0.009506884917593309
-  ],
-  [
-   "ua:genre|watch|cnt|w30|max",
-   0.009439634681210061
-  ],
-  [
-   "user|full|cnt|all",
-   0.008410582552194991
-  ],
-  [
-   "user|watch|mean(pct)|all",
-   0.00776803450783914
-  ],
-  [
-   "item|watch|cnt|all",
-   0.007516331864020807
-  ],
-  [
-   "ua:genre|watch|mean(pct)|all|mean",
-   0.007431389122487999
-  ],
-  [
-   "ua:country|full|last|all|min",
-   0.007430994927749208
-  ],
-  [
-   "user|watch|mean(pct)|w30",
-   0.00741448848526066
-  ],
-  [
-   "ua:ctype|watch|mean(pct)|w30",
-   0.007179054918347108
-  ],
-  [
-   "ua:genre|watch|mean(pct)|w30|mean",
-   0.007073730557421922
+   0.010513443355792665
   ],
   [
    "ua:ctype|watch|last|all",
-   0.007048589023079668
+   0.009397920561423124
   ],
   [
-   "ua:genre|full|last|all|min",
-   0.006746330125709383
+   "ua:genre|watch|cnt|w30|max",
+   0.008492893363782396
   ],
   [
-   "item|full|cnt|all",
-   0.006122856237323333
+   "user|full|cnt|all",
+   0.00843752089254572
   ],
   [
-   "user|full|last|all",
-   0.006076239543207048
+   "ua:genre|watch|mean(pct)|all|mean",
+   0.008062830862897866
   ],
   [
-   "s:kids|watch|cnt|w1",
-   0.005803370111558491
+   "ua:country|watch|mean(pct)|all|mean",
+   0.008046444817877729
   ],
   [
-   "ua:country|watch|mean(pct)|w30|mean",
-   0.005710074546127986
+   "item|watch|cnt|all",
+   0.007701950053269323
   ],
   [
-   "ua:country|watch|cnt|all|max",
-   0.0055930809574001325
+   "ua:genre|watch|mean(pct)|w30|mean",
+   0.007288206811784562
   ],
   [
-   "ua:genre|watch|cnt|all|max",
-   0.0055357158015175816
+   "user|watch|mean(pct)|w30",
+   0.0071708250094924715
   ],
   [
-   "s:income|watch|cnt|w1",
-   0.005499982724134036
+   "ua:ctype|watch|mean(pct)|w30",
+   0.007002273572964048
   ],
   [
-   "s:sex|watch|cnt|all",
-   0.005300767527199101
-  ],
-  [
-   "ua:ctype|full|last|all",
-   0.005268428475212658
-  ],
-  [
-   "ua:actor|watch|mean(pct)|all|mean",
-   0.005162599063257237
+   "user|watch|mean(pct)|all",
+   0.006781725413985337
   ],
   [
    "a:director|watch|mean(pct)|all|mean",
-   0.00512048650536036
+   0.006464376991073573
   ],
   [
-   "ua:director|watch|last|all|min",
-   0.005092582879876359
+   "ua:country|watch|mean(pct)|w30|mean",
+   0.0064546444411595575
+  ],
+  [
+   "item|full|cnt|all",
+   0.006409038333102259
+  ],
+  [
+   "ua:genre|full|last|all|min",
+   0.006311508271682314
+  ],
+  [
+   "ua:genre|watch|cnt|all|max",
+   0.0059733691127217695
+  ],
+  [
+   "ua:country|full|last|all|min",
+   0.005570819409261856
+  ],
+  [
+   "ua:country|watch|cnt|all|max",
+   0.005555653768767537
+  ],
+  [
+   "ua:actor|watch|mean(pct)|all|mean",
+   0.0054785334373185415
+  ],
+  [
+   "user|watch|last|all",
+   0.005296074579779957
+  ],
+  [
+   "user|full|last|all",
+   0.005252499131951233
   ],
   [
    "ua:ctype|watch|cnt|all",
-   0.004899286730433912
+   0.005221315085074212
   ],
   [
-   "user|watch|cnt|w30",
-   0.004797571663670023
+   "s:sex|watch|cnt|w7",
+   0.004993126225641993
+  ],
+  [
+   "s:kids|watch|cnt|w1",
+   0.004895586816246446
+  ],
+  [
+   "a:genre|watch|mean(pct)|w30|mean",
+   0.004853127540371476
+  ],
+  [
+   "a:actor|watch|mean(pct)|w30|mean",
+   0.00479211529666047
+  ],
+  [
+   "ua:country|watch|cnt|w7|max",
+   0.004678380631800065
+  ],
+  [
+   "ua:ctype|watch|cnt|w7",
+   0.004672642091370586
+  ],
+  [
+   "ua:actor|full|last|all|min",
+   0.004580307009395751
   ]
  ],
  "features": [
