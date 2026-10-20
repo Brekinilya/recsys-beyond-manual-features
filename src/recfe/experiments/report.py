@@ -288,12 +288,39 @@ def fig_mix():
     plt.close(fig)
 
 
+def seeds_table(ds):
+    s = load(f"{ds}__seeds.json")
+    if not s or not s["gbdt"].get("manual"):
+        return ""
+    ms = [m for m in METRICS[ds] if m != "recall@10"]
+    runs = dict(s["gbdt"])
+    if s.get("gnn"):
+        runs["gnn"] = s["gnn"]
+    base = {r["seed"]: r["test"] for r in runs["manual"]}
+    labels = dict(ROWS)
+    lines = ["| Модель (test, сиды 0–2) | " + " | ".join(f"{m}: среднее ± std" for m in ms) +
+             " | " + " | ".join(f"Δ {m} к ручным того же сида" for m in ms) + " |",
+             "|" + "---|" * (2 * len(ms) + 1)]
+    for tag, rr in runs.items():
+        vals = {m: np.array([r["test"][m] for r in rr]) for m in ms}
+        cells = [f"{v.mean():.4f} ± {v.std(ddof=1) if len(v) > 1 else 0:.4f}" for v in vals.values()]
+        if tag == "manual":
+            cells += ["–"] * len(ms)
+        else:
+            for m in ms:
+                d = np.array([r["test"][m] - base[r["seed"]][m] for r in rr if r["seed"] in base])
+                cells.append(f"{d.mean():+.4f} [{d.min():+.4f}; {d.max():+.4f}]")
+        lines.append(f"| {labels.get(tag, tag).replace('**', '')} | " + " | ".join(cells) + " |")
+    return "\n".join(lines)
+
+
 def main():
     FIGURES.mkdir(parents=True, exist_ok=True)
     parts = []
     for ds in ("yambda", "kion"):
         parts += [f"## {ds}", "", table(ds), "",
                   "Парный бутстрэп по группам (1000 повторов), test; ✱ — интервал не содержит 0:", "", sig_table(ds), "",
+                  "Разброс по сидам обучения (Δ — среднее [мин; макс] по сидам):", "", seeds_table(ds), "",
                   "Абляция ручных признаков (test, изменение при удалении группы):", "", ablation_table(ds), ""]
     parts += ["## Затраты", "", cost_table(), ""]
     for ds in ("yambda", "kion"):

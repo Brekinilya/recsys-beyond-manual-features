@@ -205,27 +205,29 @@ class GraphExperiment:
         return out
 
 
-def main(name: str, tag: str):
-    ex = GraphExperiment(name, tag)
+def main(name: str, tag: str, seed: int = 0):
+    ex = GraphExperiment(name, tag, seed=seed)
+    out_tag = tag if seed == 0 else f"{tag}_seed{seed}"
     t = time.perf_counter()
+    torch.cuda.reset_peak_memory_stats()
     ex.run()
-    res = {"dataset": name, "tag": tag, "history": ex.history,
+    res = {"dataset": name, "tag": out_tag, "seed": seed, "history": ex.history,
            "mix": dict(zip(ex.lay.rel_names, ex.model.mix().detach().cpu().numpy().round(4).tolist())),
            "n_params": int(sum(p.numel() for p in ex.model.parameters()))}
     if ex.cfg["bce_w"] > 0:
         for s in ("val", "test"):
             p = ex.predict(s)
             res[s] = metrics.evaluate(ex.ctx.split_rows[s], p, name)
-            np.save(processed(name) / f"pred__{tag}__{s}.npy", p)
-        print(f"[{name}:{tag}] val {res['val']}\n  test {res['test']}")
+            np.save(processed(name) / f"pred__{out_tag}__{s}.npy", p)
+        print(f"[{name}:{out_tag}] val {res['val']}\n  test {res['test']}")
     else:
         for s in ("train", "val", "test"):
-            np.save(processed(name) / f"lp__{tag}__{s}.npy", ex.predict(s, what="lp"))
+            np.save(processed(name) / f"lp__{out_tag}__{s}.npy", ex.predict(s, what="lp"))
     res["timing"] = ex.timing
     res["total_sec"] = time.perf_counter() - t
     res["peak_gpu_gb"] = torch.cuda.max_memory_allocated() / 1e9
-    results(f"{name}__{tag}.json").write_text(json.dumps(res, indent=1))
+    results(f"{name}__{out_tag}.json").write_text(json.dumps(res, indent=1))
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 0)

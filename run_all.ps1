@@ -29,5 +29,6 @@ foreach ($ds in "yambda", "kion") {
     Step "recfe.graph.train $ds lgcn_bpr" "lgcn_$ds"
     Step "recfe.experiments.hybrid $ds" "hybrid_$ds"
     Step "recfe.experiments.significance $ds" "significance_$ds"
+    Step "recfe.experiments.seeds $ds" "seeds_$ds"
 }
 Step "recfe.experiments.report" "report"

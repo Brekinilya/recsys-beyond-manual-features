@@ -1,0 +1,254 @@
+{
+ "dataset": "yambda",
+ "tag": "random60_s0",
+ "n_features": 61,
+ "feature_sec": 27.655722100003914,
+ "train_sec": 10.004250400001183,
+ "best_iter": 233,
+ "val_logloss": 0.4569213683214467,
+ "val_predict_sec": 0.4858502999995835,
+ "val": {
+  "logloss": 0.4569213683214464,
+  "auc": 0.8127784641804572,
+  "gauc": 0.5726572983320076,
+  "ndcg@10": 0.7730155667324526,
+  "recall@10": 0.5314807124563042,
+  "map@10": 0.6747513550617334,
+  "groups": 3858
+ },
+ "test_predict_sec": 1.1860833999962779,
+ "test": {
+  "logloss": 0.45340232500289906,
+  "auc": 0.8222941380964626,
+  "gauc": 0.5758022046936931,
+  "ndcg@10": 0.7662850651647336,
+  "recall@10": 0.5142375462444095,
+  "map@10": 0.667565948083485,
+  "groups": 9056
+ },
+ "importance": [
+  [
+   "user|lplus|mean(played)|w110",
+   0.5311334291739392
+  ],
+  [
+   "R[ua:album|recplus|cnt|w265 / ua:album|rec|cnt|w265]",
+   0.06982745486809801
+  ],
+  [
+   "user|recskip|dec(h10.1)|w1",
+   0.06936961155109198
+  ],
+  [
+   "user|lplus|cnt|w1",
+   0.057045250443942236
+  ],
+  [
+   "R[user|org|cnt|w66 / user|listen|cnt|w66]",
+   0.04590290420137057
+  ],
+  [
+   "user|lplus|cnt|all",
+   0.03608419110047859
+  ],
+  [
+   "R[user|unlike|cnt|w12 / user|like|cnt|w12]",
+   0.024111856949403557
+  ],
+  [
+   "user|dislike|dec(h2.2)|all",
+   0.023397809568238004
+  ],
+  [
+   "user|org|cnt|w2",
+   0.022553249535483877
+  ],
+  [
+   "user|like|first|w6",
+   0.019862370589069884
+  ],
+  [
+   "R[ua:album|skip|cnt|w119 / ua:album|listen|cnt|w119]",
+   0.018399356279990002
+  ],
+  [
+   "R[a:artist|recskip|cnt|w14 / a:artist|rec|cnt|w14]",
+   0.014582972508847387
+  ],
+  [
+   "R[user|dislike|cnt|w6 / user|rec|cnt|w6]",
+   0.012568669532384438
+  ],
+  [
+   "R[item|skip|cnt|w13 / item|listen|cnt|w13]",
+   0.012294863414558831
+  ],
+  [
+   "length",
+   0.005754972895234943
+  ],
+  [
+   "R[ui|skip|cnt|w89 / ui|listen|cnt|w89]",
+   0.005096489392428699
+  ],
+  [
+   "R[ua:artist|skip|cnt|w8 / user|skip|cnt|w8]",
+   0.0041740652844851536
+  ],
+  [
+   "ua:album|recplus|days|w162",
+   0.0029626856625993465
+  ],
+  [
+   "a:artist|recplus|cnt|w14",
+   0.0019524155968510207
+  ],
+  [
+   "ua:album|lplus|cnt|w55",
+   0.001822058321713962
+  ],
+  [
+   "ua:album|recplus|last|all",
+   0.001710530467351972
+  ],
+  [
+   "ui|lplus|cnt|w55",
+   0.0016197747129583575
+  ],
+  [
+   "ua:album|rec|cnt|w74",
+   0.0013912622503965992
+  ],
+  [
+   "ui|recskip|dec(h2.7)|all",
+   0.001237466260639856
+  ],
+  [
+   "R[ua:artist|dislike|cnt|w6 / ua:artist|listen|cnt|w6]",
+   0.0012308988773114566
+  ],
+  [
+   "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+   0.0010717282158664084
+  ],
+  [
+   "R[ua:album|skip|cnt|w10 / ua:album|listen|cnt|w10]",
+   0.0008904850497509853
+  ],
+  [
+   "a:album|org|cnt|w25",
+   0.0008201874464328128
+  ],
+  [
+   "a:artist|recskip|mean(played)|w90",
+   0.0008125079283540358
+  ],
+  [
+   "item|org|cnt|w197",
+   0.0007827759734020108
+  ],
+  [
+   "a:album|listen|cnt|all",
+   0.0007468222312135437
+  ],
+  [
+   "item|rec|dec(h28.7)|all",
+   0.0007165308103037526
+  ],
+  [
+   "ui|recskip|last|w130",
+   0.0006689498763455815
+  ],
+  [
+   "a:album|skip|mean(played)|w80",
+   0.0006149320967248571
+  ],
+  [
+   "item|skip|dec(h49.8)|w9",
+   0.0005523097649132256
+  ],
+  [
+   "item|skip|cnt|w4",
+   0.0005258122339886443
+  ],
+  [
+   "a:artist|lplus|mean(played)|w4",
+   0.0005046084116742874
+  ],
+  [
+   "item|recskip|nuniq|w43",
+   0.00047549486527263606
+  ],
+  [
+   "ua:album|org|dec(h2.3)|all",
+   0.0004625768060287658
+  ],
+  [
+   "item|recplus|days|w12",
+   0.0004479294172904175
+  ]
+ ],
+ "features": [
+  "length",
+  "a:album|like|last|w4",
+  "R[item|dislike|cnt|w83 / item|rec|cnt|w83]",
+  "R[user|unlike|cnt|w12 / user|like|cnt|w12]",
+  "item|rec|dec(h28.7)|all",
+  "a:album|recskip|cnt|w161",
+  "ua:album|recplus|last|all",
+  "ui|recskip|last|w130",
+  "ua:artist|unlike|cnt|w237",
+  "a:album|org|cnt|w25",
+  "R[ua:album|skip|cnt|w119 / ua:album|listen|cnt|w119]",
+  "R[ua:artist|dislike|cnt|w6 / ua:artist|listen|cnt|w6]",
+  "item|like|days|all",
+  "item|listen|cnt|w64",
+  "user|like|first|w6",
+  "R[ua:artist|skip|cnt|w8 / user|skip|cnt|w8]",
+  "ua:album|recplus|days|w162",
+  "item|recplus|days|w12",
+  "R[ui|skip|cnt|w89 / ui|listen|cnt|w89]",
+  "ui|lplus|cnt|w55",
+  "a:artist|recskip|mean(played)|w90",
+  "a:artist|recplus|cnt|w14",
+  "R[a:artist|recskip|cnt|w14 / a:artist|rec|cnt|w14]",
+  "user|lplus|mean(played)|w110",
+  "a:album|unlike|nuniq|w84",
+  "item|skip|cnt|w4",
+  "user|org|cnt|w2",
+  "user|recskip|dec(h10.1)|w1",
+  "a:album|listen|first|w2",
+  "ua:album|rec|cnt|w74",
+  "ui|unlike|cnt|w23",
+  "R[ua:album|skip|cnt|w10 / ua:album|listen|cnt|w10]",
+  "ui|unlike|last|w5",
+  "item|listen|cnt|w36",
+  "user|dislike|dec(h2.2)|all",
+  "item|org|cnt|w197",
+  "ua:album|org|cnt|all",
+  "item|like|cnt|w238",
+  "item|recskip|nuniq|w43",
+  "a:artist|like|cnt|w103",
+  "a:artist|lplus|mean(played)|w4",
+  "a:album|like|cnt|w56",
+  "item|unlike|cnt|all",
+  "a:artist|org|cnt|w17",
+  "item|skip|dec(h49.8)|w9",
+  "R[user|dislike|cnt|w6 / user|rec|cnt|w6]",
+  "ua:album|org|dec(h2.3)|all",
+  "user|lplus|cnt|all",
+  "ua:album|recskip|cnt|w16",
+  "ua:album|lplus|cnt|w55",
+  "ua:album|org|cnt|w16",
+  "ui|recskip|dec(h2.7)|all",
+  "R[item|skip|cnt|w13 / item|listen|cnt|w13]",
+  "a:artist|unlike|cnt|w57",
+  "R[ui|recskip|cnt|w5 / ui|rec|cnt|w5]",
+  "R[ua:album|recplus|cnt|w265 / ua:album|rec|cnt|w265]",
+  "a:album|listen|cnt|all",
+  "a:album|unlike|nuniq|w64",
+  "user|lplus|cnt|w1",
+  "a:album|skip|mean(played)|w80",
+  "R[user|org|cnt|w66 / user|listen|cnt|w66]"
+ ]
+}
